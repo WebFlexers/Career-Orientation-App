@@ -1,0 +1,8 @@
+<Navbar.Brand href="#home">
+            <Image
+              src="/career-logo.png"
+              alt="career logo"
+              width={80}
+              height={70}
+            />
+          </Navbar.Brand>

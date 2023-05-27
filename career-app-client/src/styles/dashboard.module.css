@@ -1,0 +1,44 @@
+#home-header {
+  margin-left: 200px;
+  margin-right: 400px;
+}
+
+.header {
+  font-size: 1.7em;
+}
+
+#button {
+  background-color: #fcb426;
+  color: white;
+}
+
+#home-img-box {
+  left: 0;
+  right: 0;
+}
+
+#img {
+  object-fit: none;
+  object-position: right top;
+  width: 100%;
+}
+
+#quote-bar {
+  background-color: #0080c8;
+  padding-top: 10px;
+  left: 0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#quote-text {
+  font-size: 2.3em;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  #home-header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
