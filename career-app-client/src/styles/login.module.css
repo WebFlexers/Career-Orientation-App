@@ -1,0 +1,8 @@
+#form-box {
+  padding: 70px 0;
+  text-align: center;
+  color: red;
+}
+
+@media only screen and (max-width: 900px) {
+}

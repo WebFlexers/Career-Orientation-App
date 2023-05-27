@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/dashboard.module.css";
+import styles from "@/styles/home.module.css";
 import { Button } from "antd";
 
 export default function Home() {
