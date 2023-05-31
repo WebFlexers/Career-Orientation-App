@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
-const NavigationBar = (props) => {
+const HomeNavigationBar = (props) => {
   const _pathName = usePathname();
   let _style = {};
   if (_pathName != "/") {
@@ -40,4 +40,4 @@ const NavigationBar = (props) => {
   );
 };
 
-export default NavigationBar;
+export default HomeNavigationBar;

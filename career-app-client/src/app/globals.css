@@ -1,8 +1,33 @@
 :root {
-  --dark-text: #585858;
+  --dark-text: #3f3f3f;
   --white: #ffffff;
 }
 
-* {
+body {
   color: var(--dark-text);
+}
+
+.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+  background-color: #fff3f3;
+  color: var(--dark-text);
+}
+
+#admin-nav {
+  background-color: #0080c8;
+  font-weight: 500;
+}
+
+#admin-nav-blank-area {
+  width: 250px;
+  height: 50px;
+  background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    margin-left: 0;
+  }
 }

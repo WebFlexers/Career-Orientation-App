@@ -2,12 +2,20 @@
 
 import { Button, Checkbox, Form, Input } from "antd";
 import styles from "@/styles/login.module.css";
-import { Container } from "react-bootstrap";
+import { useRouter } from "next/navigation";
+
+const onFinish = (values) => {
+  console.log("Success:");
+};
 
 export default function Login() {
+  const router = useRouter();
   return (
     <>
-      <Container fluid id={styles["form-box"]}>
+      <div id={styles["form-box"]}>
+        <h4 className="pb-3" style={{ textAlign: "center" }}>
+          Login
+        </h4>
         <Form
           name="basic"
           labelCol={{
@@ -22,6 +30,7 @@ export default function Login() {
           initialValues={{
             remember: true,
           }}
+          onFinish={onFinish}
           autoComplete="off"
         >
           <Form.Item
@@ -67,12 +76,16 @@ export default function Login() {
               span: 16,
             }}
           >
-            <Button type="primary" htmlType="submit" style={{ color: "white" }}>
+            <Button
+              htmlType="submit"
+              id={styles["login-btn"]}
+              onClick={() => router.push("/dashboard")}
+            >
               Submit
             </Button>
           </Form.Item>
         </Form>
-      </Container>
+      </div>
     </>
   );
 }

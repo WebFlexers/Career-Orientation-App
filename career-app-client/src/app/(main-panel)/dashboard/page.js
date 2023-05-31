@@ -1,9 +1,5 @@
 import styles from "@/styles/dashboard.module.css";
 
-export const metadata = {
-  title: "Dashboard",
-};
-
 export default function Dashboard() {
   return (
     <main>

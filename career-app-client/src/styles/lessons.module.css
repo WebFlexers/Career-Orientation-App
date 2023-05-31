@@ -1,0 +1,13 @@
+.header {
+  text-align: center;
+}
+
+#semesters-btns-box {
+  text-align: center;
+}
+
+.semesters-btn {
+}
+
+@media only screen and (max-width: 900px) {
+}
