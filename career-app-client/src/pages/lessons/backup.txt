@@ -1,0 +1,125 @@
+import styles from "@/styles/lessons.module.css";
+import { Container } from "react-bootstrap";
+import { useState } from "react";
+import AdminLayout from "@/components/admin.layout";
+import { getLocalSemestersData } from "../../../lib/semestersdata";
+import semesters from "../api/semesters.json";
+
+function getLessonsFromSemester(semesters, semester_index) {
+  return semesters[semester_index - 1].lessons;
+}
+
+export default function Lessons({ semestersData }) {
+  const [semester, setSemester] = useState(1);
+  const [lessons, setLessons] = useState([]);
+
+  // Get semesters as readable array of objects from jason file
+  const _semesters = Object.values(semesters)[0];
+
+  function handleSemesterClick(_semester) {
+    setSemester(_semester);
+    var tempLessons = getLessonsFromSemester(_semesters, _semester);
+    setLessons(tempLessons);
+  }
+
+  return (
+    <main>
+      <Container className="mt-4">
+        <h4 className={styles["header"]}>Επιλέξτε εξάμηνο:</h4>
+        <div className={styles["semesters-box"]}>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(1)}
+            >
+              Εξάμηνο 1
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(2)}
+            >
+              Εξάμηνο 2
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(3)}
+            >
+              Εξάμηνο 3
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(4)}
+            >
+              Εξάμηνο 4
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(5)}
+            >
+              Εξάμηνο 5
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(6)}
+            >
+              Εξάμηνο 6
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(7)}
+            >
+              Εξάμηνο 7
+            </button>
+          </div>
+          <div className={styles["semester-item"]}>
+            <button
+              className={styles["semester-btn"]}
+              onClick={() => handleSemesterClick(8)}
+            >
+              Εξάμηνο 8
+            </button>
+          </div>
+        </div>
+      </Container>
+
+      <Container className="mt-5 mb-3">
+        <h4 className={`${styles["header"]}`}>
+          <b>Εξάμηνο {semester}</b>
+        </h4>
+        <ol id={styles["info-box"]}>
+          {lessons.map((lesson) => {
+            return (
+              <>
+                <li>
+                  <h5 className="mt-4">{lesson.title}</h5>
+                  <h5 className="mt-3">
+                    <b>Περιγραφή</b>
+                  </h5>
+                  <div style={{ textAlign: "justify" }}>
+                    {lesson.description}
+                  </div>
+                </li>
+              </>
+            );
+          })}
+        </ol>
+      </Container>
+    </main>
+  );
+}
+
+Lessons.getLayout = function getLayout(page) {
+  return <AdminLayout>{page}</AdminLayout>;
+};
