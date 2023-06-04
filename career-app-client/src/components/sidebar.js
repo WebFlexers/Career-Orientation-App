@@ -27,7 +27,12 @@ const SideBar = () => {
     <>
       <div className={styles["sidebar"]}>
         <div id={styles["profile-box"]}>
-          <Image src="/profile-icon.png" alt="Icon0" width={100} height={100} />
+          <Image
+            src="/images/profile-icon.png"
+            alt="Icon0"
+            width={100}
+            height={100}
+          />
           <div id={styles["profile-name-cap"]}>
             <b>ELEFTHERIOS KONTOURIS</b>
           </div>

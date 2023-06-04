@@ -38,7 +38,7 @@ const AdminNavigationBar = (props) => {
               <Nav.Item>
                 <button style={{ backgroundColor: "transparent", border: "0" }}>
                   <Image
-                    src="/notification-icon.png"
+                    src="/images/notification-icon.png"
                     alt="Icon1"
                     width={25}
                     height={25}
@@ -49,7 +49,7 @@ const AdminNavigationBar = (props) => {
               <Nav.Item>
                 <button style={{ backgroundColor: "transparent", border: "0" }}>
                   <Image
-                    src="/find-icon.png"
+                    src="/images/find-icon.png"
                     alt="Icon1"
                     width={25}
                     height={25}
@@ -60,7 +60,7 @@ const AdminNavigationBar = (props) => {
               <Nav.Item>
                 <button style={{ backgroundColor: "transparent", border: "0" }}>
                   <Image
-                    src="/logout-icon.png"
+                    src="/images/logout-icon.png"
                     alt="Icon1"
                     width={25}
                     height={25}

@@ -2,11 +2,22 @@
   text-align: center;
 }
 
-#semesters-btns-box {
+.semesters-box {
+  display: grid;
+  row-gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 50px;
+}
+
+.semester-item {
   text-align: center;
 }
 
-.semesters-btn {
+.semester-btn {
+  border: 0;
+  padding: 30px 35px;
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 900px) {
