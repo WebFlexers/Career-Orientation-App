@@ -1,14 +1,63 @@
+.login-img-background {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
 #form-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  width: 50%;
+  text-align: center;
+  background-color: white;
+}
+
+.input {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 12px;
+  border: 1px solid rgb(192, 192, 192);
+  width: 90%;
+  padding: 15px 20px;
+  margin: 12px 0;
+}
+
+.input:focus {
+  outline: none !important;
+}
+
+#forgot-pass-link {
+  text-align: left;
+  margin-left: 34px;
+  font-size: 1em;
 }
 
 #login-btn {
+  background-color: rgb(2, 95, 235);
   color: white;
+  width: 90%;
+  padding: 8px 8px;
+  font-size: 0.9em;
+  border: 0;
+  border-radius: 20px;
+}
+
+.error-msg {
+  color: rgb(196, 0, 0);
 }
 
 @media only screen and (max-width: 900px) {
+  #form-box {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #form-box {
+    width: 80%;
+  }
 }

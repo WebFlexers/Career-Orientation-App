@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import HomeLayout from "@/components/home.layout";
 import { useState } from "react";
-import { Button } from "antd";
 import { Container } from "react-bootstrap";
 
 export default function Home() {
@@ -21,15 +20,6 @@ export default function Home() {
             Επαγγελματικός προσανατολισμός για το τμήμα Πληροφορικής του
             Πανεπιστημίου Πειραιώς
           </div>
-
-          <Button
-            className="mt-3"
-            id={styles["button"]}
-            size={size}
-            href="/about"
-          >
-            Περισσότερα
-          </Button>
         </div>
 
         <Container fluid id={`${styles["home-img-box"]}`}>

@@ -2,9 +2,7 @@ import styles from "@/styles/lessons.module.css";
 import { Container } from "react-bootstrap";
 import { useState } from "react";
 import AdminLayout from "@/components/admin.layout";
-import { getLocalSemestersData } from "../../../lib/semestersdata";
 import semesters from "../api/semesters.json";
-import { skipTrailingSlashRedirect } from "../../../next.config";
 
 function getLessonsFromSemester(semesters, semester_index) {
   return semesters[semester_index - 1].lessons;

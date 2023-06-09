@@ -9,6 +9,14 @@ body {
   height: 100%;
 }
 
+input {
+  color: var(--dark-text);
+}
+
+select {
+  color: var(--dark-text);
+}
+
 .content {
   margin-left: 250px;
   padding: 1px 16px;
