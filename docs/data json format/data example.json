@@ -101,7 +101,7 @@
       "name": "Poutana"
     }
   ],
-  "questionsMastersDegrees": [
+  "questionMastersDegrees": [
     {
       "questionId": 1,
       "mastersDegreeId": 1
@@ -111,7 +111,7 @@
       "mastersDegreeId": 1
     }
   ],
-  "questionsProfessions": [
+  "questionProfessions": [
     {
       "questionId": 1,
       "professionId": 1
@@ -121,7 +121,7 @@
       "professionId": 2
     }
   ],
-  "questionsTracks": [
+  "questionTracks": [
     {
       "questionId": 1,
       "trackId": 1
@@ -135,7 +135,7 @@
     {
       "generalTestId": 1,
       "type": "ComputerScienceSuitability"
-    }, 
+    },
     {
       "generalTestId": 2,
       "type": "UniversityOfPiraeusSuitability"
