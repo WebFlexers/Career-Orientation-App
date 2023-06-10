@@ -54,7 +54,9 @@ export default function Lessons({ semestersData }) {
             return (
               <>
                 <li>
-                  <h5 className="mt-5">{lesson.title}</h5>
+                  <h5 className="mt-5" style={{ color: "red" }}>
+                    {lesson.title}
+                  </h5>
                   <h5 className="mt-4">
                     <b>Περιγραφή</b>
                   </h5>

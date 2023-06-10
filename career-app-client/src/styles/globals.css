@@ -21,7 +21,6 @@ select {
   margin-left: 250px;
   padding: 1px 16px;
   height: 100%;
-  background-color: #f1f9ff;
   color: var(--dark-text);
 }
 
@@ -34,6 +33,16 @@ select {
   width: 250px;
   height: 50px;
   background-color: red;
+}
+
+button:hover {
+  background-color: #fcb426;
+}
+
+.admin-btn {
+  border: 0;
+  padding: 10px 25px;
+  color: var(--dark-text);
 }
 
 @media screen and (max-width: 500px) {

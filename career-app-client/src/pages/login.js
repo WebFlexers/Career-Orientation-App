@@ -48,7 +48,7 @@ export default function Login() {
         height={400}
         className={styles["login-img-background"]}
       />
-      <div id={styles["form-box"]}>
+      <div id={styles["form-box"]} style={{ height: "62%" }}>
         <h4 className="mt-3" style={{ textAlign: "center" }}>
           Σύνδεση
         </h4>
