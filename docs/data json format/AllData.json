@@ -1487,40 +1487,34 @@
   ],
   "trueFalseAnswers": [
     {
-      "trueFalseAnswerId": 1,
-      "Value": true,
-      "questionId": 3
+      "questionId": 3,
+      "Value": true
     },
     {
-      "trueFalseAnswerId": 2,
-      "Value": false,
-      "questionId": 4
+      "questionId": 4,
+      "Value": false
     }
   ],
   "multipleChoiceAnswers": [
     {
-      "multipleChoiceAnswerId": 1,
+      "questionId": 2,
       "text": "His intentional feeding",
-      "isCorrect": false,
-      "questionId": 2
+      "isCorrect": false
     },
     {
-      "multipleChoiceAnswerId": 2,
+      "questionId": 2,
       "text": "His bad behaviour",
-      "isCorrect": false,
-      "questionId": 2
+      "isCorrect": false
     },
     {
-      "multipleChoiceAnswerId": 3,
+      "questionId": 2,
       "text": "His godly presence",
-      "isCorrect": true,
-      "questionId": 2
+      "isCorrect": true
     },
     {
-      "multipleChoiceAnswerId": 4,
+      "questionId": 2,
       "text": "His simping",
-      "isCorrect": false,
-      "questionId": 2
+      "isCorrect": false
     }
   ],
   "tracks": [
