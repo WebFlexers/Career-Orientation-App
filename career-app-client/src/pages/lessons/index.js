@@ -2,7 +2,7 @@ import styles from "@/styles/lessons.module.css";
 import { Container } from "react-bootstrap";
 import { useState } from "react";
 import AdminLayout from "@/components/admin.layout";
-import semesters from "../api/semesters.json";
+import semesters from "../../../public/data/semesters.json";
 
 function getLessonsFromSemester(semesters, semester_index) {
   return semesters[semester_index - 1].lessons;
