@@ -1,4 +1,5 @@
-Real Data: https://jsoneditoronline.org/#left=cloud.8b2ebf9c707d4af99de7c4f3951962f5
+Json αρχείο συσχετισμών: https://jsoneditoronline.org/#left=cloud.8b2ebf9c707d4af99de7c4f3951962f5
+Json αρχείο ερωτήσεων: https://jsoneditoronline.org/#left=cloud.1b7d01225c6449a5b501d94ffe3b874f
 
 Documentation:
 

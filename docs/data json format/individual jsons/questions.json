@@ -1,0 +1,30 @@
+"questions": [
+	{
+	  "questionId": 1,
+	  "text": "Is this a question?",
+	  "type": "LikertScale",
+	  "universityTestId": null,
+	  "generalTestId": "1"
+	},
+	{
+	  "questionId": 2,
+	  "text": "What is StyleM known for?",
+	  "type": "MultipleChoice",
+	  "universityTestId": 1,
+	  "generalTestId": null
+	},
+	{
+	  "questionId": 3,
+	  "text": "StyleM is the master of masters",
+	  "type": "TrueFalse",
+	  "universityTestId": 2,
+	  "generalTestId": null
+	},
+	{
+	  "questionId": 4,
+	  "text": "Is StyleM the worst?",
+	  "type": "TrueFalse",
+	  "universityTestId": 2,
+	  "generalTestId": null
+	}
+]

@@ -1,0 +1,26 @@
+"multipleChoiceAnswers": [
+    {
+      "multipleChoiceAnswerId": 1,
+      "text": "His intentional feeding",
+      "isCorrect": false,
+      "questionId": 2
+    },
+    {
+      "multipleChoiceAnswerId": 2,
+      "text": "His bad behaviour",
+      "isCorrect": false,
+      "questionId": 2
+    },
+    {
+      "multipleChoiceAnswerId": 3,
+      "text": "His godly presence",
+      "isCorrect": true,
+      "questionId": 2
+    },
+    {
+      "multipleChoiceAnswerId": 4,
+      "text": "His simping",
+      "isCorrect": false,
+      "questionId": 2
+    }
+]
