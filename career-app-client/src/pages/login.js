@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useFormik } from "formik";
 import Link from "next/link";
 import Image from "next/image";
+import { useSession, signIn, signOut } from "next-auth/react";
 
 const onFinish = (values) => {
   console.log("Success:");
@@ -26,6 +27,7 @@ const validate = (values) => {
 };
 export default function Login() {
   const router = useRouter();
+  const { data: session } = useSession();
 
   const formik = useFormik({
     initialValues: {
@@ -35,8 +37,13 @@ export default function Login() {
     validateOnChange: false,
     validateOnBlur: false,
     validate,
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async (values) => {
+      const result = await signIn("credentials", {
+        username: values.username,
+        password: values.password,
+        redirect: true,
+        callbackUrl: "/",
+      });
     },
   });
 
