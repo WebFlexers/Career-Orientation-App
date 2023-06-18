@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import axios from "axios";
 
 export const authOptions = {
   providers: [
@@ -11,43 +12,25 @@ export const authOptions = {
       // e.g. domain, username, password, 2FA token, etc.
       // You can pass any HTML attribute to the <input> tag through the object.
       credentials: {
-        username: { label: "Username", type: "text", placeholder: "jsmith" },
+        email: { label: "Email", type: "text", placeholder: "jsmith" },
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials, req) {
-        // When the API is ready use the below
-        /*const { username, password } = credentials;
-        const res = await fetch("/auth/login", {
-          method: "POST",
-          headers: {
-            "Content-Type": "appilication/json",
-          },
-          body: JSON.stringify({
-            username,
-            password,
-          }),
-        });
+        const { email, password } = credentials;
+        // Prepare params
+        const url = "https://localhost:7155/api/Users/Login";
+        const data = {
+          email,
+          password,
+        };
+        const config = { "content-type": "application/json" };
+        // Request
+        const res = await axios.post(url, data, config);
+        console.log(res.data);
 
-        const user = await res.json();
-
-        if (res.ok && user) {
-          return user;
-        } else return null;*/
-
-        const { username, password } = credentials;
-        if (username == "admin" && password == "1234") {
-          const user = {
-            username: username,
-            password: password,
-            fullname: "ADMIN USER",
-            email: "admin@webflexers.gr",
-            accessToken: "itsmemariotoken",
-          };
-          console.log(JSON.stringify(user));
-          return JSON.stringify(user);
-        } else {
-          return null;
-        }
+        if (res) {
+          return res.data;
+        } else return null;
       },
     }),
   ],
@@ -59,5 +42,34 @@ export const authOptions = {
   pages: {
     signIn: "/login",
   },
+
+  callbacks: {
+    async jwt({ token, user, account }) {
+      if (account && user) {
+        return {
+          ...token,
+          accessToken: user.token,
+          userId: user.userId,
+        };
+      }
+
+      return token;
+    },
+
+    async session({ session, token, user }) {
+      // Send properties to the client, like an access_token and user id from a provider.
+      session.accessToken = token.accessToken;
+
+      // Fetch user using the userId
+      //const url = `https://localhost:7155/api/Users${token.userId}`;
+      //const res = axios.get(url);
+      //console.log(res.data);
+
+      session.user.userId = token.userId;
+
+      return session;
+    },
+  },
 };
+
 export default NextAuth(authOptions);

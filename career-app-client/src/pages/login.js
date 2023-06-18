@@ -5,16 +5,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 const onFinish = (values) => {
   console.log("Success:");
 };
 
 const validate = (values) => {
   const errors = {};
-  if (!values.username) {
-    errors.username = "Υποχρεωτικό πεδίο";
-  } else if (values.username.length > 15) {
-    errors.username = "Must be 15 characters or less";
+  if (!values.email) {
+    errors.email = "Υποχρεωτικό πεδίο";
+  } else if (values.email.length > 100) {
+    errors.email = "Must be 100 characters or less";
   }
 
   if (!values.password) {
@@ -31,7 +33,7 @@ export default function Login() {
 
   const formik = useFormik({
     initialValues: {
-      username: "",
+      email: "",
       password: "",
     },
     validateOnChange: false,
@@ -39,7 +41,7 @@ export default function Login() {
     validate,
     onSubmit: async (values) => {
       const result = await signIn("credentials", {
-        username: values.username,
+        email: values.email,
         password: values.password,
         redirect: true,
         callbackUrl: "/",
@@ -70,16 +72,16 @@ export default function Login() {
         </div>
         <form onSubmit={formik.handleSubmit}>
           <input
-            id="username"
-            name="username"
+            id="email"
+            name="email"
             type="text"
-            placeholder="Όνομα χρήστη"
+            placeholder="Email"
             className={styles["input"]}
             onChange={formik.handleChange}
-            value={formik.values.username}
+            value={formik.values.email}
           />
-          {formik.errors.username ? (
-            <div className={styles["error-msg"]}>{formik.errors.username}</div>
+          {formik.errors.email ? (
+            <div className={styles["error-msg"]}>{formik.errors.email}</div>
           ) : null}
           <input
             id="password"

@@ -3,11 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/sidebar.module.css";
-import { useSession } from "next-auth/react";
 
 const SideBar = () => {
-  const { data: session } = useSession();
-
   const links = [
     { label: "Κεντρικός Πίνακας", path: "/dashboard", targetSegment: null },
     { label: "Διδασκαλία", path: "/lessons", targetSegment: "lessons" },

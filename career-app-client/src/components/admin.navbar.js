@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { signOut } from "next-auth/react";
 
 function getHeader(pathName) {
   if (pathName == "/dashboard") {
@@ -56,7 +57,10 @@ const AdminNavigationBar = (props) => {
                 </button>
               </Nav.Item>
               <Nav.Item>
-                <button style={{ backgroundColor: "transparent", border: "0" }}>
+                <button
+                  onClick={() => signOut({ callbackUrl: "/" })}
+                  style={{ backgroundColor: "transparent", border: "0" }}
+                >
                   <Image
                     src="/images/logout-icon.png"
                     alt="Icon1"
