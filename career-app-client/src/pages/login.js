@@ -29,7 +29,7 @@ const validate = (values) => {
 };
 export default function Login() {
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();
 
   const formik = useFormik({
     initialValues: {
@@ -43,11 +43,21 @@ export default function Login() {
       const result = await signIn("credentials", {
         email: values.email,
         password: values.password,
-        redirect: true,
+        redirect: false,
         callbackUrl: "/",
+      }).then(({ ok, error }) => {
+        if (ok) {
+          router.push("/");
+        } else {
+          alert("Incorrect username or password.");
+        }
       });
     },
   });
+
+  if (status === "authenticated") {
+    return <h2 style={{ textAlign: "center" }}>Already logged in!</h2>;
+  }
 
   return (
     <>

@@ -4,9 +4,15 @@ import Image from "next/image";
 import HomeLayout from "@/components/home.layout";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { useSession, getSession } from "next-auth/react";
 
-export default function Home() {
+export default function Home(props) {
   const [size, setSize] = useState("large");
+  const { status } = useSession();
+
+  if (status === "authenticated") {
+  }
+
   return (
     <>
       <Head>
@@ -47,3 +53,8 @@ export default function Home() {
 Home.getLayout = function getLayout(page) {
   return <HomeLayout>{page}</HomeLayout>;
 };
+
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
+  return { props: { session } };
+}

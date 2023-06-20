@@ -1,10 +1,12 @@
 import Nav from "react-bootstrap/Nav";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/sidebar.module.css";
+import { getSession } from "next-auth/react";
+import axios from "axios";
 
-const SideBar = () => {
+export default function SideBar(props) {
   const links = [
     { label: "Κεντρικός Πίνακας", path: "/dashboard", targetSegment: null },
     { label: "Διδασκαλία", path: "/lessons", targetSegment: "lessons" },
@@ -19,6 +21,7 @@ const SideBar = () => {
       targetSegment: "tests",
     },
   ];
+
   return (
     <>
       <div className={styles["sidebar"]}>
@@ -55,6 +58,4 @@ const SideBar = () => {
       </div>
     </>
   );
-};
-
-export default SideBar;
+}

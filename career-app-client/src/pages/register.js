@@ -49,8 +49,13 @@ const validate = (values) => {
   return errors;
 };
 export default function Register() {
+  const { data: session, status } = useSession();
   const router = useRouter();
   const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+
+  if (status === "authenticated") {
+    return <h2 style={{ textAlign: "center" }}>Already logged in!</h2>;
+  }
 
   // Form's main function
   const formik = useFormik({

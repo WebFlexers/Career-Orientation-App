@@ -26,7 +26,6 @@ export const authOptions = {
         const config = { "content-type": "application/json" };
         // Request
         const res = await axios.post(url, data, config);
-        console.log(res.data);
 
         if (res) {
           return res.data;
@@ -56,15 +55,9 @@ export const authOptions = {
       return token;
     },
 
-    async session({ session, token, user }) {
+    async session({ session, token }) {
       // Send properties to the client, like an access_token and user id from a provider.
       session.accessToken = token.accessToken;
-
-      // Fetch user using the userId
-      //const url = `https://localhost:7155/api/Users${token.userId}`;
-      //const res = axios.get(url);
-      //console.log(res.data);
-
       session.user.userId = token.userId;
 
       return session;

@@ -4,7 +4,7 @@ import styles from "@/styles/dashboard.module.css";
 import AdminLayout from "@/components/admin.layout";
 import { useSession, getSession } from "next-auth/react";
 
-export default function Dashboard({ accessToken, user }) {
+export default function Dashboard(props) {
   const { data: session, status } = useSession();
 
   if (status === "unauthenticated") {
@@ -28,16 +28,3 @@ export default function Dashboard({ accessToken, user }) {
 Dashboard.getLayout = function getLayout(page) {
   return <AdminLayout>{page}</AdminLayout>;
 };
-
-export async function getServerSideProps(ctx) {
-  const session = await getSession(ctx);
-  if (!session) {
-    return {
-      props: {},
-    };
-  }
-  const { accessToken, user } = session;
-  return {
-    props: { accessToken, user },
-  };
-}
