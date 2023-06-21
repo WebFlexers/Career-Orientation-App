@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "@/styles/dashboard.module.css";
 import AdminLayout from "@/components/admin.layout";
 import { useSession, getSession } from "next-auth/react";
+import axios from "axios";
+import { useEffect } from "react";
 
 export default function Dashboard(props) {
   const { data: session, status } = useSession();
@@ -10,6 +12,24 @@ export default function Dashboard(props) {
   if (status === "unauthenticated") {
     return null;
   }
+
+  console.log(props.data);
+
+  // Store username and students role in sessionStorage
+  useEffect(() => {
+    if (window) {
+      let role = "";
+      if (props.data.isProspectiveStudent == true) {
+        role = "Αμύητος";
+      } else if (props.data.isGraduate == true) {
+        role = "Απόφοιτος";
+      } else {
+        role = "Φοιτητής";
+      }
+      sessionStorage.setItem("username", props.data.username);
+      sessionStorage.setItem("role", role);
+    }
+  }, []);
 
   return (
     <>
@@ -28,3 +48,27 @@ export default function Dashboard(props) {
 Dashboard.getLayout = function getLayout(page) {
   return <AdminLayout>{page}</AdminLayout>;
 };
+
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
+
+  if (!session) return null;
+
+  let data = "";
+  try {
+    let reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
+
+    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
+
+    const res = await reqInstance.get(url);
+    data = res.data;
+  } catch (err) {
+    return { err };
+  } finally {
+    return { props: { data } };
+  }
+}

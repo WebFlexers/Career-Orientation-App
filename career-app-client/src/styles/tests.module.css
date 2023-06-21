@@ -13,10 +13,34 @@
   grid-row-gap: 30px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .tests-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+.header {
+  height: 35vh;
+  background-color: #95d8ff;
+  box-shadow: 0 4px 4px -4px gray;
+  color: var(--dark-text)
+}
+
+.header-content {
+  padding-top: 90px;
+}
+
+.question-header {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.question-box {
+  margin: 20px 0;
+}
+
+.answers-box {
+  font-size: 1.10em;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .header {
+    height: 50vh;
   }
 }
+

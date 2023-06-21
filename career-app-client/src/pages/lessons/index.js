@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 import AdminLayout from "@/components/admin.layout";
 import semesters from "../../../public/data/semesters.json";
+import { getSession } from "next-auth/react";
+import axios from "axios";
 
 function getLessonsFromSemester(semesters, semester_index) {
   return semesters[semester_index - 1].lessons;
@@ -104,3 +106,27 @@ export default function Lessons({ semestersData }) {
 Lessons.getLayout = function getLayout(page) {
   return <AdminLayout>{page}</AdminLayout>;
 };
+
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
+
+  if (!session) return null;
+
+  let data = "";
+  try {
+    let reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
+
+    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
+
+    const res = await reqInstance.get(url);
+    data = res.data;
+  } catch (err) {
+    return { err };
+  } finally {
+    return { props: { data } };
+  }
+}

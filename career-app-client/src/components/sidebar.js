@@ -1,12 +1,15 @@
-import Nav from "react-bootstrap/Nav";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/sidebar.module.css";
-import { getSession } from "next-auth/react";
-import axios from "axios";
+import useSessionStorage from "@/hooks/useSessionStorage";
 
 export default function SideBar(props) {
+  const username = useSessionStorage("username");
+  const role = useSessionStorage("role");
+
+  console.log(username);
+
   const links = [
     { label: "Κεντρικός Πίνακας", path: "/dashboard", targetSegment: null },
     { label: "Διδασκαλία", path: "/lessons", targetSegment: "lessons" },
@@ -17,7 +20,7 @@ export default function SideBar(props) {
     },
     {
       label: "Πρόοδος",
-      path: "/tests",
+      path: "/progress",
       targetSegment: "tests",
     },
   ];
@@ -33,9 +36,9 @@ export default function SideBar(props) {
             height={100}
           />
           <div id={styles["profile-name-cap"]}>
-            <b>ELEFTHERIOS</b>
+            <b>Welcome, {username}</b>
           </div>
-          <div id={styles["profile-title-cap"]}>Φοιτητής</div>
+          <div id={styles["profile-title-cap"]}>{role}</div>
         </div>
         <div id={styles["main-menu"]}>
           {" "}
