@@ -10,7 +10,15 @@
 	},
 	{
 	  "questionId": 3,
-	  "likertScaleAnswer": 3
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 23,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 26,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

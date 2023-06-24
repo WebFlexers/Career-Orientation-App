@@ -142,50 +142,50 @@
     },
     {
       "questionId": 21,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι η βασική δομή ενός προγράμματος σε Python;",
+      "type": "MultipleChoice",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 22,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η C είναι μια γλώσσα υψηλού επιπέδου.",
+      "type": "TrueFalse",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 23,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει ο προγραμματισμός;",
+      "type": "LikertScale",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 24,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι η βασική διαφορά μεταξύ των στατικών και δυναμικών ιστοσελίδων;",
+      "type": "MultipleChoice",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 25,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η HTML είναι γλώσσα προγραμματισμού.",
+      "type": "TrueFalse",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 26,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η δημιουργία ιστοσελίδων;",
+      "type": "LikertScale",
       "universityTestId": 1,
       "generalTestId": null
     },
     {
       "questionId": 27,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιος από τους παρακάτω ορισμούς περιγράφει καλύτερα την έννοια του \"αλγορίθμου\";",
+      "type": "MultipleChoice",
       "universityTestId": 1,
       "generalTestId": null
     },

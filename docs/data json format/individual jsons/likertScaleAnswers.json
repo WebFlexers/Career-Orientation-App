@@ -1,4 +1,4 @@
-"likertScaleAnswers": [
+{"likertScaleAnswers": [
     {
       "LikertScaleAnswerId": 1,
       "Option1": "Πολύ Λίγο",
@@ -30,5 +30,5 @@
       "Option3": "",
       "Option4": "",
       "Option5": ""
-    },
-]
+    }
+]}

@@ -1,4 +1,5 @@
-"tracks": [
+{
+  "tracks": [
     {
       "trackId": 1,
       "name": "ΤΛΕΣ"
@@ -11,4 +12,5 @@
       "trackId": 3,
       "name": "ΠΣΥ"
     }
-]
+  ]
+}

@@ -1,26 +1,59 @@
-"multipleChoiceAnswers": [
+{
+  "multipleChoiceAnswers": [
     {
       "multipleChoiceAnswerId": 1,
-      "text": "His intentional feeding",
-      "isCorrect": false,
-      "questionId": 2
+      "text": "Εισαγωγή βιβλιοθηκών, Κύρια συνάρτηση, Βοηθητικές συναρτήσεις",
+      "isCorrect": true,
+      "questionId": 21
     },
     {
       "multipleChoiceAnswerId": 2,
-      "text": "His bad behaviour",
+      "text": "Εκφώνηση προβλήματος, Υλοποίηση λύσης, Εξαγωγή αποτελεσμάτων",
       "isCorrect": false,
-      "questionId": 2
+      "questionId": 21
     },
     {
       "multipleChoiceAnswerId": 3,
-      "text": "His godly presence",
-      "isCorrect": true,
-      "questionId": 2
+      "text": "Κεφαλίδα, Σώμα, Υποσημείωση",
+      "isCorrect": false,
+      "questionId": 21
     },
     {
       "multipleChoiceAnswerId": 4,
-      "text": "His simping",
+      "text": "Το περιεχόμενο",
+      "isCorrect": true,
+      "questionId": 24
+    },
+    {
+      "multipleChoiceAnswerId": 5,
+      "text": "Η εμφάνιση",
       "isCorrect": false,
-      "questionId": 2
+      "questionId": 24
+    },
+    {
+      "multipleChoiceAnswerId": 6,
+      "text": "Οι χρήστες",
+      "isCorrect": false,
+      "questionId": 24
+    },
+    {
+      "multipleChoiceAnswerId": 7,
+      "text": "Μια ακολουθία οδηγιών που επιλύει ένα συγκεκριμένο πρόβλημα",
+      "isCorrect": true,
+      "questionId": 27
+    },
+    {
+      "multipleChoiceAnswerId": 8,
+      "text": "Μια συλλογή δεδομένων",
+      "isCorrect": false,
+      "questionId": 27
+    },
+    {
+      "multipleChoiceAnswerId": 9,
+      "text": "Ένα εργαλείο για την ανάλυση δεδομένων",
+      "isCorrect": false,
+      "questionId": 27
     }
-]
+    
+  ]
+} 

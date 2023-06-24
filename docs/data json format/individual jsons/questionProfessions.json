@@ -7,6 +7,74 @@
     {
       "questionId": 2,
       "professionId": 2
+    },
+    {
+      "questionId": 21,
+      "professionId": 4
+    },
+    {
+      "questionId": 22,
+      "professionId": 1
+    },
+    {
+      "questionId": 23,
+      "professionId": 1
+    },
+    {
+      "questionId": 23,
+      "professionId": 2
+    },
+    {
+      "questionId": 24,
+      "professionId": 2
+    },
+    {
+      "questionId": 24,
+      "professionId": 15
+    },  
+    {
+      "questionId": 24,
+      "professionId": 6
+    },
+    {
+      "questionId": 25,
+      "professionId": 15
+    },
+    {
+      "questionId": 25,
+      "professionId": 14
+    },
+    {
+      "questionId": 25,
+      "professionId": 2
+    },
+    {
+      "questionId": 26,
+      "professionId": 2
+    },
+    {
+      "questionId": 26,
+      "professionId": 1
+    },
+    {
+      "questionId": 26,
+      "professionId": 15
+    },
+    {
+      "questionId": 26,
+      "professionId": 8
+    },
+    {
+      "questionId": 27,
+      "professionId": 11
+    },
+    {
+      "questionId": 27,
+      "professionId": 12
+    },
+    {
+      "questionId": 27,
+      "professionId": 14
     }
   ]
 }

@@ -1,12 +1,56 @@
 {
   "questionMastersDegrees": [
     {
-      "questionId": 1,
+      "questionId": 21,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 22,
       "mastersDegreeId": 1
     },
     {
-      "questionId": 2,
+      "questionId": 23,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 23,
       "mastersDegreeId": 1
+    },
+    {
+      "questionId": 24,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 25,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 25,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 26,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 27,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 27,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 27,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 27,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 27,
+      "mastersDegreeId": 9
     }
   ]	
 }
