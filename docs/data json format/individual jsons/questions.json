@@ -1,30 +1,1488 @@
-"questions": [
-	{
-	  "questionId": 1,
-	  "text": "Is this a question?",
-	  "type": "LikertScale",
-	  "universityTestId": null,
-	  "generalTestId": "1"
-	},
-	{
-	  "questionId": 2,
-	  "text": "What is StyleM known for?",
-	  "type": "MultipleChoice",
-	  "universityTestId": 1,
-	  "generalTestId": null
-	},
-	{
-	  "questionId": 3,
-	  "text": "StyleM is the master of masters",
-	  "type": "TrueFalse",
-	  "universityTestId": 2,
-	  "generalTestId": null
-	},
-	{
-	  "questionId": 4,
-	  "text": "Is StyleM the worst?",
-	  "type": "TrueFalse",
-	  "universityTestId": 2,
-	  "generalTestId": null
-	}
-]
+{
+  "questions": [
+    {
+      "questionId": 1,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου1Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 2,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου2Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 3,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου3Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 4,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου4Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 5,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου5Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 6,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου6Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 7,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου7Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 8,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου8Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 9,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου9Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 10,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου10Τεστ1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 1
+    },
+    {
+      "questionId": 11,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου1Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+        {
+      "questionId": 12,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου2Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 13,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου3Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+        {
+      "questionId": 14,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου4Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 15,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου5Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+        {
+      "questionId": 16,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου6Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 17,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου7Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+        {
+      "questionId": 18,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου8Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 19,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου9Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 20,
+      "text": "ΑλλαξέΜεΕρωτησηΑμύητου10Τεστ2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": null,
+      "generalTestId": 2
+    },
+    {
+      "questionId": 21,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 22,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 23,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 24,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 25,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 26,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 27,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 1,
+      "generalTestId": null
+    },
+    {
+      "questionId": 28,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 29,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 30,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 31,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 32,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 33,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 34,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 2,
+      "generalTestId": null
+    },
+    {
+      "questionId": 35,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 36,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 37,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 38,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 39,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 40,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 41,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 42,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 43,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 44,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10Επαναληπτικού1",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 3,
+      "generalTestId": null
+    },
+    {
+      "questionId": 45,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 46,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 47,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 48,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 49,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 50,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 51,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 4,
+      "generalTestId": null
+    },
+    {
+      "questionId": 52,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 53,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 54,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 55,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 56,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 57,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 58,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 5,
+      "generalTestId": null
+    },
+    {
+      "questionId": 59,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 60,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 61,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 62,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 63,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 64,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 65,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 66,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 67,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 68,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10Επαναληπτικού2",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 6,
+      "generalTestId": null
+    },
+    {
+      "questionId": 69,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 70,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 71,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 72,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 73,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 74,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 75,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 7,
+      "generalTestId": null
+    },
+    {
+      "questionId": 76,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 77,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 78,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 79,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 80,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 81,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 82,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 8,
+      "generalTestId": null
+    },
+    {
+      "questionId": 83,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 84,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 85,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 86,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 87,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 88,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 89,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 90,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 91,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 92,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΤΛΕΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 9,
+      "generalTestId": null
+    },
+    {
+      "questionId": 93,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 94,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 95,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 96,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 97,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 98,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 99,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 10,
+      "generalTestId": null
+    },
+    {
+      "questionId": 100,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 101,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 102,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 103,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 104,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 105,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 106,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 11,
+      "generalTestId": null
+    },
+    {
+      "questionId": 107,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 108,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 109,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 110,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 111,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 112,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 113,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 114,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 115,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 116,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΔΥΣ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 12,
+      "generalTestId": null
+    },
+    {
+      "questionId": 117,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 118,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 119,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 120,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 121,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 122,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 123,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Εξαμήνου5",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 13,
+      "generalTestId": null
+    },
+    {
+      "questionId": 124,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 125,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 126,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 127,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 128,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 129,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 130,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Εξαμήνου6",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 14,
+      "generalTestId": null
+    },
+    {
+      "questionId": 131,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 132,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 133,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 134,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 135,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 136,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 137,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 138,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 139,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 140,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΠΣΥ_Επαναληπτικού3",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 15,
+      "generalTestId": null
+    },
+    {
+      "questionId": 141,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 142,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 143,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 144,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 145,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 146,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 147,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 16,
+      "generalTestId": null
+    },
+    {
+      "questionId": 148,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 149,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 150,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 151,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 152,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 153,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 154,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 17,
+      "generalTestId": null
+    },
+    {
+      "questionId": 155,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 156,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 157,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 158,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 159,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 160,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 161,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 162,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 163,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 164,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΤΛΕΣ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 18,
+      "generalTestId": null
+    },
+    {
+      "questionId": 165,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 166,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 167,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 168,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 169,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 170,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 171,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 19,
+      "generalTestId": null
+    },
+    {
+      "questionId": 172,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 173,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 174,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 175,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 176,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 177,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 178,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 20,
+      "generalTestId": null
+    },
+    {
+      "questionId": 179,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 180,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 181,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 182,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 183,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 184,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 185,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 186,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 187,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 188,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΔΥΣ_Επαναληπτικό4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 21,
+      "generalTestId": null
+    },
+    {
+      "questionId": 189,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 190,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 191,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 192,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 193,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 194,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 195,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Εξαμήνου7",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 22,
+      "generalTestId": null
+    },
+    {
+      "questionId": 196,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 197,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 198,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 199,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 200,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 201,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 202,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Εξαμήνου8",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 23,
+      "generalTestId": null
+    },
+    {
+      "questionId": 203,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 204,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 205,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 206,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 207,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 208,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 209,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 210,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 211,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    },
+    {
+      "questionId": 212,
+      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10_ΠΣΥ_Επαναληπτικού4",
+      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "universityTestId": 24,
+      "generalTestId": null
+    }
+  ]
+}
