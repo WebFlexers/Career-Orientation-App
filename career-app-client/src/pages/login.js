@@ -15,14 +15,12 @@ const validate = (values) => {
   const errors = {};
   if (!values.email) {
     errors.email = "Υποχρεωτικό πεδίο";
-  } else if (values.email.length > 100) {
-    errors.email = "Must be 100 characters or less";
+  } else if (values.email.length > 255) {
+    errors.email = "Υπέρβαση ορίου χαρακτήρων. Μέγιστο: 255 χαρακτήρες";
   }
 
   if (!values.password) {
     errors.password = "Υποχρεωτικό πεδίο";
-  } else if (values.password.length > 15) {
-    errors.password = "Must be 15 characters or less";
   }
 
   return errors;
@@ -49,7 +47,7 @@ export default function Login() {
         if (ok) {
           router.push("/");
         } else {
-          alert("Incorrect username or password.");
+          alert("Λανθασμένο όνομα χρήστη ή κωδικός πρόσβασης");
         }
       });
     },

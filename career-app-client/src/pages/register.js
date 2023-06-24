@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { Field, useFormik, FormikProvider } from "formik";
 import Link from "next/link";
 import Image from "next/image";
+import { useSession, signIn } from "next-auth/react";
+import axios from "axios";
 
 const onFinish = (values) => {
   console.log("Success:");
@@ -12,38 +14,52 @@ const validate = (values) => {
   const errors = {};
   if (!values.username) {
     errors.username = "Υποχρεωτικό πεδίο";
-  } else if (values.username.length > 15) {
-    errors.username = "Must be 15 characters or less";
+  } else if (values.username.length > 30) {
+    errors.username = "Υπέρβαση ορίου χαρακτήρων. Μέγιστο: 30 χαρακτήρες";
+  } else if (values.username.length < 6) {
+    errors.username =
+      "Ελάχιστοι απαιτούμενοι χαρακτήρες: 6. Παρακαλώ προσθέστε περισσότερους";
   }
 
   if (!values.password) {
     errors.password = "Υποχρεωτικό πεδίο";
-  } else if (values.password.length > 15) {
-    errors.password = "Πρέπει να αποτελείτε το πολύ από 15 σύμβολα";
+  } else if (values.password.length < 6) {
+    errors.password =
+      "Ελάχιστοι απαιτούμενοι χαρακτήρες: 6. Παρακαλώ προσθέστε περισσότερους";
+  } else if (!/[A-Z]/.test(values.password)) {
+    errors.password = "Πρέπει να έχει τουλάχιστον ένα κεφαλαίο γράμμα";
+  } else if (!/[a-z]/.test(values.password)) {
+    errors.password = "Πρέπει να έχει τουλάχιστον ένα μικρό γράμμα";
+  } else if (!/[0-9]/.test(values.password)) {
+    errors.password = "Πρέπει να έχει τουλάχιστον έναν αριθμό";
   }
 
   if (!values.passwordRepeat) {
     errors.passwordRepeat = "Υποχρεωτικό πεδίο";
   } else if (values.passwordRepeat != values.password) {
-    errors.passwordRepeat = "Οι κωδικοί δεν είναι ίδιοι";
+    errors.passwordRepeat =
+      "Ο κωδικός και η επαλήθευση κωδικού πρέπει να ταυτίζονται";
   }
 
   if (!values.email) {
     errors.email = "Υποχρεωτικό πεδίο";
-  } else if (values.email.length > 200) {
-    errors.email = "Πρέπει να αποτελείτε το πολύ από 200 σύμβολα";
+  } else if (values.email.length > 255) {
+    errors.email = "Υπέρβαση ορίου χαρακτήρων. Μέγιστο: 255 χαρακτήρες";
   }
 
   if (values.role == "") {
     errors.role = "Επιλέξτε ιδιότητα";
   }
 
-  if (values.semester < 1) {
+  if (values.semester < 1 && values.role == "student") {
     errors.semester = "Επιλέξτε εξάμηνο";
   }
 
-  if (values.direction == "") {
-    errors.direction = "Επιλέξτε κατεύθυνση";
+  if (
+    values.track == "" &&
+    (values.role == "student" || values.role == "graduate")
+  ) {
+    errors.track = "Επιλέξτε κατεύθυνση";
   }
 
   return errors;
@@ -66,15 +82,84 @@ export default function Register() {
       email: "",
       role: "",
       semester: 0,
-      direction: "",
+      track: "",
     },
     validateOnChange: false,
     validateOnBlur: false,
     validate,
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      registerUser(values);
     },
   });
+
+  async function registerUser(values) {
+    try {
+      const url = "https://localhost:7155/api/Users/Register";
+
+      let data = {};
+      if (values.role == "interested") {
+        data = {
+          username: values.username,
+          password: values.password,
+          confirmPassword: values.passwordRepeat,
+          email: values.email,
+          isProspectiveStudent: true,
+          isGraduate: false,
+          semester: null,
+          track: null,
+        };
+      } else if (values.role == "graduate") {
+        data = {
+          username: values.username,
+          password: values.password,
+          confirmPassword: values.passwordRepeat,
+          email: values.email,
+          isProspectiveStudent: false,
+          isGraduate: true,
+          semester: null,
+          track: values.track,
+        };
+      } else if (values.role == "student") {
+        if (values.semester > 4) {
+          data = {
+            username: values.username,
+            password: values.password,
+            confirmPassword: values.passwordRepeat,
+            email: values.email,
+            isProspectiveStudent: false,
+            isGraduate: false,
+            semester: parseInt(values.semester),
+            track: values.track,
+          };
+        } else {
+          data = {
+            username: values.username,
+            password: values.password,
+            confirmPassword: values.passwordRepeat,
+            email: values.email,
+            isProspectiveStudent: false,
+            isGraduate: false,
+            semester: parseInt(values.semester),
+            track: null,
+          };
+        }
+      }
+
+      console.log(data);
+
+      const config = { "content-type": "application/json" };
+
+      const res = await axios.post(url, data, config);
+
+      if (res.status == 201) {
+        alert("Συγχαρητήρια, ο λογαριασμός σας δημιουργήθηκε επιτυχώς!");
+        router.push("/login");
+      }
+    } catch (err) {
+      alert("An error occured");
+      console.log(err.response);
+    }
+  }
 
   return (
     <>
@@ -162,7 +247,7 @@ export default function Register() {
               <option value="">Επιλέξτε Ιδιότητα:</option>
               <option value="interested">Αμύητος</option>
               <option value="student">Φοιτητής</option>
-              <option value="gradute">Απόφοιτος</option>
+              <option value="graduate">Απόφοιτος</option>
             </Field>
 
             {formik.errors.role ? (
@@ -189,28 +274,29 @@ export default function Register() {
               </>
             ) : null}
 
-            {formik.values.semester > 4 && formik.values.role == "student" ? (
+            {(formik.values.semester > 4 && formik.values.role == "student") ||
+            formik.values.role == "graduate" ? (
               <>
                 <Field
                   as="select"
-                  name="direction"
+                  name="track"
                   className={styles["input"]}
                   style={{ backgroundColor: "transparent" }}
                 >
                   <option value="">Επιλέξτε Κατεύθυνση:</option>
-                  <option value="TSIS">
+                  <option value="ΤΛΕΣ">
                     Τεχνολογία Λογισμικού και Ευφυή Συστήματα (ΤΛΕΣ)
                   </option>
-                  <option value="NCS">
+                  <option value="ΔΥΣ">
                     Διαδικτυακά και Υπολογιστικά Συστήματα (ΔΥΣ)
                   </option>
-                  <option value="IS">
+                  <option value="ΠΣΥ">
                     Πληροφοριακά Συστήματα και Υπηρεσίες (ΠΣΥ)
                   </option>
                 </Field>
-                {formik.errors.direction ? (
+                {formik.errors.track ? (
                   <div className={styles["error-msg"]}>
-                    {formik.errors.direction}
+                    {formik.errors.track}
                   </div>
                 ) : null}
               </>
