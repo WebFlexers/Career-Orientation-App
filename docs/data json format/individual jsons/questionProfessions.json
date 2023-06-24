@@ -1,0 +1,12 @@
+{
+  "questionProfessions": [
+    {
+      "questionId": 1,
+      "professionId": 1
+    },
+    {
+      "questionId": 2,
+      "professionId": 2
+    }
+  ]
+}

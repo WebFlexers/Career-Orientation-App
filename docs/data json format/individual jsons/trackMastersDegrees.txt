@@ -1,0 +1,64 @@
+{
+  "trackMastersDegrees": [
+    {
+	  "trackId": 1,
+	  "mastersDegreeId": 1
+	},
+	{
+	  "trackId": 1,
+	  "mastersDegreeId": 2
+	},
+	{
+	  "trackId": 1,
+	  "mastersDegreeId": 3
+	},
+	{
+	  "trackId": 1,
+	  "mastersDegreeId": 4
+	},
+	{
+	  "trackId": 1,
+	  "mastersDegreeId": 5
+	},
+	{
+	  "trackId": 2,
+	  "mastersDegreeId": 5
+	},
+	{
+	  "trackId": 2,
+	  "mastersDegreeId": 2
+	},
+	{
+	  "trackId": 2,
+	  "mastersDegreeId": 3
+	},
+	{
+	  "trackId": 2,
+	  "mastersDegreeId": 4
+	},
+	{
+	  "trackId": 2,
+	  "mastersDegreeId": 6
+	},
+	{
+	  "trackId": 3,
+	  "mastersDegreeId": 6
+	},
+	{
+	  "trackId": 3,
+	  "mastersDegreeId": 7
+	},
+	{
+	  "trackId": 3,
+	  "mastersDegreeId": 8
+	},
+	{
+	  "trackId": 3,
+	  "mastersDegreeId": 9
+	},
+	{
+	  "trackId": 3,
+	  "mastersDegreeId": 10
+	}
+  ]
+}

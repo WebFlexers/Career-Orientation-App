@@ -1,0 +1,16 @@
+{
+  "questionLikertScaleAnswers": [
+    {
+	  "questionId": 1,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 2,
+	  "likertScaleAnswerId": 2
+	},
+	{
+	  "questionId": 3,
+	  "likertScaleAnswer": 3
+	}
+  ]
+}

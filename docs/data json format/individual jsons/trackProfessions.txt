@@ -1,0 +1,64 @@
+{
+  "trackProfessions": [
+	{
+      "trackId" : 1,
+      "professionId": 1
+	},
+    {
+      "trackId" : 1,
+      "professionId": 2
+    },
+    {
+      "trackId" : 1,
+      "professionId": 3
+    },
+    {
+      "trackId" : 1,
+      "professionId": 4
+    },
+    {
+      "trackId" : 1,
+      "professionId": 5
+    },
+    {
+      "trackId" : 2,
+      "professionId": 6
+    },
+    {
+      "trackId" : 2,
+      "professionId": 7
+    },
+    {
+      "trackId" : 2,
+      "professionId": 8
+    },
+    {
+      "trackId" : 2,
+      "professionId": 9
+    },
+    {
+      "trackId" : 2,
+      "professionId": 10
+    },
+    {
+      "trackId" : 3,
+      "professionId": 11
+    },
+    {
+      "trackId" : 3,
+      "professionId": 12
+    },
+    {
+      "trackId" : 3,
+      "professionId": 13
+    },
+    {
+      "trackId" : 3,
+      "professionId": 14
+    },
+    {
+      "trackId" : 3,
+      "professionId": 15
+    }
+  ]
+}

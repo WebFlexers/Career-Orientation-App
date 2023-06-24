@@ -1,14 +1,14 @@
 "tracks": [
     {
       "trackId": 1,
-      "name": "TLES"
+      "name": "ΤΛΕΣ"
     },
     {
       "trackId": 2,
-      "name": "DIS"
+      "name": "ΔΥΣ"
     },
     {
       "trackId": 3,
-      "name": "PSI"
+      "name": "ΠΣΥ"
     }
 ]

@@ -1,0 +1,172 @@
+{
+  "universityTests": [
+    {
+      "universityTestId": 1,
+      "semester": 1,
+      "year": 1,
+      "IsRevision": false,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 2,
+      "semester": 2,
+      "year": 1,
+      "IsRevision": false,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 3,
+      "semester": null,
+      "year": 1,
+      "IsRevision": true,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 4,
+      "semester": 3,
+      "year": 2,
+      "IsRevision": false,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 5,
+      "semester": 4,
+      "year": 2,
+      "IsRevision": false,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 6,
+      "semester": null,
+      "year": 2,
+      "IsRevision": true,
+	  "trackId": null
+    },
+    {
+      "universityTestId": 7,
+      "semester": 5,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 1
+    },
+    {
+      "universityTestId": 8,
+      "semester": 6,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 1
+    },
+    {
+      "universityTestId": 9,
+      "semester": null,
+      "year": 3,
+      "IsRevision": true,
+	  "trackId": 1
+    },
+    {
+      "universityTestId": 10,
+      "semester": 5,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 2
+    },
+    {
+      "universityTestId": 11,
+      "semester": 5,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 2
+    },
+    {
+      "universityTestId": 12,
+      "semester": null,
+      "year": 3,
+      "IsRevision": true,
+	  "trackId": 2
+    },
+	{
+      "universityTestId": 13,
+      "semester": 5,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 3
+    },
+	{
+      "universityTestId": 14,
+      "semester": 6,
+      "year": 3,
+      "IsRevision": false,
+	  "trackId": 3
+    },
+	{
+      "universityTestId": 15,
+      "semester": null,
+      "year": 3,
+      "IsRevision": true,
+	  "trackId": 3
+    },
+	{
+      "universityTestId": 16,
+      "semester": 7,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 1
+    },
+	{
+      "universityTestId": 17,
+      "semester": 8,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 1
+    },
+	{
+      "universityTestId": 18,
+      "semester": null,
+      "year": 4,
+      "IsRevision": true,
+	  "trackId": 1
+    },
+	{
+      "universityTestId": 19,
+      "semester": 7,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 2
+    },
+	{
+      "universityTestId": 20,
+      "semester": 8,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 2
+    },
+	{
+      "universityTestId": 21,
+      "semester": null,
+      "year": 4,
+      "IsRevision": true,
+	  "trackId": 2
+    },
+	{
+      "universityTestId": 22,
+      "semester": 7,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 3
+    },
+	{
+      "universityTestId": 23,
+      "semester": 8,
+      "year": 4,
+      "IsRevision": false,
+	  "trackId": 3
+    },
+	{
+      "universityTestId": 24,
+      "semester": null,
+      "year": 4,
+      "IsRevision": true,
+	  "trackId": 3
+    },
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "generalTests": [
+	{
+	  "generalTestId": 1,
+	  "type": "ComputerScienceSuitability"
+	},
+	{
+	  "generalTestId": 2,
+	  "type": "UniversityOfPiraeusSuitability"
+	}
+  ]
+}

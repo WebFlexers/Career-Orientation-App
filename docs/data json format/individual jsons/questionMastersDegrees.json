@@ -1,0 +1,12 @@
+{
+  "questionMastersDegrees": [
+    {
+      "questionId": 1,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 2,
+      "mastersDegreeId": 1
+    }
+  ]	
+}
