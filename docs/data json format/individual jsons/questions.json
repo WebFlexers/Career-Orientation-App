@@ -191,154 +191,154 @@
     },
     {
       "questionId": 28,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα παράδειγμα δομής δεδομένων που έχει το LIFO (Last In First Out) χαρακτηριστικό;",
+      "type": "MultipleChoice",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 29,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ένα λειτουργικό σύστημα είναι ένα πρόγραμμα που διαχειρίζεται τον υλικό εξοπλισμό ενός υπολογιστή.",
+      "type": "TrueFalse",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 30,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η εργασία με δομές δεδομένων;",
+      "type": "LikertScale",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 31,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα παράδειγμα ασύγχρονου προγραμματισμού;",
+      "type": "MultipleChoice",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 32,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η κωδικοποίηση Huffman χρησιμοποιείται για την περίληψη κειμένων.",
+      "type": "TrueFalse",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 33,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο απολαύσατε την εισαγωγή σας στα λειτουργικά συστήματα;",
+      "type": "LikertScale",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 34,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου2",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια από τις παρακάτω γλώσσες χρησιμοποιείται συχνά για την ανάπτυξη λογισμικού για λειτουργικά συστήματα;",
+      "type": "MultipleChoice",
       "universityTestId": 2,
       "generalTestId": null
     },
     {
       "questionId": 35,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα παράδειγμα δομής δεδομένων που έχει το LIFO (Last In First Out) χαρακτηριστικό;",
+      "type": "MultipleChoice",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 36,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ένα λειτουργικό σύστημα είναι ένα πρόγραμμα που διαχειρίζεται τον υλικό εξοπλισμό ενός υπολογιστή.",
+      "type": "TrueFalse",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 37,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η εργασία με δομές δεδομένων;",
+      "type": "LikertScale",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 38,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η κωδικοποίηση Huffman χρησιμοποιείται για την περίληψη κειμένων.",
+      "type": "TrueFalse",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 39,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο απολαύσατε την εισαγωγή σας στα λειτουργικά συστήματα;",
+      "type": "LikertScale",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 40,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι η βασική δομή ενός προγράμματος σε Python;",
+      "type": "MultipleChoice",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 41,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η C είναι μια γλώσσα υψηλού επιπέδου.",
+      "type": "TrueFalse",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 42,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή8Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει ο προγραμματισμός;",
+      "type": "LikertScale",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 43,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή9Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι η βασική διαφορά μεταξύ των στατικών και δυναμικών ιστοσελίδων;",
+      "type": "MultipleChoice",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 44,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή10Επαναληπτικού1",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η HTML είναι γλώσσα προγραμματισμού.",
+      "type": "TrueFalse",
       "universityTestId": 3,
       "generalTestId": null
     },
     {
       "questionId": 45,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι η πολυπλοκότητα χρόνου του αλγορίθμου Quicksort στη χειρότερη περίπτωση?",
+      "type": "MultipleChoice",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 46,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η SQL είναι μια γλώσσα προγραμματισμού που χρησιμοποιείται για τη διαχείριση και την ανάκτηση δεδομένων σε βάσεις δεδομένων.",
+      "type": "TrueFalse",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 47,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η εργασία με βάσεις δεδομένων;",
+      "type": "LikertScale",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 48,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα παράδειγμα μηχανισμού μετάδοσης δεδομένων σε ένα δίκτυο;",
+      "type": "MultipleChoice",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 49,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5Εξαμήνου3",
+      "text": "Στην επιστήμη των υπολογιστών, το 'routing' αναφέρεται στη διαδικασία επιλογής μονοπατιών σε ένα δίκτυο για τη μεταφορά δεδομένων από μια πηγή σε έναν προορισμό.",
       "type": "ΑλλαξεΜεΤύποΕρώτησης",
       "universityTestId": 4,
       "generalTestId": null

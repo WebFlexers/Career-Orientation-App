@@ -1,5 +1,6 @@
 {
-  "multipleChoiceAnswers": [
+  "multipleChoiceAnswers":
+  [
     {
       "multipleChoiceAnswerId": 1,
       "text": "Εισαγωγή βιβλιοθηκών, Κύρια συνάρτηση, Βοηθητικές συναρτήσεις",
@@ -53,7 +54,168 @@
       "text": "Ένα εργαλείο για την ανάλυση δεδομένων",
       "isCorrect": false,
       "questionId": 27
+    },
+    {
+      "multipleChoiceAnswerId": 10,
+      "text": "Ουρά (Queue)",
+      "isCorrect": false,
+      "questionId": 28
+    },
+    {
+      "multipleChoiceAnswerId": 11,
+      "text": "Στοίβα (Stack)",
+      "isCorrect": true,
+      "questionId": 28
+    },
+    {
+      "multipleChoiceAnswerId": 12,
+      "text": "Λίστα (List)",
+      "isCorrect": false,
+      "questionId": 28
+    },
+    {
+      "multipleChoiceAnswerId": 13,
+      "text": "AJAX σε JavaScript",
+      "isCorrect": true,
+      "questionId": 31
+    },
+    {
+      "multipleChoiceAnswerId": 14,
+      "text": "Λούπες σε Python",
+      "isCorrect": false,
+      "questionId": 31
+    },
+    {
+      "multipleChoiceAnswerId": 15,
+      "text": "Κλάσεις σε Java",
+      "isCorrect": false,
+      "questionId": 31
+    },
+    {
+      "multipleChoiceAnswerId": 16,
+      "text": "Python",
+      "isCorrect": false,
+      "questionId": 34
+    },
+    {
+      "multipleChoiceAnswerId": 17,
+      "text": "C",
+      "isCorrect": true,
+      "questionId": 34
+    },
+    {
+      "multipleChoiceAnswerId": 18,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 34
+    },
+    {
+      "multipleChoiceAnswerId": 19,
+      "text": "Ουρά (Queue)",
+      "isCorrect": false,
+      "questionId": 35
+    },
+    {
+      "multipleChoiceAnswerId": 20,
+      "text": "Στοίβα (Stack)",
+      "isCorrect": true,
+      "questionId": 35
+    },
+    {
+      "multipleChoiceAnswerId": 21,
+      "text": "Λίστα (List)",
+      "isCorrect": false,
+      "questionId": 35
+    },
+    {
+      "multipleChoiceAnswerId": 22,
+      "text": "Εισαγωγή βιβλιοθηκών, Κύρια συνάρτηση, Βοηθητικές συναρτήσεις",
+      "isCorrect": true,
+      "questionId": 40
+    },
+    {
+      "multipleChoiceAnswerId": 23,
+      "text": "Εκφώνηση προβλήματος, Υλοποίηση λύσης, Εξαγωγή αποτελεσμάτων",
+      "isCorrect": false,
+      "questionId": 40
+    },
+    {
+      "multipleChoiceAnswerId": 24,
+      "text": "Κεφαλίδα, Σώμα, Υποσημείωση",
+      "isCorrect": false,
+      "questionId": 40
+    },
+    {
+      "multipleChoiceAnswerId": 25,
+      "text": "Το περιεχόμενο",
+      "isCorrect": true,
+      "questionId": 43
+    },
+    {
+      "multipleChoiceAnswerId": 26,
+      "text": "Η εμφάνιση",
+      "isCorrect": false,
+      "questionId": 43
+    },
+    {
+      "multipleChoiceAnswerId": 27,
+      "text": "Οι χρήστες",
+      "isCorrect": false,
+      "questionId": 43
+    },
+    {
+      "multipleChoiceAnswerId": 28,
+      "text": "O(n log n)",
+      "isCorrect": false,
+      "questionId": 45
+    },
+    {
+      "multipleChoiceAnswerId": 29,
+      "text": "O(n^2)",
+      "isCorrect": true,
+      "questionId": 45
+    },
+    {
+      "multipleChoiceAnswerId": 30,
+      "text": "O(n)",
+      "isCorrect": false,
+      "questionId": 45
+    },
+    {
+      "multipleChoiceAnswerId": 31,
+      "text": "TCP/IP",
+      "isCorrect": true,
+      "questionId": 48
+    },
+    {
+      "multipleChoiceAnswerId": 32,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 48
+    },
+    {
+      "multipleChoiceAnswerId": 33,
+      "text": "SSL",
+      "isCorrect": false,
+      "questionId": 48
+    },
+    {
+      "multipleChoiceAnswerId": 34,
+      "text": "Πίνακας",
+      "isCorrect": false,
+      "questionId": 51
+    },
+    {
+      "multipleChoiceAnswerId": 35,
+      "text": "Στοίβα",
+      "isCorrect": false,
+      "questionId": 51
+    },
+    {
+      "multipleChoiceAnswerId": 36,
+      "text": "Ουρά προτεραιότητας",
+      "isCorrect": true,
+      "questionId": 51
     }
-    
   ]
 } 

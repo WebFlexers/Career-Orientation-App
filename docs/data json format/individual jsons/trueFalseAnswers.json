@@ -9,6 +9,21 @@
       "trueFalseAnswerId": 3,
       "Value": false,
       "questionId": 25
+    },
+    {
+      "trueFalseAnswerId": 4,
+      "Value": false,
+      "questionId": 29
+    },
+    {
+      "trueFalseAnswerId": 5,
+      "Value": true,
+      "questionId": 32
+    },
+    {
+      "trueFalseAnswerId": 6,
+      "Value": true,
+      "questionId": 36
     }
   ]
 }

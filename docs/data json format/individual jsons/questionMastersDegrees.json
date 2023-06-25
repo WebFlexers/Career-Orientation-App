@@ -51,6 +51,90 @@
     {
       "questionId": 27,
       "mastersDegreeId": 9
-    }
+    },
+    {
+      "questionId": 28,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 28,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 29,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 29,
+      "mastersDegreeId": 4
+    },    
+    {
+      "questionId": 29,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 30,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 31,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 31,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 32,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 32,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 32,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 33,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 33,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 33,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 34,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 34,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 35,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 35,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 36,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 36,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 36,
+      "mastersDegreeId": 7
+    },
   ]	
 }
