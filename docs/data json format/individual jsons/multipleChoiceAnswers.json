@@ -216,6 +216,60 @@
       "text": "Ουρά προτεραιότητας",
       "isCorrect": true,
       "questionId": 51
+    },
+    {
+      "multipleChoiceAnswerId": 37,
+      "text": "CPU",
+      "isCorrect": false,
+      "questionId": 52
+    },
+    {
+      "multipleChoiceAnswerId": 38,
+      "text": "RAM",
+      "isCorrect": false,
+      "questionId": 52
+    },
+    {
+      "multipleChoiceAnswerId": 39,
+      "text": "Όλα τα παραπάνω",
+      "isCorrect": true,
+      "questionId": 52
+    },
+    {
+      "multipleChoiceAnswerId": 40,
+      "text": "WebGL",
+      "isCorrect": false,
+      "questionId": 55
+    },
+    {
+      "multipleChoiceAnswerId": 41,
+      "text": "OpenGL",
+      "isCorrect": false,
+      "questionId": 55
+    },
+    {
+      "multipleChoiceAnswerId": 42,
+      "text": "Όλα τα παραπάνω",
+      "isCorrect": true,
+      "questionId": 55
+    },
+    {
+      "multipleChoiceAnswerId": 43,
+      "text": "Δέντρα απόφασης",
+      "isCorrect": true,
+      "questionId": 58
+    },
+    {
+      "multipleChoiceAnswerId": 44,
+      "text": "Γραμμική άλγεβρα",
+      "isCorrect": false,
+      "questionId": 58
+    },
+    {
+      "multipleChoiceAnswerId": 45,
+      "text": "Πίνακες διαστημάτων",
+      "isCorrect": false,
+      "questionId": 58
     }
   ]
 } 

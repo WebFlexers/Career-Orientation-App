@@ -47,6 +47,14 @@
 	{
 	  "questionId": 50,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 54,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 57,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

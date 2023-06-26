@@ -343,6 +343,66 @@
     {
       "questionId": 51,
       "professionId": 12
+    },
+    {
+      "questionId": 52,
+      "professionId": 12
+    },
+    {
+      "questionId": 52,
+      "professionId": 13
+    },
+    {
+      "questionId": 53,
+      "professionId": 8
+    },
+    {
+      "questionId": 53,
+      "professionId": 9
+    },
+    {
+      "questionId": 54,
+      "professionId": 10
+    },
+    {
+      "questionId": 54,
+      "professionId": 14
+    },
+    {
+      "questionId": 55,
+      "professionId": 5
+    },
+    {
+      "questionId": 56,
+      "professionId": 3
+    },
+    {
+      "questionId": 56,
+      "professionId": 5
+    },
+    {
+      "questionId": 56,
+      "professionId": 9
+    },
+    {
+      "questionId": 57,
+      "professionId": 3
+    },
+    {
+      "questionId": 57,
+      "professionId": 2
+    },
+    {
+      "questionId": 58,
+      "professionId": 13
+    },
+    {
+      "questionId": 58,
+      "professionId": 7
+    },
+    {
+      "questionId": 58,
+      "professionId": 8
     }
   ]
 }
