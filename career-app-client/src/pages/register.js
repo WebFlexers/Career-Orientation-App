@@ -57,6 +57,7 @@ const validate = (values) => {
 
   if (
     values.track == "" &&
+    values.semester > 4 &&
     (values.role == "student" || values.role == "graduate")
   ) {
     errors.track = "Επιλέξτε κατεύθυνση";
@@ -97,6 +98,7 @@ export default function Register() {
       const url = "https://localhost:7155/api/Users/Register";
 
       let data = {};
+      const semesterInt = parseInt(values.semester);
       if (values.role == "interested") {
         data = {
           username: values.username,
@@ -120,7 +122,7 @@ export default function Register() {
           track: values.track,
         };
       } else if (values.role == "student") {
-        if (values.semester > 4) {
+        if (semesterInt > 4) {
           data = {
             username: values.username,
             password: values.password,
@@ -128,10 +130,11 @@ export default function Register() {
             email: values.email,
             isProspectiveStudent: false,
             isGraduate: false,
-            semester: parseInt(values.semester),
+            semester: semesterInt,
             track: values.track,
           };
         } else {
+          console.log("Yes I am here");
           data = {
             username: values.username,
             password: values.password,
@@ -139,7 +142,7 @@ export default function Register() {
             email: values.email,
             isProspectiveStudent: false,
             isGraduate: false,
-            semester: parseInt(values.semester),
+            semester: semesterInt,
             track: null,
           };
         }
