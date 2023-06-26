@@ -339,21 +339,21 @@
     {
       "questionId": 49,
       "text": "Στην επιστήμη των υπολογιστών, το 'routing' αναφέρεται στη διαδικασία επιλογής μονοπατιών σε ένα δίκτυο για τη μεταφορά δεδομένων από μια πηγή σε έναν προορισμό.",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "type": "TrueFalse",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 50,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας ενδιέφερε η εισαγωγή στις έννοιες δικτύων;",
+      "type": "LikertScale",
       "universityTestId": 4,
       "generalTestId": null
     },
     {
       "questionId": 51,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7Εξαμήνου3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια από τα παρακάτω είναι σύνθετες δομές δεδομένων;",
+      "type": "MultipleChoice",
       "universityTestId": 4,
       "generalTestId": null
     },

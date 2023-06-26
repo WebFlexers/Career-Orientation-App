@@ -24,6 +24,31 @@
       "trueFalseAnswerId": 6,
       "Value": true,
       "questionId": 36
+    },
+    {
+      "trueFalseAnswerId": 7,
+      "Value": true,
+      "questionId": 38
+    },
+    {
+      "trueFalseAnswerId": 8,
+      "Value": false,
+      "questionId": 41
+    },
+    {
+      "trueFalseAnswerId": 9,
+      "Value": false,
+      "questionId": 44
+    },
+    {
+      "trueFalseAnswerId": 10,
+      "Value": false,
+      "questionId": 46
+    },
+    {
+      "trueFalseAnswerId": 11,
+      "Value": true,
+      "questionId": 49
     }
   ]
 }

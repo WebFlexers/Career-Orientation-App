@@ -25,8 +25,28 @@
 	  "likertScaleAnswer": 1
 	},
 	{
-		"questionId": 33,
-		"likertScaleAnswer": 1
+	  "questionId": 33,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 37,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 39,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 42,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 47,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 50,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

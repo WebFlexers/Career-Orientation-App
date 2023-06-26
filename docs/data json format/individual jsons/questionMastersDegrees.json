@@ -136,5 +136,137 @@
       "questionId": 36,
       "mastersDegreeId": 7
     },
+    {
+      "questionId": 37,
+      "mastersDegreeId": 5 
+    },
+    {
+      "questionId": 37,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 38,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 38,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 38,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 39,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 39,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 40,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 40,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 41,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 41,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 41,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 42,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 42,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 43,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 43,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 44,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 44,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 45,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 45,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 45,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 46,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 46,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 47,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 47,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 48,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 48,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 49,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 49,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 50,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 50,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 51,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 51,
+      "mastersDegreeId": 10
+    }
   ]	
 }
