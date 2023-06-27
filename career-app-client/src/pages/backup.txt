@@ -1,12 +1,25 @@
-if (res.status == 201) {
-        const result = await signIn("credentials", {
-          email: values.email,
-          password: values.password,
-          redirect: false,
-          callbackUrl: "/dashboard",
-        }).then(({ ok, error }) => {
-          if (ok) {
-            router.push("/dashboard");
-          }
-        });
-      }
+<li>
+            <h5 className="mt-5" style={{ color: "red" }}>
+              Ανάλυση 1
+            </h5>
+            <h5 className="mt-4">
+              <b>Περιγραφή</b>
+            </h5>
+            <div style={{ textAlign: "justify" }}>Κάτι καλό</div>
+            <h5 className="mt-4">
+              <b>Hard Skills</b>
+            </h5>
+            <div style={{ textAlign: "justify" }}>
+              <ul>
+                <li style={{ margin: "10px 0" }}>Υπομονή</li>
+              </ul>
+            </div>
+            <h5 className="mt-4">
+              <b>Soft Skills</b>
+            </h5>
+            <div style={{ textAlign: "justify" }}>
+              <ul>
+                <li style={{ margin: "10px 0" }}>Παράνοια</li>
+              </ul>
+            </div>
+          </li>
