@@ -519,6 +519,74 @@
     {
       "questionId": 82,
       "mastersDegreeId": 5
+    },
+    {
+      "questionId": 83,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 83,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 84,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 84,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 85,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 86,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 87,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 87,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 88,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 88,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 89,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 89,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 90,
+      "mastersDegreeId": 6
+    },
+    {
+      "questionId": 91,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 91,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 92,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 92,
+      "mastersDegreeId": 3
     }
   ]	
 }

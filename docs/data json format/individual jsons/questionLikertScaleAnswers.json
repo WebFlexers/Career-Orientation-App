@@ -83,6 +83,22 @@
 	{
 	  "questionId": 80,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 83,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 85,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 88,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 90,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

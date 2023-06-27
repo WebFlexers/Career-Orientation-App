@@ -450,6 +450,78 @@
       "text": "Google Docs",
       "isCorrect": false,
       "questionId": 82
+    },
+    {
+      "multipleChoiceAnswerId": 76,
+      "text": "SQL",
+      "isCorrect": false,
+      "questionId": 84
+    },
+    {
+      "multipleChoiceAnswerId": 77,
+      "text": "Python",
+      "isCorrect": true,
+      "questionId": 84
+    },
+    {
+      "multipleChoiceAnswerId": 78,
+      "text": "HTML",
+      "isCorrect": false,
+      "questionId": 84
+    },
+    {
+      "multipleChoiceAnswerId": 79,
+      "text": "Django",
+      "isCorrect": true,
+      "questionId": 87
+    },
+    {
+      "multipleChoiceAnswerId": 80,
+      "text": "Excel",
+      "isCorrect": false,
+      "questionId": 87
+    },
+    {
+      "multipleChoiceAnswerId": 81,
+      "text": "Google Docs",
+      "isCorrect": false,
+      "questionId": 87
+    },
+    {
+      "multipleChoiceAnswerId": 82,
+      "text": "Συνεχής επανάληψη και προσαρμογή",
+      "isCorrect": true,
+      "questionId": 89
+    },
+    {
+      "multipleChoiceAnswerId": 83,
+      "text": "Εγκατάσταση του νεότερου λογισμικού",
+      "isCorrect": false,
+      "questionId": 89
+    },
+    {
+      "multipleChoiceAnswerId": 84,
+      "text": "Χρήση μόνο δεδομένων εκπαίδευσης για το τεστ",
+      "isCorrect": false,
+      "questionId": 89
+    },
+    {
+      "multipleChoiceAnswerId": 85,
+      "text": "Διαίρεση του προβλήματος σε μικρότερα μέρη",
+      "isCorrect": true,
+      "questionId": 92
+    },
+    {
+      "multipleChoiceAnswerId": 86,
+      "text": "Αγνόηση των προβλημάτων και ελπίδα ότι θα εξαφανιστούν μόνα τους",
+      "isCorrect": false,
+      "questionId": 92
+    },
+    {
+      "multipleChoiceAnswerId": 87,
+      "text": "Επανεγκατάσταση του λογισμικού",
+      "isCorrect": false,
+      "questionId": 92
     }
   ]
 } 
