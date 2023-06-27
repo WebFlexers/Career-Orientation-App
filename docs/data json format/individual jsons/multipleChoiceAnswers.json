@@ -342,6 +342,60 @@
       "text": "SSL",
       "isCorrect": false,
       "questionId": 67
+    },
+    {
+      "multipleChoiceAnswerId": 58,
+      "text": "Python",
+      "isCorrect": true,
+      "questionId": 69
+    },
+    {
+      "multipleChoiceAnswerId": 59,
+      "text": "Java",
+      "isCorrect": false,
+      "questionId": 69
+    },
+    {
+      "multipleChoiceAnswerId": 60,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 69
+    },
+    {
+      "multipleChoiceAnswerId": 61,
+      "text": "Συνεχής επανάληψη και προσαρμογή",
+      "isCorrect": true,
+      "questionId": 72
+    },
+    {
+      "multipleChoiceAnswerId": 62,
+      "text": "Εγκατάσταση του νεότερου λογισμικού",
+      "isCorrect": false,
+      "questionId": 72
+    },
+    {
+      "multipleChoiceAnswerId": 63,
+      "text": "Χρήση μόνο δεδομένων εκπαίδευσης για το τεστ",
+      "isCorrect": false,
+      "questionId": 72
+    },
+    {
+      "multipleChoiceAnswerId": 64,
+      "text": "Διαίρεση του προβλήματος σε μικρότερα μέρη",
+      "isCorrect": true,
+      "questionId": 75
+    },
+    {
+      "multipleChoiceAnswerId": 65,
+      "text": "Αγνόηση των προβλημάτων και ελπίδα ότι θα εξαφανιστούν μόνα τους",
+      "isCorrect": false,
+      "questionId": 75
+    },
+    {
+      "multipleChoiceAnswerId": 66,
+      "text": "Επανεγκατάσταση του λογισμικού",
+      "isCorrect": false,
+      "questionId": 75
     }
   ]
 } 
