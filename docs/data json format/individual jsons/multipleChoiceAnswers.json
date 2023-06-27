@@ -396,6 +396,60 @@
       "text": "Επανεγκατάσταση του λογισμικού",
       "isCorrect": false,
       "questionId": 75
+    },
+    {
+      "multipleChoiceAnswerId": 67,
+      "text": "TensorFlow",
+      "isCorrect": false,
+      "questionId": 76
+    },
+    {
+      "multipleChoiceAnswerId": 68,
+      "text": "K-means clustering",
+      "isCorrect": true,
+      "questionId": 76
+    },
+    {
+      "multipleChoiceAnswerId": 69,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 76
+    },
+    {
+      "multipleChoiceAnswerId": 70,
+      "text": "SQL",
+      "isCorrect": false,
+      "questionId": 79
+    },
+    {
+      "multipleChoiceAnswerId": 71,
+      "text": "Python",
+      "isCorrect": true,
+      "questionId": 79
+    },
+    {
+      "multipleChoiceAnswerId": 72,
+      "text": "HTML",
+      "isCorrect": false,
+      "questionId": 79
+    },
+    {
+      "multipleChoiceAnswerId": 73,
+      "text": "Django",
+      "isCorrect": true,
+      "questionId": 82
+    },
+    {
+      "multipleChoiceAnswerId": 74,
+      "text": "Excel",
+      "isCorrect": false,
+      "questionId": 82
+    },
+    {
+      "multipleChoiceAnswerId": 75,
+      "text": "Google Docs",
+      "isCorrect": false,
+      "questionId": 82
     }
   ]
 } 

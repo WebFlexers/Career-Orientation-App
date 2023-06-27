@@ -521,63 +521,63 @@
     {
       "questionId": 75,
       "text": "Ποια από τις παρακάτω μεθόδους είναι βασική για τη διαχείριση πολύπλοκων προβλημάτων λογισμικού;",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "type": "MultipleChoice",
       "universityTestId": 7,
       "generalTestId": null
     },
     {
       "questionId": 76,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιος από τους παρακάτω είναι ένας αλγόριθμος machine learning;",
+      "type": "MultipleChoice",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 77,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Η ανάπτυξη λογισμικού αφορά μόνο την εγγραφή κώδικα.",
+      "type": "TrueFalse",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 78,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η ανάπτυξη λογισμικού;",
+      "type": "LikertScale",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 79,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια από τα παρακάτω είναι γλώσσα προγραμματισμού που χρησιμοποιείται ευρέως στην ανάπτυξη λογισμικού;",
+      "type": "MultipleChoice",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 80,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η διαδικασία του debugging στον κώδικά σας;",
+      "type": "LikertScale",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 81,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Τα Ευφυή Συστήματα χρησιμοποιούνται για την επεξεργασία και την ανάλυση δεδομένων μεγάλης κλίμακας.",
+      "type": "TrueFalse",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 82,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΤΛΕΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα framework για την ανάπτυξη λογισμικού;",
+      "type": "MultipleChoice",
       "universityTestId": 8,
       "generalTestId": null
     },
     {
       "questionId": 83,
       "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΤΛΕΣ_Επαναληπτικού3",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "type": "",
       "universityTestId": 9,
       "generalTestId": null
     },
