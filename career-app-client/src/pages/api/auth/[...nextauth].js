@@ -27,7 +27,7 @@ export const authOptions = {
         // Request
         const res = await axios.post(url, data, config);
 
-        if (res.status == 200) {
+        if (res) {
           return res.data;
         } else return null;
       },
