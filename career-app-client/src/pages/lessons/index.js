@@ -6,10 +6,6 @@ import semesters from "../../../public/data/semesters.json";
 import { getSession } from "next-auth/react";
 import axios from "axios";
 
-function getLessonsFromSemester(semesters, semester_index) {
-  return semesters[semester_index - 1].lessons;
-}
-
 export default function Lessons({ semestersData }) {
   // Variable that reads the json file and converts it to arrays of objects
   const [localSemesters, setLocalSemesters] = useState(
@@ -18,11 +14,11 @@ export default function Lessons({ semestersData }) {
   const [lessons, setLessons] = useState([]);
   const [selectedSemester, setSelectedSemester] = useState(0);
 
-  function handleSemesterClick(index) {
-    var tempLessons = getLessonsFromSemester(localSemesters, index);
+  const handleSemesterClick = async (semester_index) => {
+    var tempLessons = 0;
     setSelectedSemester(index);
     setLessons(tempLessons);
-  }
+  };
 
   return (
     <main>

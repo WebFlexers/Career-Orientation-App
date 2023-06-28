@@ -57,6 +57,7 @@ const validate = (values) => {
 
   if (
     values.track == "" &&
+    values.semester > 4 &&
     (values.role == "student" || values.role == "graduate")
   ) {
     errors.track = "Επιλέξτε κατεύθυνση";
