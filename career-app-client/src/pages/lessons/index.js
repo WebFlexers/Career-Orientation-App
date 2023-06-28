@@ -24,20 +24,18 @@ export default function Lessons(props) {
   ];
 
   const handleSemesterClick = async (semester_index) => {
-    var url = "";
-    if (role == "Αμύητος") {
-      url = `https://localhost:7155/api/Courses?Semester=${semester_index}&IsProspectiveStudent=true`;
-    } else if (role == "Φοιτητής" || role == "Απόφοιτος") {
-      if (props.userData.semester > 4 || props.userData.semester == null) {
-        url = `https://localhost:7155/api/Courses?Semester=${semester_index}&Track=${props.userData.track}&IsProspectiveStudent=false`;
-      } else {
-        url = `https://localhost:7155/api/Courses?Semester=${semester_index}&IsProspectiveStudent=false`;
-      }
-    }
+    var track = "";
+    var IsProspectiveStudent = false;
+
+    if (track != null && semester_index > 4 && role != "Αμύητος")
+      track = props.userData.track;
+    if (role == "Αμύητος") IsProspectiveStudent = true;
+
+    const url = `https://localhost:7155/api/Courses?Semester=${semester_index}&Track=${track}&IsProspectiveStudent=${IsProspectiveStudent}`;
 
     const res = await axios.get(url);
 
-    const tempCourses = res.data.courses;
+    const tempCourses = res.data;
 
     setSelectedSemester(semester_index);
     setCourses(tempCourses);
@@ -76,10 +74,10 @@ export default function Lessons(props) {
           {selectedSemester > 0 ? <b>Εξάμηνο {selectedSemester}</b> : <b></b>}
         </h4>
         <ol id={styles["info-box"]}>
-          {courses.map((course) => {
+          {courses?.map((course) => {
             return (
               <>
-                <li>
+                <li key={courses.indexOf(course)}>
                   <h5 className="mt-5" style={{ color: "red" }}>
                     {course.name}
                     &nbsp;({course.track == null ? <>Κορμού</> : course.track})
@@ -99,7 +97,12 @@ export default function Lessons(props) {
                         if (skill.type == "Hard")
                           return (
                             <>
-                              <li style={{ margin: "10px 0" }}>{skill.name}</li>
+                              <li
+                                style={{ margin: "10px 0" }}
+                                key={course.skills.indexOf(skill)}
+                              >
+                                {skill.name}
+                              </li>
                             </>
                           );
                       })}
@@ -114,7 +117,12 @@ export default function Lessons(props) {
                         if (skill.type == "Soft")
                           return (
                             <>
-                              <li style={{ margin: "10px 0" }}>{skill.name}</li>
+                              <li
+                                style={{ margin: "10px 0" }}
+                                key={course.skills.indexOf(skill)}
+                              >
+                                {skill.name}
+                              </li>
                             </>
                           );
                       })}

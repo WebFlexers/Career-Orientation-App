@@ -9,8 +9,6 @@ export default function SideBar(props) {
   const role = useSessionStorage("role");
   const semester = useSessionStorage("semester");
 
-  console.log(username);
-
   const links = [
     { label: "Κεντρικός Πίνακας", path: "/dashboard", targetSegment: null },
     { label: "Διδασκαλία", path: "/lessons", targetSegment: "lessons" },
@@ -55,10 +53,10 @@ export default function SideBar(props) {
           })}
         </div>
         <div id={styles["last-menu-box"]}>
-          <Link key={1} href="/kapou-magika">
+          <Link key={26} href="/kapou-magika">
             Ρυθμίσεις
           </Link>
-          <Link key={1} href="/kapou-magika">
+          <Link key={25} href="/kapou-magika">
             Έξοδος
           </Link>
         </div>
