@@ -5,7 +5,7 @@
 .semesters-box {
   display: grid;
   row-gap: 70px;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   margin-top: 50px;
 }
 

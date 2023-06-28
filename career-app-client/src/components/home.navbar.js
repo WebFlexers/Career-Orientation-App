@@ -37,7 +37,9 @@ const HomeNavigationBar = (props) => {
               <Nav.Link href="/contact">Επικοινωνία</Nav.Link>
               {session ? (
                 <>
-                  <Nav.Link href="/dashboard">Κεντρικός Πίνακας</Nav.Link>
+                  <Nav.Link href="/dashboard" style={{ color: "#fcb426" }}>
+                    Κεντρικός Πίνακας
+                  </Nav.Link>
                   <button
                     onClick={() => signOut({ callbackUrl: "/" })}
                     style={{

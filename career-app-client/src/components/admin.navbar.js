@@ -35,10 +35,13 @@ const AdminNavigationBar = (props) => {
             <Nav className="me-auto"></Nav>
             <Nav className="me-5" style={{ paddingRight: "0" }}>
               <Nav.Item>
-                <button style={{ backgroundColor: "transparent", border: "0" }}>
+                <button
+                  onClick={() => router.push("/")}
+                  style={{ backgroundColor: "transparent", border: "0" }}
+                >
                   <Image
-                    src="/images/notification-icon.png"
-                    alt="Icon1"
+                    src="/images/home-icon.png"
+                    alt="Home Icon"
                     width={25}
                     height={25}
                     style={{ margin: "5px 15px" }}
@@ -49,7 +52,7 @@ const AdminNavigationBar = (props) => {
                 <button style={{ backgroundColor: "transparent", border: "0" }}>
                   <Image
                     src="/images/find-icon.png"
-                    alt="Icon1"
+                    alt="Find Icon"
                     width={25}
                     height={25}
                     style={{ margin: "5px 15px" }}
@@ -63,7 +66,7 @@ const AdminNavigationBar = (props) => {
                 >
                   <Image
                     src="/images/logout-icon.png"
-                    alt="Icon1"
+                    alt="Logout Icon"
                     width={25}
                     height={25}
                     style={{ margin: "5px 15px" }}

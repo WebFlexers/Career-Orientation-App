@@ -7,27 +7,22 @@ import axios from "axios";
 import { useEffect } from "react";
 
 export default function Dashboard(props) {
-  const { data: session, status } = useSession();
-
-  if (status === "unauthenticated") {
-    return null;
-  }
-
-  console.log(props.data);
-
   // Store username and students role in sessionStorage
   useEffect(() => {
     if (window) {
       let role = "";
+      let semester = 0;
       if (props.data.isProspectiveStudent == true) {
         role = "Αμύητος";
       } else if (props.data.isGraduate == true) {
         role = "Απόφοιτος";
       } else {
         role = "Φοιτητής";
+        semester = props.data.semester;
       }
       sessionStorage.setItem("username", props.data.username);
       sessionStorage.setItem("role", role);
+      sessionStorage.setItem("semester", semester);
     }
   }, []);
 

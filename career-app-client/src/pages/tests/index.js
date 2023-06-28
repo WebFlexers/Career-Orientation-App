@@ -4,12 +4,13 @@ import { Container } from "react-bootstrap";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import AdminLayout from "@/components/admin.layout";
-import Link from "next/link";
+import useSessionStorage from "@/hooks/useSessionStorage";
 
 export default function Tests({ semestersData }) {
   const router = useRouter();
-  const [role, setRole] = useState("Student");
-  const [activeSemester, setActiveSemester] = useState(4);
+  const role = useSessionStorage("role");
+  var activeSemester = parseInt(useSessionStorage("semester"));
+  console.log(activeSemester);
 
   const studentTests = [
     { label: "Εξάμηνο 1", path: "/tests/examino1" },
@@ -39,11 +40,12 @@ export default function Tests({ semestersData }) {
     <main>
       <Container className="mt-4 mb-4" style={{ textAlign: "center" }}>
         <h4 className={lessonStyles["header"]}>
-          Πριν προβείτε στην επίλυση των παρακάτω τεστ, μελετήστε το υλικό που
-          βρίσκεται στην ενότητα Διδασκαλία.
+          Πριν προβείτε στην επίλυση των παρακάτω τεστ, μελετήστε το υλικό{" "}
+          <br />
+          που βρίσκεται στην ενότητα Διδασκαλία.
         </h4>
         <button
-          className="admin-btn mt-4"
+          className="admin-btn mt-3"
           onClick={() => {
             router.push("/lessons");
           }}
@@ -51,38 +53,40 @@ export default function Tests({ semestersData }) {
           Μετάβαση
         </button>
       </Container>
-      <Container className="mt-4" style={{ textAlign: "center" }}>
+      <Container className="mt-5" style={{ textAlign: "center" }}>
         <h4 className="mb-4">Επιλέξτε τεστ:</h4>
-        {role == "Student" && (
-          <>
-            <div className={testsStyles["tests-box"]}>
-              {studentTests.map((test) => {
-                // Show tests based on the active semester
-                if (
-                  studentTests.indexOf(test) + 1 >
-                  activeSemester + Math.floor(activeSemester / 2)
-                )
-                  return null;
+        {role == "Φοιτητής" ||
+          (role == "Απόφοιτος" && (
+            <>
+              <div className={`mt-3 ${testsStyles["tests-box"]}`}>
+                {studentTests.map((test) => {
+                  if (role == "Απόφοιτος") activeSemester = 8;
+                  // Show tests based on the active semester
+                  if (
+                    studentTests.indexOf(test) + 1 >
+                    activeSemester + Math.floor(activeSemester / 2)
+                  )
+                    return null;
 
-                return (
-                  <>
-                    <div className={testsStyles["tests-item"]}>
-                      <button
-                        className="admin-btn"
-                        onClick={() =>
-                          handleTestClick(studentTests.indexOf(test) + 1)
-                        }
-                      >
-                        {test.label}
-                      </button>
-                    </div>
-                  </>
-                );
-              })}
-            </div>
-          </>
-        )}
-        {role == "Interested" && (
+                  return (
+                    <>
+                      <div className={testsStyles["tests-item"]}>
+                        <button
+                          className="admin-btn"
+                          onClick={() =>
+                            handleTestClick(studentTests.indexOf(test) + 1)
+                          }
+                        >
+                          {test.label}
+                        </button>
+                      </div>
+                    </>
+                  );
+                })}
+              </div>
+            </>
+          ))}
+        {role == "Αμύητος" && (
           <>
             <div className={testsStyles["interested-tests-box"]}>
               {interestedTests.map((test) => {

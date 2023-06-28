@@ -7,6 +7,7 @@ import useSessionStorage from "@/hooks/useSessionStorage";
 export default function SideBar(props) {
   const username = useSessionStorage("username");
   const role = useSessionStorage("role");
+  const semester = useSessionStorage("semester");
 
   console.log(username);
 
@@ -39,6 +40,9 @@ export default function SideBar(props) {
             <b>Welcome, {username}</b>
           </div>
           <div id={styles["profile-title-cap"]}>{role}</div>
+          {semester > 0 ? (
+            <div id={styles["profile-title-cap"]}>Εξάμηνο: {semester}</div>
+          ) : null}
         </div>
         <div id={styles["main-menu"]}>
           {" "}
