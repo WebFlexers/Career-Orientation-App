@@ -20,6 +20,7 @@ export default function Dashboard(props) {
         role = "Φοιτητής";
         semester = props.data.semester;
       }
+
       sessionStorage.setItem("username", props.data.username);
       sessionStorage.setItem("role", role);
       sessionStorage.setItem("semester", semester);

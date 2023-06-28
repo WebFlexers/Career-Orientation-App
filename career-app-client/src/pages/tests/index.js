@@ -5,12 +5,12 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import AdminLayout from "@/components/admin.layout";
 import useSessionStorage from "@/hooks/useSessionStorage";
+import { getSession } from "next-auth/react";
 
-export default function Tests({ semestersData }) {
+export default function Tests(props) {
   const router = useRouter();
   const role = useSessionStorage("role");
   var activeSemester = parseInt(useSessionStorage("semester"));
-  console.log(activeSemester);
 
   const studentTests = [
     { label: "Εξάμηνο 1", path: "/tests/examino1" },
@@ -55,37 +55,37 @@ export default function Tests({ semestersData }) {
       </Container>
       <Container className="mt-5" style={{ textAlign: "center" }}>
         <h4 className="mb-4">Επιλέξτε τεστ:</h4>
-        {role == "Φοιτητής" ||
-          (role == "Απόφοιτος" && (
-            <>
-              <div className={`mt-3 ${testsStyles["tests-box"]}`}>
-                {studentTests.map((test) => {
-                  if (role == "Απόφοιτος") activeSemester = 8;
-                  // Show tests based on the active semester
-                  if (
-                    studentTests.indexOf(test) + 1 >
-                    activeSemester + Math.floor(activeSemester / 2)
-                  )
-                    return null;
+        {(role == "Φοιτητής" || role == "Απόφοιτος") && (
+          <>
+            <div className={`mt-3 ${testsStyles["tests-box"]}`}>
+              {studentTests.map((test) => {
+                if (role == "Απόφοιτος") activeSemester = 8;
+                // Show tests based on the active semester
+                if (
+                  studentTests.indexOf(test) + 1 >
+                  activeSemester + Math.floor(activeSemester / 2)
+                ) {
+                  return null;
+                }
 
-                  return (
-                    <>
-                      <div className={testsStyles["tests-item"]}>
-                        <button
-                          className="admin-btn"
-                          onClick={() =>
-                            handleTestClick(studentTests.indexOf(test) + 1)
-                          }
-                        >
-                          {test.label}
-                        </button>
-                      </div>
-                    </>
-                  );
-                })}
-              </div>
-            </>
-          ))}
+                return (
+                  <>
+                    <div className={testsStyles["tests-item"]}>
+                      <button
+                        className="admin-btn"
+                        onClick={() =>
+                          handleTestClick(studentTests.indexOf(test) + 1)
+                        }
+                      >
+                        {test.label}
+                      </button>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </>
+        )}
         {role == "Αμύητος" && (
           <>
             <div className={testsStyles["interested-tests-box"]}>
@@ -114,3 +114,28 @@ export default function Tests({ semestersData }) {
 Tests.getLayout = function getLayout(page) {
   return <AdminLayout>{page}</AdminLayout>;
 };
+
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
+
+  if (!session) return null;
+
+  let userData = "";
+  try {
+    let reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
+
+    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
+
+    const res = await reqInstance.get(url);
+    userData = res.data;
+    console.log(userData);
+  } catch (err) {
+    return { err };
+  } finally {
+    return { props: { userData } };
+  }
+}
