@@ -91,9 +91,19 @@
       "questionId": 86
     },
     {
-      "trueFalseAnswerId": 19,
+      "trueFalseAnswerId": 20,
       "Value": true,
       "questionId": 91
+    },
+    {
+      "trueFalseAnswerId": 21,
+      "Value": true,
+      "questionId": 94
+    },
+    {
+      "trueFalseAnswerId": 22,
+      "Value": true,
+      "questionId": 97
     }
   ]
 }

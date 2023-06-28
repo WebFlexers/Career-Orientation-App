@@ -522,6 +522,60 @@
       "text": "Επανεγκατάσταση του λογισμικού",
       "isCorrect": false,
       "questionId": 92
+    },
+    {
+      "multipleChoiceAnswerId": 88,
+      "text": "Docker",
+      "isCorrect": true,
+      "questionId": 93
+    },
+    {
+      "multipleChoiceAnswerId": 89,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 93
+    },
+    {
+      "multipleChoiceAnswerId": 90,
+      "text": "Apache Server",
+      "isCorrect": false,
+      "questionId": 93
+    },
+    {
+      "multipleChoiceAnswerId": 91,
+      "text": "Windows 10",
+      "isCorrect": false,
+      "questionId": 96
+    },
+    {
+      "multipleChoiceAnswerId": 92,
+      "text": "Ubuntu Server",
+      "isCorrect": true,
+      "questionId": 96
+    },
+    {
+      "multipleChoiceAnswerId": 93,
+      "text": "iOS",
+      "isCorrect": false,
+      "questionId": 96
+    },
+    {
+      "multipleChoiceAnswerId": 94,
+      "text": "Git",
+      "isCorrect": true,
+      "questionId": 99
+    },
+    {
+      "multipleChoiceAnswerId": 95,
+      "text": "Notepad++",
+      "isCorrect": false,
+      "questionId": 99
+    },
+    {
+      "multipleChoiceAnswerId": 96,
+      "text": "PyCharm",
+      "isCorrect": false,
+      "questionId": 99
     }
   ]
 } 

@@ -679,6 +679,42 @@
     {
       "questionId": 92,
       "professionId": 11
+    },
+    {
+      "questionId": 93,
+      "professionId": 3
+    },
+    {
+      "questionId": 94,
+      "professionId": 6
+    },
+    {
+      "questionId": 95,
+      "professionId": 7
+    },
+    {
+      "questionId": 95,
+      "professionId": 8
+    },
+    {
+      "questionId": 96,
+      "professionId": 1
+    },
+    {
+      "questionId": 97,
+      "professionId": 7
+    },
+    {
+      "questionId": 97,
+      "professionId": 8
+    },
+    {
+      "questionId": 98,
+      "professionId": 9
+    },
+    {
+      "questionId": 99,
+      "professionId": 10
     }
   ]
 }

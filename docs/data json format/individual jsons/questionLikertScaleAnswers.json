@@ -99,6 +99,14 @@
 	{
 	  "questionId": 90,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 95,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 98,
+	  "likertScaleAnswer": 1
 	}
   ]
 }
