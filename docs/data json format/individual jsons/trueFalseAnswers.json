@@ -104,6 +104,16 @@
       "trueFalseAnswerId": 22,
       "Value": true,
       "questionId": 97
+    },
+    {
+      "trueFalseAnswerId": 23,
+      "Value": false,
+      "questionId": 101
+    },
+    {
+      "trueFalseAnswerId": 24,
+      "Value": true,
+      "questionId": 105
     }
   ]
 }

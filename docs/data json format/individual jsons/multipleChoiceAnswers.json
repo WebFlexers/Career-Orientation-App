@@ -576,6 +576,60 @@
       "text": "PyCharm",
       "isCorrect": false,
       "questionId": 99
+    },
+    {
+      "multipleChoiceAnswerId": 97,
+      "text": "TCP/IP",
+      "isCorrect": true,
+      "questionId": 100
+    },
+    {
+      "multipleChoiceAnswerId": 98,
+      "text": "OCI",
+      "isCorrect": false,
+      "questionId": 100
+    },
+    {
+      "multipleChoiceAnswerId": 99,
+      "text": "HDMI",
+      "isCorrect": false,
+      "questionId": 100
+    },
+    {
+      "multipleChoiceAnswerId": 100,
+      "text": "SMTP",
+      "isCorrect": true,
+      "questionId": 103
+    },
+    {
+      "multipleChoiceAnswerId": 101,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 103
+    },
+    {
+      "multipleChoiceAnswerId": 102,
+      "text": "TCP",
+      "isCorrect": false,
+      "questionId": 103
+    },
+    {
+      "multipleChoiceAnswerId": 103,
+      "text": "Rate limiting",
+      "isCorrect": true,
+      "questionId": 106
+    },
+    {
+      "multipleChoiceAnswerId": 104,
+      "text": "Encryption",
+      "isCorrect": false,
+      "questionId": 106
+    },
+    {
+      "multipleChoiceAnswerId": 104,
+      "text": "Firewalls",
+      "isCorrect": false,
+      "questionId": 106
     }
   ]
 } 

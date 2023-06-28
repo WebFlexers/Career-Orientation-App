@@ -695,50 +695,50 @@
     },
     {
       "questionId": 100,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα πρότυπο πρωτοκόλλου δικτύου;",
+      "type": "MultipleChoice",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 101,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το Wi-Fi είναι ο μόνος τρόπος για να συνδεθείτε ασύρματα σε ένα δίκτυο.",
+      "type": "TrueFalse",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 102,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει να σχεδιάζετε και να εφαρμόζετε δίκτυα;",
+      "type": "LikertScale",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 103,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω πρωτόκολλα χρησιμοποιείται για τη μεταφορά ηλεκτρονικών μηνυμάτων;",
+      "type": "MultipleChoice",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 104,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η δημιουργία και διαχείριση υπηρεσιών δικτύου, όπως ηλεκτρονικό ταχυδρομείο, web servers, κλπ.;",
+      "type": "LikertScale",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 105,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το VPN είναι μια τεχνική που χρησιμοποιείται για να κάνει ένα δίκτυο ασφαλέστερο.",
+      "type": "TrueFalse",
       "universityTestId": 11,
       "generalTestId": null
     },
     {
       "questionId": 106,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου6",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια από τα παρακάτω είναι τεχνική για την καταπολέμηση των DDoS επιθέσεων;",
+      "type": "MultipleChoice",
       "universityTestId": 11,
       "generalTestId": null
     },
