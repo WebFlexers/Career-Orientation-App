@@ -626,10 +626,82 @@
       "questionId": 106
     },
     {
-      "multipleChoiceAnswerId": 104,
+      "multipleChoiceAnswerId": 105,
       "text": "Firewalls",
       "isCorrect": false,
       "questionId": 106
+    },
+    {
+      "multipleChoiceAnswerId": 106,
+      "text": "Docker",
+      "isCorrect": true,
+      "questionId": 107
+    },
+    {
+      "multipleChoiceAnswerId": 107,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 107
+    },
+    {
+      "multipleChoiceAnswerId": 108,
+      "text": "Apache Server",
+      "isCorrect": false,
+      "questionId": 107
+    },
+    {
+      "multipleChoiceAnswerId": 109,
+      "text": "Windows 10",
+      "isCorrect": false,
+      "questionId": 110
+    },
+    {
+      "multipleChoiceAnswerId": 110,
+      "text": "Ubuntu Server",
+      "isCorrect": true,
+      "questionId": 110
+    },
+    {
+      "multipleChoiceAnswerId": 111,
+      "text": "iOS",
+      "isCorrect": false,
+      "questionId": 110
+    },
+    {
+      "multipleChoiceAnswerId": 112,
+      "text": "SMTP",
+      "isCorrect": true,
+      "questionId": 113
+    },
+    {
+      "multipleChoiceAnswerId": 111,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 113
+    },
+    {
+      "multipleChoiceAnswerId": 112,
+      "text": "TCP",
+      "isCorrect": false,
+      "questionId": 113
+    },
+    {
+      "multipleChoiceAnswerId": 113,
+      "text": "Rate limiting",
+      "isCorrect": false,
+      "questionId": 116
+    },
+    {
+      "multipleChoiceAnswerId": 114,
+      "text": "Encryption",
+      "isCorrect": false,
+      "questionId": 116
+    },
+    {
+      "multipleChoiceAnswerId": 115,
+      "text": "Firewalls",
+      "isCorrect": true,
+      "questionId": 116
     }
   ]
 } 
