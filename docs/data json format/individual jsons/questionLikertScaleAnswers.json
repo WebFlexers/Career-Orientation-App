@@ -143,6 +143,22 @@
 	{
 	  "questionId": 129,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 133,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 135,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 136,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 139,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

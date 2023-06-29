@@ -810,6 +810,78 @@
       "text": "Ασύμβατη μορφοποίηση δεδομένων",
       "isCorrect": false,
       "questionId": 130
+    },
+    {
+      "multipleChoiceAnswerId": 136,
+      "text": "SHA-256",
+      "isCorrect": true,
+      "questionId": 131
+    },
+    {
+      "multipleChoiceAnswerId": 137,
+      "text": "Python 3.7",
+      "isCorrect": false,
+      "questionId": 131
+    },
+    {
+      "multipleChoiceAnswerId": 138,
+      "text": "περίοδος συχνότητας",
+      "isCorrect": false,
+      "questionId": 131
+    },
+    {
+      "multipleChoiceAnswerId": 139,
+      "text": "Χρήση ισχυρών κωδικών πρόσβασης",
+      "isCorrect": true,
+      "questionId": 134
+    },
+    {
+      "multipleChoiceAnswerId": 140,
+      "text": "Απενεργοποίηση των ενημερώσεων λογισμικού",
+      "isCorrect": false,
+      "questionId": 134
+    },
+    {
+      "multipleChoiceAnswerId": 141,
+      "text": "Χρήση του ίδιου κωδικού πρόσβασης σε όλες τις συσκευές",
+      "isCorrect": false,
+      "questionId": 134
+    },
+    {
+      "multipleChoiceAnswerId": 142,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 137
+    },
+    {
+      "multipleChoiceAnswerId": 143,
+      "text": "SMTP",
+      "isCorrect": false,
+      "questionId": 137
+    },
+    {
+      "multipleChoiceAnswerId": 144,
+      "text": "SPI",
+      "isCorrect": true,
+      "questionId": 137
+    },
+    {
+      "multipleChoiceAnswerId": 145,
+      "text": "Περίπλοκη διαχείριση μνήμης",
+      "isCorrect": false,
+      "questionId": 140
+    },
+    {
+      "multipleChoiceAnswerId": 146,
+      "text": "Χρονισμός και συγχρονισμός",
+      "isCorrect": true,
+      "questionId": 140
+    },
+    {
+      "multipleChoiceAnswerId": 147,
+      "text": "Ασύμβατη μορφοποίηση δεδομένων",
+      "isCorrect": false,
+      "questionId": 140
     }
   ]
 } 
