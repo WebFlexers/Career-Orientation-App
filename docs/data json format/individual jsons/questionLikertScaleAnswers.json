@@ -157,7 +157,11 @@
 	  "likertScaleAnswer": 1
 	},
 	{
-	  "questionId": 139,
+	  "questionId": 143,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 145,
 	  "likertScaleAnswer": 1
 	}
   ]

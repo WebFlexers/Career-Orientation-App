@@ -883,6 +883,42 @@
     {
       "questionId": 140,
       "mastersDegreeId": 9
+    },
+    {
+      "questionId": 141,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 142,
+      "mastersDegreeId": 2
+    },
+    {
+      "questionId": 143,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 144,
+      "mastersDegreeId": 6 
+    },
+    {
+      "questionId": 145,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 146,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 146,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 147,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 147,
+      "mastersDegreeId": 7
     }
   ]	
 }

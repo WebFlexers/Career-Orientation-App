@@ -882,6 +882,60 @@
       "text": "Ασύμβατη μορφοποίηση δεδομένων",
       "isCorrect": false,
       "questionId": 140
+    },
+    {
+      "multipleChoiceAnswerId": 148,
+      "text": "Παλινδρόμηση Δελτίου (Backpropagation)",
+      "isCorrect": true,
+      "questionId": 141
+    },
+    {
+      "multipleChoiceAnswerId": 149,
+      "text": "Ανάλυση Κυρίων Συνιστωσών (PCA)",
+      "isCorrect": false,
+      "questionId": 141
+    },
+    {
+      "multipleChoiceAnswerId": 150,
+      "text": "k-πλησιέστερος γείτονας (k-NN)",
+      "isCorrect": false,
+      "questionId": 141
+    },
+    {
+      "multipleChoiceAnswerId": 151,
+      "text": "Σύστημα συστάσεων",
+      "isCorrect": true,
+      "questionId": 144
+    },
+    {
+      "multipleChoiceAnswerId": 152,
+      "text": "Βάση δεδομένων SQL",
+      "isCorrect": false,
+      "questionId": 144
+    },
+    {
+      "multipleChoiceAnswerId": 153,
+      "text": "Σύστημα διαχείρισης αρχείων",
+      "isCorrect": false,
+      "questionId": 144
+    },
+    {
+      "multipleChoiceAnswerId": 154,
+      "text": "C++",
+      "isCorrect": false,
+      "questionId": 147
+    },
+    {
+      "multipleChoiceAnswerId": 155,
+      "text": "Python",
+      "isCorrect": true,
+      "questionId": 147
+    },
+    {
+      "multipleChoiceAnswerId": 156,
+      "text": "JavaScript",
+      "isCorrect": false,
+      "questionId": 147
     }
   ]
 } 
