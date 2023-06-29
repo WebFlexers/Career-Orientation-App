@@ -674,31 +674,31 @@
       "questionId": 113
     },
     {
-      "multipleChoiceAnswerId": 111,
+      "multipleChoiceAnswerId": 113,
       "text": "HTTP",
       "isCorrect": false,
       "questionId": 113
     },
     {
-      "multipleChoiceAnswerId": 112,
+      "multipleChoiceAnswerId": 114,
       "text": "TCP",
       "isCorrect": false,
       "questionId": 113
     },
     {
-      "multipleChoiceAnswerId": 113,
+      "multipleChoiceAnswerId": 115,
       "text": "Rate limiting",
       "isCorrect": false,
       "questionId": 116
     },
     {
-      "multipleChoiceAnswerId": 114,
+      "multipleChoiceAnswerId": 116,
       "text": "Encryption",
       "isCorrect": false,
       "questionId": 116
     },
     {
-      "multipleChoiceAnswerId": 115,
+      "multipleChoiceAnswerId": 117,
       "text": "Firewalls",
       "isCorrect": true,
       "questionId": 116
