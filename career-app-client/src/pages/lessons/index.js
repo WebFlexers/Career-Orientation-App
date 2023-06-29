@@ -29,6 +29,7 @@ export default function Lessons(props) {
 
     if (track != null && semester_index > 4 && role != "Αμύητος")
       track = props.userData.track;
+
     if (role == "Αμύητος") IsProspectiveStudent = true;
 
     const url = `https://localhost:7155/api/Courses?Semester=${semester_index}&Track=${track}&IsProspectiveStudent=${IsProspectiveStudent}`;

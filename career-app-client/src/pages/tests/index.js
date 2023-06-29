@@ -10,21 +10,22 @@ import { getSession } from "next-auth/react";
 export default function Tests(props) {
   const router = useRouter();
   const role = useSessionStorage("role");
+  const track = useSessionStorage("track");
   var activeSemester = parseInt(useSessionStorage("semester"));
 
   const studentTests = [
-    { label: "Εξάμηνο 1", path: "/tests/examino1" },
-    { label: "Εξάμηνο 2", path: "/tests/examino2" },
-    { label: "Επαναληπτικό", path: "/tests/examino1" },
-    { label: "Εξάμηνο 3", path: "/tests/examino1" },
-    { label: "Εξάμηνο 4", path: "/tests/examino1" },
-    { label: "Επαναληπτικό", path: "/tests/examino1" },
-    { label: "Εξάμηνο 5", path: "/tests/examino1" },
-    { label: "Εξάμηνο 6", path: "/tests/examino1" },
-    { label: "Επαναληπτικό", path: "/tests/examino1" },
-    { label: "Εξάμηνο 7", path: "/tests/examino1" },
-    { label: "Εξάμηνο 8", path: "/tests/examino1" },
-    { label: "Επαναληπτικό", path: "/tests/examino1" },
+    { label: "Εξάμηνο 1", isRevision: false, index: 1 },
+    { label: "Εξάμηνο 2", isRevision: false, index: 2 },
+    { label: "Επαναληπτικό", isRevision: true, index: 1 },
+    { label: "Εξάμηνο 3", isRevision: false, index: 3 },
+    { label: "Εξάμηνο 4", isRevision: false, index: 4 },
+    { label: "Επαναληπτικό", isRevision: true, index: 2 },
+    { label: "Εξάμηνο 5", isRevision: false, index: 5 },
+    { label: "Εξάμηνο 6", isRevision: false, index: 6 },
+    { label: "Επαναληπτικό", isRevision: true, index: 3 },
+    { label: "Εξάμηνο 7", isRevision: false, index: 7 },
+    { label: "Εξάμηνο 8", isRevision: false, index: 8 },
+    { label: "Επαναληπτικό", isRevision: true, index: 4 },
   ];
 
   const interestedTests = [
@@ -32,8 +33,25 @@ export default function Tests(props) {
     { label: "Τεστ 2", path: "/tests/examino2" },
   ];
 
-  function handleTestClick(index) {
-    alert(index);
+  function handleTestClick(index, isRevision) {
+    var tempTrack = "";
+    var semester = "";
+    var revisionYear = "";
+
+    if (!isRevision) {
+      semester = index;
+      if (index > 4) {
+        tempTrack = track;
+      }
+    } else {
+      revisionYear = index;
+      if (index > 2) {
+        tempTrack = track;
+      }
+    }
+
+    const url = `/tests/${index}?track=${tempTrack}&semester=${semester}&revisionYear=${revisionYear}`;
+    router.push(url);
   }
 
   return (
@@ -74,7 +92,7 @@ export default function Tests(props) {
                       <button
                         className="admin-btn"
                         onClick={() =>
-                          handleTestClick(studentTests.indexOf(test) + 1)
+                          handleTestClick(test.index, test.isRevision)
                         }
                       >
                         {test.label}
@@ -132,7 +150,6 @@ export async function getServerSideProps(ctx) {
 
     const res = await reqInstance.get(url);
     userData = res.data;
-    console.log(userData);
   } catch (err) {
     return { err };
   } finally {

@@ -12,18 +12,23 @@ export default function Dashboard(props) {
     if (window) {
       let role = "";
       let semester = 0;
+      let track = "";
+
       if (props.data.isProspectiveStudent == true) {
         role = "Αμύητος";
       } else if (props.data.isGraduate == true) {
         role = "Απόφοιτος";
+        track = props.data.track;
       } else {
         role = "Φοιτητής";
         semester = props.data.semester;
+        track = props.data.track;
       }
 
       sessionStorage.setItem("username", props.data.username);
       sessionStorage.setItem("role", role);
       sessionStorage.setItem("semester", semester);
+      sessionStorage.setItem("track", track);
     }
   }, []);
 

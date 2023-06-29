@@ -8,6 +8,7 @@ export default function SideBar(props) {
   const username = useSessionStorage("username");
   const role = useSessionStorage("role");
   const semester = useSessionStorage("semester");
+  const track = useSessionStorage("track");
 
   const links = [
     { label: "Κεντρικός Πίνακας", path: "/dashboard", targetSegment: null },
@@ -40,6 +41,9 @@ export default function SideBar(props) {
           <div id={styles["profile-title-cap"]}>{role}</div>
           {semester > 0 ? (
             <div id={styles["profile-title-cap"]}>Εξάμηνο: {semester}</div>
+          ) : null}
+          {semester > 4 ? (
+            <div id={styles["profile-title-cap"]}>Κατεύθυνση: {track}</div>
           ) : null}
         </div>
         <div id={styles["main-menu"]}>

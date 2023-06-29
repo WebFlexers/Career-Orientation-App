@@ -1,12 +1,14 @@
-if (res.status == 201) {
-        const result = await signIn("credentials", {
-          email: values.email,
-          password: values.password,
-          redirect: false,
-          callbackUrl: "/dashboard",
-        }).then(({ ok, error }) => {
-          if (ok) {
-            router.push("/dashboard");
-          }
-        });
+if (semester < 4) {
+      if (!isRevision) {
+        semester = index;
+      } else {
+        revisionYear = index;
       }
+    } else {
+      track = props.userData.track;
+      if (!isRevision) {
+        semester = index;
+      } else {
+        revisionYear = index;
+      }
+    }

@@ -1,10 +1,17 @@
 import { Container, Row } from "react-bootstrap";
 import styles from "@/styles/tests.module.css";
 import { Formik, Field, Form } from "formik";
-import { useSession } from "next-auth/react";
+import { useSession, getSession } from "next-auth/react";
+import { useRouter } from "next/router";
+import axios from "axios";
 
 export default function Test() {
+  const router = useRouter();
+  // Get data from url
+  const { IsRevision } = router.query;
+
   const { data: session, status } = useSession();
+
   const preferenceAnswers = [
     { label: "Καθόλου", value: "None" },
     { label: "Πολύ Λίγο", value: "A little bit" },
@@ -80,4 +87,32 @@ export default function Test() {
       </Container>
     </>
   );
+}
+
+export async function getServerSideProps(ctx) {
+  const session = await getSession(ctx);
+
+  if (!session) return null;
+
+  const track = ctx.query.track;
+  const semester = ctx.query.semester;
+  const revisionYear = ctx.query.revisionYear;
+
+  let testData = "";
+  try {
+    let reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
+
+    const url = `https://localhost:7155/api/StudentTests?Track=${track}&Semester=${semester}&RevisionYear=${revisionYear}`;
+
+    const res = await reqInstance.get(url);
+    testData = res.data;
+  } catch (err) {
+    return { err };
+  } finally {
+    return { props: { testData } };
+  }
 }
