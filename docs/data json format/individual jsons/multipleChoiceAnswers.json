@@ -756,6 +756,60 @@
       "text": "Χρήση της ίδιας κρυπτογραφικής κλειδαριάς για όλα τα δεδομένα",
       "isCorrect": false,
       "questionId": 123
+    },
+    {
+      "multipleChoiceAnswerId": 127,
+      "text": "Πρόσθεση δύο αριθμών",
+      "isCorrect": false,
+      "questionId": 124
+    },
+    {
+      "multipleChoiceAnswerId": 128,
+      "text": "Αφαίρεση δύο αριθμών",
+      "isCorrect": false,
+      "questionId": 124
+    },
+    {
+      "multipleChoiceAnswerId": 129,
+      "text": "Πολλαπλασιασμός δύο αριθμών",
+      "isCorrect": true,
+      "questionId": 124
+    },
+    {
+      "multipleChoiceAnswerId": 130,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 127
+    },
+    {
+      "multipleChoiceAnswerId": 131,
+      "text": "SMTP",
+      "isCorrect": false,
+      "questionId": 127
+    },
+    {
+      "multipleChoiceAnswerId": 132,
+      "text": "SPI",
+      "isCorrect": true,
+      "questionId": 127
+    },
+    {
+      "multipleChoiceAnswerId": 133,
+      "text": "Περίπλοκη διαχείριση μνήμης",
+      "isCorrect": false,
+      "questionId": 130
+    },
+    {
+      "multipleChoiceAnswerId": 134,
+      "text": "Χρονισμός και συγχρονισμός",
+      "isCorrect": true,
+      "questionId": 130
+    },
+    {
+      "multipleChoiceAnswerId": 135,
+      "text": "Ασύμβατη μορφοποίηση δεδομένων",
+      "isCorrect": false,
+      "questionId": 130
     }
   ]
 } 
