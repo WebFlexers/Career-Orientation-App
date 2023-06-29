@@ -127,6 +127,14 @@
 	{
 	  "questionId": 114,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 119,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 121,
+	  "likertScaleAnswer": 1
 	}
   ]
 }
