@@ -163,6 +163,14 @@
 	{
 	  "questionId": 145,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 150,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 152,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

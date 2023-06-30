@@ -936,6 +936,60 @@
       "text": "JavaScript",
       "isCorrect": false,
       "questionId": 147
+    },
+    {
+      "multipleChoiceAnswerId": 157,
+      "text": "Διάδοση Κανόνων (Rule Propagation)",
+      "isCorrect": false,
+      "questionId": 148
+    },
+    {
+      "multipleChoiceAnswerId": 158,
+      "text": "Βελτιστοποίηση Adam (Adam Optimization)",
+      "isCorrect": true,
+      "questionId": 148
+    },
+    {
+      "multipleChoiceAnswerId": 159,
+      "text": "Κανονικοποίηση l1",
+      "isCorrect": false,
+      "questionId": 148
+    },
+    {
+      "multipleChoiceAnswerId": 160,
+      "text": "Συνελικτικά Νευρωνικά Δίκτυα (CNN)",
+      "isCorrect": false,
+      "questionId": 151
+    },
+    {
+      "multipleChoiceAnswerId": 161,
+      "text": "Δίκτυα LSTM (Long Short-Term Memory)",
+      "isCorrect": true,
+      "questionId": 151
+    },
+    {
+      "multipleChoiceAnswerId": 162,
+      "text": "k-πλησιέστεροι γείτονες (k-NN)",
+      "isCorrect": false,
+      "questionId": 151
+    },
+    {
+      "multipleChoiceAnswerId": 163,
+      "text": "Αναγνώριση Προτύπων",
+      "isCorrect": false,
+      "questionId": 154
+    },
+    {
+      "multipleChoiceAnswerId": 164,
+      "text": "Ανάλυση Βάσεων Δεδομένων",
+      "isCorrect": false,
+      "questionId": 154
+    },
+    {
+      "multipleChoiceAnswerId": 165,
+      "text": "Αυτόματη οδήγηση αυτοκινήτων ",
+      "isCorrect": true,
+      "questionId": 154
     }
   ]
 } 
