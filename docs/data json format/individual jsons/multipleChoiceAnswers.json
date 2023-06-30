@@ -1116,6 +1116,60 @@
       "text": "ARP ",
       "isCorrect": false,
       "questionId": 171 
+    },
+    {
+      "multipleChoiceAnswerId": 185,
+      "text": "Κρυπτογράφηση δεδομένων",
+      "isCorrect": true,
+      "questionId": 172
+    },
+    {
+      "multipleChoiceAnswerId": 186,
+      "text": "Διαγραφή δεδομένων",
+      "isCorrect": false,
+      "questionId": 172
+    },
+    {
+      "multipleChoiceAnswerId": 187,
+      "text": "Αποφυγή της χρήσης δικτύων",
+      "isCorrect": false,
+      "questionId": 172
+    },
+    {
+      "multipleChoiceAnswerId": 188,
+      "text": "TCP Tahoe  ",
+      "isCorrect": false,
+      "questionId": 175 
+    },
+    {
+      "multipleChoiceAnswerId": 189,
+      "text": "TCP Reno ",
+      "isCorrect": false,
+      "questionId": 175 
+    },
+    {
+      "multipleChoiceAnswerId": 190,
+      "text": "TCP Cubic ",
+      "isCorrect": true,
+      "questionId": 175 
+    },
+    {
+      "multipleChoiceAnswerId": 191,
+      "text": "ICMP ",
+      "isCorrect": true,
+      "questionId": 178
+    },
+    {
+      "multipleChoiceAnswerId": 192,
+      "text": "IMAP ",
+      "isCorrect": false,
+      "questionId": 178
+    },
+    {
+      "multipleChoiceAnswerId": 193,
+      "text": "SNMP ",
+      "isCorrect": false,
+      "questionId": 178
     }
   ]
 } 

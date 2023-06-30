@@ -1199,50 +1199,50 @@
     },
     {
       "questionId": 172,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποια είναι μια κοινή μέθοδος για την εξασφάλιση της ασφάλειας στα δικτυακά συστήματα;",
+      "type": "MultipleChoice",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 173,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το IPv6 προσφέρει μεγαλύτερο αριθμό διευθύνσεων σε σύγκριση με το IPv4.",
+      "type": "TrueFalse",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 174,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Οι τεχνολογίες cloud computing έχουν καταστήσει τη διαχείριση δεδομένων πιο απλή.",
+      "type": "LikertScale",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 175,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιος από τους παρακάτω αλγόριθμους είναι ο καλύτερος για την αντιμετώπιση του προβλήματος της συμφόρησης στο δίκτυο;",
+      "type": "MultipleChoice",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 176,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το Multiprotocol Label Switching (MPLS) είναι μια τεχνική για τη βελτίωση της επικοινωνίας σε υψηλής ταχύτητας τηλεπικοινωνιακά δίκτυα.",
+      "type": "TrueFalse",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 177,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Προτιμώ την εργασία σε φυσικά σε σχέση με τα εικονικά δίκτυα;",
+      "type": "LikertScale",
       "universityTestId": 20,
       "generalTestId": null
     },
     {
       "questionId": 178,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου8",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω πρωτόκολλα χρησιμοποιείται για την ανίχνευση βλαβών σε δικτυακές συσκευές;",
+      "type": "MultipleChoice",
       "universityTestId": 20,
       "generalTestId": null
     },
