@@ -1150,50 +1150,50 @@
     },
     {
       "questionId": 165,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή1_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": " Ποιο από τα παρακάτω είναι ένα πρωτόκολλο ρουτίνγκ;",
+      "type": "MultipleChoice",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 166,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή2_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το ιδιωτικό δίκτυο VPN μπορεί να παρέχει ασφαλή επικοινωνία σε ένα δημόσιο δίκτυο.",
+      "type": "TrueFalse",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 167,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή3_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η σχεδίαση και η υλοποίηση δικτύων;",
+      "type": "LikertScale",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 168,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή4_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένας τύπος ασύρματου δικτύου;",
+      "type": "MultipleChoice",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 169,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή5_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Πόσο σας αρέσει η ανάπτυξη και η διαχείριση δικτυακών υπηρεσιών;",
+      "type": "LikertScale",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 170,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή6_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Το Ethernet είναι ένα πρωτόκολλο του τρίτου επιπέδου στην ταξινόμηση OSI.",
+      "type": "TrueFalse",
       "universityTestId": 19,
       "generalTestId": null
     },
     {
       "questionId": 171,
-      "text": "ΑλλαξέΜεΕρωτησηΦοιτητή7_ΔΥΣ_Εξαμήνου7",
-      "type": "ΑλλαξεΜεΤύποΕρώτησης",
+      "text": "Ποιο από τα παρακάτω είναι ένα πρωτόκολλο εφαρμογών;",
+      "type": "MultipleChoice",
       "universityTestId": 19,
       "generalTestId": null
     },

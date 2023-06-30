@@ -1062,6 +1062,60 @@
       "text": "Αυτόματη οδήγηση αυτοκινήτων",
       "isCorrect": true,
       "questionId": 164
+    },
+    {
+      "multipleChoiceAnswerId": 176,
+      "text": "TCP ",
+      "isCorrect": false,
+      "questionId": 165
+    },
+    {
+      "multipleChoiceAnswerId": 177,
+      "text": "HTTP ",
+      "isCorrect": false,
+      "questionId": 165
+    },
+    {
+      "multipleChoiceAnswerId": 178,
+      "text": "OSPF ",
+      "isCorrect": true,
+      "questionId": 165
+    },
+    {
+      "multipleChoiceAnswerId": 179,
+      "text": "GSM ",
+      "isCorrect": true,
+      "questionId": 168
+    },
+    {
+      "multipleChoiceAnswerId": 180,
+      "text": "DSL ",
+      "isCorrect": false,
+      "questionId": 168
+    },
+    {
+      "multipleChoiceAnswerId": 181,
+      "text": "UDP ",
+      "isCorrect": false,
+      "questionId": 168
+    },
+    {
+      "multipleChoiceAnswerId": 182,
+      "text": "IP ",
+      "isCorrect": false,
+      "questionId": 171
+    },
+    {
+      "multipleChoiceAnswerId": 183,
+      "text": "FTP ",
+      "isCorrect": true,
+      "questionId": 171
+    },
+    {
+      "multipleChoiceAnswerId": 184,
+      "text": "ARP ",
+      "isCorrect": false,
+      "questionId": 171 
     }
   ]
 } 

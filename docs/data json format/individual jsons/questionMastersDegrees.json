@@ -1007,6 +1007,42 @@
     {
       "questionId": 164,
       "mastersDegreeId": 2
+    },
+    {
+      "questionId": 165,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 166,
+      "mastersDegreeId": 5
+    },
+    {
+      "questionId": 167,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 167,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 168,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 169,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 170,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 171,
+      "mastersDegreeId": 4
+    },
+    {
+      "questionId": 171,
+      "mastersDegreeId": 5
     }
   ]	
 }

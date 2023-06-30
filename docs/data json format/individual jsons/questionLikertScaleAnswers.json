@@ -187,6 +187,14 @@
 	{
 	  "questionId": 162,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 167,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 169,
+	  "likertScaleAnswer": 1
 	}
   ]
 }
