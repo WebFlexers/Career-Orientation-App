@@ -990,6 +990,78 @@
       "text": "Αυτόματη οδήγηση αυτοκινήτων ",
       "isCorrect": true,
       "questionId": 154
+    },
+    {
+      "multipleChoiceAnswerId": 166,
+      "text": "Παλινδρόμηση Δελτίου (Backpropagation)",
+      "isCorrect": true,
+      "questionId": 155
+    },
+    {
+      "multipleChoiceAnswerId": 167,
+      "text": "Ανάλυση Κυρίων Συνιστωσών (PCA)",
+      "isCorrect": false,
+      "questionId": 155
+    },
+    {
+      "multipleChoiceAnswerId": 168,
+      "text": "k-πλησιέστερος γείτονας (k-NN)",
+      "isCorrect": false,
+      "questionId": 155
+    },
+    {
+      "multipleChoiceAnswerId": 169,
+      "text": "Σύστημα συστάσεων",
+      "isCorrect": true,
+      "questionId": 158
+    },
+    {
+      "multipleChoiceAnswerId": 169,
+      "text": "Βάση δεδομένων SQL",
+      "isCorrect": false,
+      "questionId": 158
+    },
+    {
+      "multipleChoiceAnswerId": 169,
+      "text": "Σύστημα διαχείρισης αρχείων",
+      "isCorrect": false,
+      "questionId": 158
+    },
+    {
+      "multipleChoiceAnswerId": 170,
+      "text": "Συνελικτικά Νευρωνικά Δίκτυα (CNN)",
+      "isCorrect": false,
+      "questionId": 161
+    },
+    {
+      "multipleChoiceAnswerId": 171,
+      "text": "Δίκτυα LSTM (Long Short-Term Memory)",
+      "isCorrect": true,
+      "questionId": 161
+    },
+    {
+      "multipleChoiceAnswerId": 172,
+      "text": "k-πλησιέστεροι γείτονες (k-NN)",
+      "isCorrect": false,
+      "questionId": 161
+    },
+    {
+      "multipleChoiceAnswerId": 173,
+      "text": "Αναγνώριση Προτύπων",
+      "isCorrect": false,
+      "questionId": 164
+    },
+    {
+      "multipleChoiceAnswerId": 174,
+      "text": "Ανάλυση Βάσεων Δεδομένων",
+      "isCorrect": false,
+      "questionId": 164
+    },
+    {
+      "multipleChoiceAnswerId": 175,
+      "text": "Αυτόματη οδήγηση αυτοκινήτων",
+      "isCorrect": true,
+      "questionId": 164
     }
   ]
 } 

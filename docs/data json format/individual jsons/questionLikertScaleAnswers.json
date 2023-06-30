@@ -171,6 +171,22 @@
 	{
 	  "questionId": 152,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 157,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 159,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 160,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 162,
+	  "likertScaleAnswer": 1
 	}
   ]
 }
