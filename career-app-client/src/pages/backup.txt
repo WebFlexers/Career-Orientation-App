@@ -1,14 +1,21 @@
-if (semester < 4) {
-      if (!isRevision) {
-        semester = index;
-      } else {
-        revisionYear = index;
-      }
-    } else {
-      track = props.userData.track;
-      if (!isRevision) {
-        semester = index;
-      } else {
-        revisionYear = index;
-      }
+let reqObject = {
+      userId: session.user.userId,
+      universityTestId: universityTestId,
+      answers: answersObject,
+    };
+    try {
+      let reqInstance = axios.create({
+        headers: {
+          Authorization: `Bearer ${session.accessToken}`,
+        },
+      });
+
+      const url = ``;
+
+      const res = await reqInstance.get(url);
+      testData = res.data;
+    } catch (err) {
+      return { err };
+    } finally {
+      return { props: { testData } };
     }
