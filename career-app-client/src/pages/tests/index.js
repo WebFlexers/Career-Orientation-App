@@ -29,11 +29,17 @@ export default function Tests(props) {
   ];
 
   const interestedTests = [
-    { label: "Τεστ 1", path: "/tests/examino1" },
-    { label: "Τεστ 2", path: "/tests/examino2" },
+    { label: "Τεστ 1", index: 1 },
+    { label: "Τεστ 2", index: 2 },
   ];
 
   function handleTestClick(index, isRevision) {
+    if (role == "Αμύητος") {
+      const url = `/tests/${index}?generalTestId=${index}`;
+      router.push(url);
+      return;
+    }
+
     var tempTrack = "";
     var semester = "";
     var revisionYear = "";
@@ -113,7 +119,7 @@ export default function Tests(props) {
                     <div className={testsStyles["tests-item"]}>
                       <button
                         className="admin-btn"
-                        onClick={() => handleSemesterClick(1)}
+                        onClick={() => handleTestClick(test.index, false)}
                       >
                         {test.label}
                       </button>

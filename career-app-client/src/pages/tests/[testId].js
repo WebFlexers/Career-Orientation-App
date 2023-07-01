@@ -5,13 +5,16 @@ import { useSession, getSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import axios from "axios";
+import useSessionStorage from "@/hooks/useSessionStorage";
 
 export default function Test(props) {
   // Variables and consts
   const router = useRouter();
+  const role = useSessionStorage("role");
   const { data: session, status } = useSession();
   const { track, semester, revisionYear } = router.query;
-  const { isRevision, universityTestId, questions } = props.testData;
+  const { isRevision, universityTestId, questions, generalTestId } =
+    props.testData;
   const [successMsg, setSuccessMsg] = useState("");
 
   const preferenceAnswers = [
@@ -76,11 +79,21 @@ export default function Test(props) {
       }
     });
 
-    let reqObject = {
-      userId: session.user.userId,
-      universityTestId: universityTestId,
-      answers: answersObject,
-    };
+    let reqObject = {};
+    if (role == "Αμύητος") {
+      reqObject = {
+        userId: session.user.userId,
+        generalTestId: generalTestId,
+        answers: answersObject,
+      };
+    } else {
+      reqObject = {
+        userId: session.user.userId,
+        universityTestId: universityTestId,
+        answers: answersObject,
+      };
+    }
+
     console.log(reqObject);
     try {
       let reqInstance = axios.create({
@@ -89,7 +102,12 @@ export default function Test(props) {
         },
       });
 
-      const url = `https://localhost:7155/api/StudentTests`;
+      let url = "";
+      if (role == "Αμύητος") {
+        url = `https://localhost:7155/api/ProspectiveStudentTests`;
+      } else {
+        url = `https://localhost:7155/api/StudentTests`;
+      }
 
       const config = { "content-type": "application/json" };
 
@@ -99,7 +117,7 @@ export default function Test(props) {
         router.push("/tests");
       }
     } catch (err) {
-      console(err.response?.data?.title);
+      alert(err.response?.data.title);
       router.push("/tests");
     }
   }
@@ -147,7 +165,7 @@ export default function Test(props) {
                           className="mt-3 mb-3"
                         >
                           <div className={styles["question-header"]}>
-                            {question.text} ({question.questionId})
+                            {question.text}
                           </div>
                           <div className={styles["answers-box"]}>
                             {question.type == "MultipleChoice" ? (
@@ -249,6 +267,7 @@ export async function getServerSideProps(ctx) {
   const track = ctx.query.track;
   const semester = ctx.query.semester;
   const revisionYear = ctx.query.revisionYear;
+  const generalTestId = ctx.query.generalTestId;
 
   let testData = "";
   try {
@@ -258,7 +277,12 @@ export async function getServerSideProps(ctx) {
       },
     });
 
-    const url = `https://localhost:7155/api/StudentTests?Track=${track}&Semester=${semester}&RevisionYear=${revisionYear}`;
+    let url = "";
+    if (generalTestId == null || generalTestId == "") {
+      url = `https://localhost:7155/api/StudentTests?Track=${track}&Semester=${semester}&RevisionYear=${revisionYear}`;
+    } else {
+      url = `https://localhost:7155/api/ProspectiveStudentTests/generalTestId?generalTestId=${generalTestId}`;
+    }
 
     const res = await reqInstance.get(url);
     testData = res.data;
