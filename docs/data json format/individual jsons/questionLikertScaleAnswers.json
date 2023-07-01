@@ -203,6 +203,14 @@
 	{
 	  "questionId": 177,
 	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 180,
+	  "likertScaleAnswer": 1
+	},
+	{
+	  "questionId": 184,
+	  "likertScaleAnswer": 1
 	}
   ]
 }

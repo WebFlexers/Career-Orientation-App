@@ -1170,6 +1170,96 @@
       "text": "SNMP ",
       "isCorrect": false,
       "questionId": 178
+    },
+    {
+      "multipleChoiceAnswerId": 194,
+      "text": "GSM",
+      "isCorrect": true,
+      "questionId": 181
+    },
+    {
+      "multipleChoiceAnswerId": 195,
+      "text": "UDP",
+      "isCorrect": false,
+      "questionId": 181
+    },
+    {
+      "multipleChoiceAnswerId": 196,
+      "text": "UDP",
+      "isCorrect": false,
+      "questionId": 181
+    },
+    {
+      "multipleChoiceAnswerId": 197,
+      "text": "TCP Tahoe ",
+      "isCorrect": false,
+      "questionId": 182
+    },
+    {
+      "multipleChoiceAnswerId": 198,
+      "text": "TCP Reno ",
+      "isCorrect": false,
+      "questionId": 182
+    },
+    {
+      "multipleChoiceAnswerId": 199,
+      "text": "TCP Cubic ",
+      "isCorrect": true,
+      "questionId": 182
+    },
+    {
+      "multipleChoiceAnswerId": 200,
+      "text": "ICMP",
+      "isCorrect": true,
+      "questionId": 185
+    },
+    {
+      "multipleChoiceAnswerId": 201,
+      "text": "IMAP",
+      "isCorrect": false,
+      "questionId": 185
+    },
+    {
+      "multipleChoiceAnswerId": 202,
+      "text": "SNMP",
+      "isCorrect": false,
+      "questionId": 185
+    },
+    {
+      "multipleChoiceAnswerId": 203,
+      "text": "Κρυπτογράφηση δεδομένων",
+      "isCorrect": true,
+      "questionId": 186
+    },
+    {
+      "multipleChoiceAnswerId": 204,
+      "text": "Διαγραφή δεδομένων",
+      "isCorrect": false,
+      "questionId": 186
+    },
+    {
+      "multipleChoiceAnswerId": 205,
+      "text": "Αποφυγή της χρήσης δικτύων",
+      "isCorrect": false,
+      "questionId": 186
+    },
+    {
+      "multipleChoiceAnswerId": 206,
+      "text": "TCP",
+      "isCorrect": false,
+      "questionId": 187
+    },
+    {
+      "multipleChoiceAnswerId": 207,
+      "text": "HTTP",
+      "isCorrect": false,
+      "questionId": 187
+    },
+    {
+      "multipleChoiceAnswerId": 208,
+      "text": "OSPF",
+      "isCorrect": true,
+      "questionId": 187
     }
   ]
 } 
