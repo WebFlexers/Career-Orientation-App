@@ -1338,7 +1338,65 @@
       "text": "RISC",
       "isCorrect": false,
       "questionId": 195
+    },
+    {
+      "multipleChoiceAnswerId": 222,
+      "text": "Προγραμματισμός C++",
+      "isCorrect": false,
+      "questionId": 196
+    },
+    {
+      "multipleChoiceAnswerId": 222,
+      "text": "Απευθείας μετατροπή από VHDL (VHDL to Gate translation)",
+      "isCorrect": true,
+      "questionId": 196
+    },
+    {
+      "multipleChoiceAnswerId": 222,
+      "text": "Αρχιτεκτονική της Κατάνευσης",
+      "isCorrect": false,
+      "questionId": 196
+    },
+    {
+      "multipleChoiceAnswerId": 223,
+      "text": "Μονοπύρηνος Επεξεργαστής",
+      "isCorrect": false,
+      "questionId": 199
+    },
+    {
+      "multipleChoiceAnswerId": 224,
+      "text": "Πολυπύρηνος Επεξεργαστής",
+      "isCorrect": true,
+      "questionId": 199
+    },
+    {
+      "multipleChoiceAnswerId": 225,
+      "text": "Επεξεργαστής Χαμηλής Κατανάλωσης",
+      "isCorrect": false,
+      "questionId": 199
+    },
+    {
+      "multipleChoiceAnswerId": 226,
+      "text": "Προσομοίωση Καιρού",
+      "isCorrect": false,
+      "questionId": 202
     }
+    ,
+    {
+      "multipleChoiceAnswerId": 227,
+      "text": "Ανάλυση Δεδομένων",
+      "isCorrect": false,
+      "questionId": 202
+    }
+    ,
+    {
+      "multipleChoiceAnswerId": 228,
+      "text": "Ανάλυση Δεδομένων",
+      "isCorrect": true,
+      "questionId": 202
+    }
+
   ]
 } 
+
 

@@ -1278,7 +1278,43 @@
     },
     {
       "questionId": 195,
+      "professionId": 15
+    },
+    {
+      "questionId": 196,
       "professionId": 10
+    },
+    {
+      "questionId": 197,
+      "professionId": 9
+    },
+    {
+      "questionId": 198,
+      "professionId": 5
+    },
+    {
+      "questionId": 199,
+      "professionId": 5
+    },
+    {
+      "questionId": 199,
+      "professionId": 12
+    },
+    {
+      "questionId": 200,
+      "professionId": 8
+    },
+    {
+      "questionId": 200,
+      "professionId": 7
+    },
+    {
+      "questionId": 201,
+      "professionId": 13
+    },
+    {
+      "questionId": 202,
+      "professionId": 1
     }
   ]
 }
