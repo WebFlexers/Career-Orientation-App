@@ -1127,6 +1127,34 @@
     {
       "questionId": 188,
       "mastersDegreeId": 9
+    },
+    {
+      "questionId": 189,
+      "mastersDegreeId": 10
+    },
+    {
+      "questionId": 190,
+      "mastersDegreeId": 8
+    },
+    {
+      "questionId": 191,
+      "mastersDegreeId": 9
+    },
+    {
+      "questionId": 192,
+      "mastersDegreeId": 7
+    },
+    {
+      "questionId": 193,
+      "mastersDegreeId": 1
+    },
+    {
+      "questionId": 194,
+      "mastersDegreeId": 3
+    },
+    {
+      "questionId": 195,
+      "mastersDegreeId": 6 
     }
   ]	
 }

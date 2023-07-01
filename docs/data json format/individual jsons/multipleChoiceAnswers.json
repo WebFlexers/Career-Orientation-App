@@ -1284,6 +1284,61 @@
       "text": "Η 3-tier αρχιτεκτονική επιτρέπει μόνο μια σύνδεση στη φορά, ενώ η αρχιτεκτονική Πελάτη-Εξυπηρετητή επιτρέπει πολλαπλές συνδέσεις.",
       "isCorrect": false,
       "questionId": 16
+    },
+    {
+      "multipleChoiceAnswerId": 213,
+      "text": "Να διαχειρίζεται τα αρχεία",
+      "isCorrect": false,
+      "questionId": 189
+    },
+    {
+      "multipleChoiceAnswerId": 214,
+      "text": "Να διαχειρίζεται τις επεξεργασίες",
+      "isCorrect": false,
+      "questionId": 189
+    },
+    {
+      "multipleChoiceAnswerId": 215,
+      "text": "Να διαχειρίζεται τον χώρο της μνήμης ",
+      "isCorrect": true,
+      "questionId": 189
+    },
+    {
+      "multipleChoiceAnswerId": 216,
+      "text": "HTΕκ περιτροπής (Round-robin) TP",
+      "isCorrect": true,
+      "questionId": 192
+    },
+    {
+      "multipleChoiceAnswerId": 217,
+      "text": "Δυαδικό δέντρο",
+      "isCorrect": false,
+      "questionId": 192
+    },
+    {
+      "multipleChoiceAnswerId": 218,
+      "text": "Γράφημα",
+      "isCorrect": false,
+      "questionId": 192
+    },
+    {
+      "multipleChoiceAnswerId": 219,
+      "text": "MIMD",
+      "isCorrect": true,
+      "questionId": 195
+    },
+    {
+      "multipleChoiceAnswerId": 220,
+      "text": "HTTPSIMD",
+      "isCorrect": false,
+      "questionId": 195
+    },
+    {
+      "multipleChoiceAnswerId": 221,
+      "text": "RISC",
+      "isCorrect": false,
+      "questionId": 195
     }
   ]
 } 
+

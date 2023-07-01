@@ -1251,6 +1251,34 @@
     {
       "questionId": 188,
       "professionId": 8
+    },
+    {
+      "questionId": 189,
+      "professionId": 12
+    },
+    {
+      "questionId": 190,
+      "professionId": 5
+    },
+    {
+      "questionId": 191,
+      "professionId": 14
+    },
+    {
+      "questionId": 192,
+      "professionId": 15
+    },
+    {
+      "questionId": 193,
+      "professionId": 9
+    },
+    {
+      "questionId": 194,
+      "professionId": 4
+    },
+    {
+      "questionId": 195,
+      "professionId": 10
     }
   ]
 }
