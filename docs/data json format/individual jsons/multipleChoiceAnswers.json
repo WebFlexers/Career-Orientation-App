@@ -1394,9 +1394,97 @@
       "text": "Ανάλυση Δεδομένων",
       "isCorrect": true,
       "questionId": 202
+    },
+    {
+      "multipleChoiceAnswerId": 229,
+      "text": "Να διαχειρίζεται τα αρχεία",
+      "isCorrect": false,
+      "questionId": 203
+    },
+    {
+      "multipleChoiceAnswerId": 230,
+      "text": "Να διαχειρίζεται τις επεξεργασίες",
+      "isCorrect": false,
+      "questionId": 203
+    },
+    {
+      "multipleChoiceAnswerId": 231,
+      "text": "Να διαχειρίζεται τον χώρο της μνήμης",
+      "isCorrect": true,
+      "questionId": 203
+    },
+    {
+      "multipleChoiceAnswerId": 232,
+      "text": "Εκ περιτροπής (Round-robin)",
+      "isCorrect": true,
+      "questionId": 206
+    },
+    {
+      "multipleChoiceAnswerId": 233,
+      "text": "Δυαδικό δέντρο",
+      "isCorrect": false,
+      "questionId": 206
+    },
+    {
+      "multipleChoiceAnswerId": 234,
+      "text": "Γράφημα",
+      "isCorrect": false,
+      "questionId": 206
+    },
+    {
+      "multipleChoiceAnswerId": 235,
+      "text": "Προγραμματισμός C++",
+      "isCorrect": false,
+      "questionId": 208
+    },
+    {
+      "multipleChoiceAnswerId": 236,
+      "text": "Απευθείας μετατροπή από VHDL (VHDL to Gate translation)",
+      "isCorrect": false,
+      "questionId": 208
+    },
+    {
+      "multipleChoiceAnswerId": 237,
+      "text": "Αρχιτεκτονική της Κατάνευσης",
+      "isCorrect": false,
+      "questionId": 208
+    },
+    {
+      "multipleChoiceAnswerId": 238,
+      "text": "Μονοπύρηνος Επεξεργαστής",
+      "isCorrect": false,
+      "questionId": 211
+    },
+    {
+      "multipleChoiceAnswerId": 239,
+      "text": "Πολυπύρηνος Επεξεργαστής",
+      "isCorrect": true,
+      "questionId": 211
+    },
+    {
+      "multipleChoiceAnswerId": 240,
+      "text": "Επεξεργαστής Χαμηλής Κατανάλωσης",
+      "isCorrect": false,
+      "questionId": 211
+    },
+    {
+      "multipleChoiceAnswerId": 241,
+      "text": "Προσομοίωση Καιρού",
+      "isCorrect": false,
+      "questionId": 212
+    },
+    {
+      "multipleChoiceAnswerId": 242,
+      "text": "Ανάλυση Δεδομένων",
+      "isCorrect": false,
+      "questionId": 212
+    },
+    {
+      "multipleChoiceAnswerId": 243,
+      "text": "Όλα τα παραπάνω",
+      "isCorrect": true,
+      "questionId": 212
     }
-
   ]
 } 
-
 
