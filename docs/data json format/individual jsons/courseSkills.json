@@ -1,0 +1,868 @@
+﻿{
+  "courseSkills": [
+    {
+      "courseId": 1,
+      "skillId": 1
+    },
+    {
+      "courseId": 1,
+      "skillId": 2
+    },
+    {
+      "courseId": 1,
+      "skillId": 3
+    },
+    {
+      "courseId": 1,
+      "skillId": 4
+    },
+    {
+      "courseId": 1,
+      "skillId": 5
+    },
+    {
+      "courseId": 1,
+      "skillId": 6
+    },
+    {
+      "courseId": 1,
+      "skillId": 7
+    },
+    {
+      "courseId": 1,
+      "skillId": 8
+    },
+    {
+      "courseId": 1,
+      "skillId": 9
+    },
+    {
+      "courseId": 2,
+      "skillId": 10
+    },
+    {
+      "courseId": 2,
+      "skillId": 11
+    },
+    {
+      "courseId": 2,
+      "skillId": 12
+    },
+    {
+      "courseId": 2,
+      "skillId": 13
+    },
+    {
+      "courseId": 2,
+      "skillId": 5
+    },
+    {
+      "courseId": 2,
+      "skillId": 14
+    },
+    {
+      "courseId": 2,
+      "skillId": 15
+    },
+    {
+      "courseId": 2,
+      "skillId": 16
+    },
+    {
+      "courseId": 3,
+      "skillId": 17
+    },
+    {
+      "courseId": 3,
+      "skillId": 18
+    },
+    {
+      "courseId": 3,
+      "skillId": 19
+    },
+    {
+      "courseId": 3,
+      "skillId": 20
+    },
+    {
+      "courseId": 3,
+      "skillId": 21
+    },
+    {
+      "courseId": 3,
+      "skillId": 22
+    },
+    {
+      "courseId": 3,
+      "skillId": 23
+    },
+    {
+      "courseId": 3,
+      "skillId": 24
+    },
+    {
+      "courseId": 3,
+      "skillId": 25
+    },
+    {
+      "courseId": 3,
+      "skillId": 26
+    },
+    {
+      "courseId": 3,
+      "skillId": 27
+    },
+    {
+      "courseId": 3,
+      "skillId": 28
+    },
+    {
+      "courseId": 4,
+      "skillId": 29
+    },
+    {
+      "courseId": 4,
+      "skillId": 30
+    },
+    {
+      "courseId": 4,
+      "skillId": 31
+    },
+    {
+      "courseId": 4,
+      "skillId": 32
+    },
+    {
+      "courseId": 4,
+      "skillId": 21
+    },
+    {
+      "courseId": 4,
+      "skillId": 23
+    },
+    {
+      "courseId": 4,
+      "skillId": 15
+    },
+    {
+      "courseId": 4,
+      "skillId": 6
+    },
+    {
+      "courseId": 5,
+      "skillId": 45
+    },
+    {
+      "courseId": 5,
+      "skillId": 46
+    },
+    {
+      "courseId": 5,
+      "skillId": 47
+    },
+    {
+      "courseId": 5,
+      "skillId": 21
+    },
+    {
+      "courseId": 5,
+      "skillId": 37
+    },
+    {
+      "courseId": 5,
+      "skillId": 44
+    },
+    {
+      "courseId": 5,
+      "skillId": 9
+    },
+    {
+      "courseId": 6,
+      "skillId": 33
+    },
+    {
+      "courseId": 6,
+      "skillId": 34
+    },
+    {
+      "courseId": 6,
+      "skillId": 35
+    },
+    {
+      "courseId": 6,
+      "skillId": 36
+    },
+    {
+      "courseId": 6,
+      "skillId": 37
+    },
+    {
+      "courseId": 6,
+      "skillId": 7
+    },
+    {
+      "courseId": 6,
+      "skillId": 8
+    },
+    {
+      "courseId": 6,
+      "skillId": 9
+    },
+    {
+      "courseId": 7,
+      "skillId": 38
+    },
+    {
+      "courseId": 7,
+      "skillId": 39
+    },
+    {
+      "courseId": 7,
+      "skillId": 40
+    },
+    {
+      "courseId": 7,
+      "skillId": 41
+    },
+    {
+      "courseId": 7,
+      "skillId": 7
+    },
+    {
+      "courseId": 7,
+      "skillId": 8
+    },
+    {
+      "courseId": 7,
+      "skillId": 43
+    },
+    {
+      "courseId": 7,
+      "skillId": 9
+    },
+    {
+      "courseId": 7,
+      "skillId": 44
+    },
+    {
+      "courseId": 8,
+      "skillId": 48
+    },
+    {
+      "courseId": 8,
+      "skillId": 49
+    },
+    {
+      "courseId": 8,
+      "skillId": 50
+    },
+    {
+      "courseId": 8,
+      "skillId": 51
+    },
+    {
+      "courseId": 8,
+      "skillId": 41
+    },
+    {
+      "courseId": 8,
+      "skillId": 43
+    },
+    {
+      "courseId": 8,
+      "skillId": 7
+    },
+    {
+      "courseId": 8,
+      "skillId": 9
+    },
+    {
+      "courseId": 8,
+      "skillId": 42
+    },
+    {
+      "courseId": 9,
+      "skillId": 52
+    },
+    {
+      "courseId": 9,
+      "skillId": 53
+    },
+    {
+      "courseId": 9,
+      "skillId": 54
+    },
+    {
+      "courseId": 9,
+      "skillId": 55
+    },
+    {
+      "courseId": 9,
+      "skillId": 56
+    },
+    {
+      "courseId": 9,
+      "skillId": 41
+    },
+    {
+      "courseId": 9,
+      "skillId": 6
+    },
+    {
+      "courseId": 9,
+      "skillId": 57
+    },
+    {
+      "courseId": 9,
+      "skillId": 58
+    },
+    {
+      "courseId": 10,
+      "skillId": 59
+    },
+    {
+      "courseId": 10,
+      "skillId": 60
+    },
+    {
+      "courseId": 10,
+      "skillId": 61
+    },
+    {
+      "courseId": 10,
+      "skillId": 62
+    },
+    {
+      "courseId": 10,
+      "skillId": 41
+    },
+    {
+      "courseId": 10,
+      "skillId": 43
+    },
+    {
+      "courseId": 10,
+      "skillId": 6
+    },
+    {
+      "courseId": 10,
+      "skillId": 63
+    },
+    {
+      "courseId": 11,
+      "skillId": 64
+    },
+    {
+      "courseId": 11,
+      "skillId": 65
+    },
+    {
+      "courseId": 11,
+      "skillId": 66
+    },
+    {
+      "courseId": 11,
+      "skillId": 67
+    },
+    {
+      "courseId": 11,
+      "skillId": 68
+    },
+    {
+      "courseId": 11,
+      "skillId": 69
+    },
+    {
+      "courseId": 11,
+      "skillId": 71
+    },
+    {
+      "courseId": 11,
+      "skillId": 72
+    },
+    {
+      "courseId": 11,
+      "skillId": 8
+    },
+    {
+      "courseId": 12,
+      "skillId": 72
+    },
+    {
+      "courseId": 12,
+      "skillId": 73
+    },
+    {
+      "courseId": 12,
+      "skillId": 74
+    },
+    {
+      "courseId": 12,
+      "skillId": 75
+    },
+    {
+      "courseId": 12,
+      "skillId": 76
+    },
+    {
+      "courseId": 12,
+      "skillId": 77
+    },
+    {
+      "courseId": 12,
+      "skillId": 41
+    },
+    {
+      "courseId": 12,
+      "skillId": 43
+    },
+    {
+      "courseId": 12,
+      "skillId": 14
+    },
+    {
+      "courseId": 13,
+      "skillId": 78
+    },
+    {
+      "courseId": 13,
+      "skillId": 79
+    },
+    {
+      "courseId": 13,
+      "skillId": 80
+    },
+    {
+      "courseId": 13,
+      "skillId": 81
+    },
+    {
+      "courseId": 13,
+      "skillId": 41
+    },
+    {
+      "courseId": 13,
+      "skillId": 8
+    },
+    {
+      "courseId": 13,
+      "skillId": 9
+    },
+    {
+      "courseId": 14,
+      "skillId": 82
+    },
+    {
+      "courseId": 14,
+      "skillId": 83
+    },
+    {
+      "courseId": 14,
+      "skillId": 84
+    },
+    {
+      "courseId": 14,
+      "skillId": 85
+    },
+    {
+      "courseId": 14,
+      "skillId": 86
+    },
+    {
+      "courseId": 14,
+      "skillId": 87
+    },
+    {
+      "courseId": 14,
+      "skillId": 88
+    },
+    {
+      "courseId": 14,
+      "skillId": 89
+    },
+    {
+      "courseId": 14,
+      "skillId": 41
+    },
+    {
+      "courseId": 14,
+      "skillId": 43
+    },
+    {
+      "courseId": 14,
+      "skillId": 23
+    },
+    {
+      "courseId": 14,
+      "skillId": 77
+    },
+    {
+      "courseId": 14,
+      "skillId": 8
+    },
+    {
+      "courseId": 15,
+      "skillId": 90
+    },
+    {
+      "courseId": 15,
+      "skillId": 91
+    },
+    {
+      "courseId": 15,
+      "skillId": 92
+    },
+    {
+      "courseId": 15,
+      "skillId": 93
+    },
+    {
+      "courseId": 15,
+      "skillId": 94
+    },
+    {
+      "courseId": 15,
+      "skillId": 95
+    },
+    {
+      "courseId": 15,
+      "skillId": 96
+    },
+    {
+      "courseId": 15,
+      "skillId": 97
+    },
+    {
+      "courseId": 16,
+      "skillId": 98
+    },
+    {
+      "courseId": 16,
+      "skillId": 99
+    },
+    {
+      "courseId": 16,
+      "skillId": 100
+    },
+    {
+      "courseId": 16,
+      "skillId": 101
+    },
+    {
+      "courseId": 16,
+      "skillId": 102
+    },
+    {
+      "courseId": 16,
+      "skillId": 103
+    },
+    {
+      "courseId": 16,
+      "skillId": 41
+    },
+    {
+      "courseId": 16,
+      "skillId": 43
+    },
+    {
+      "courseId": 16,
+      "skillId": 8
+    },
+    {
+      "courseId": 17,
+      "skillId": 104
+    },
+    {
+      "courseId": 17,
+      "skillId": 105
+    },
+    {
+      "courseId": 17,
+      "skillId": 106
+    },
+    {
+      "courseId": 17,
+      "skillId": 107
+    },
+    {
+      "courseId": 17,
+      "skillId": 108
+    },
+    {
+      "courseId": 17,
+      "skillId": 23
+    },
+    {
+      "courseId": 17,
+      "skillId": 43
+    },
+    {
+      "courseId": 17,
+      "skillId": 77
+    },
+    {
+      "courseId": 17,
+      "skillId": 88
+    },
+    {
+      "courseId": 18,
+      "skillId": 109
+    },
+    {
+      "courseId": 18,
+      "skillId": 110
+    },
+    {
+      "courseId": 18,
+      "skillId": 111
+    },
+    {
+      "courseId": 18,
+      "skillId": 112
+    },
+    {
+      "courseId": 18,
+      "skillId": 113
+    },
+    {
+      "courseId": 18,
+      "skillId": 114
+    },
+    {
+      "courseId": 18,
+      "skillId": 41
+    },
+    {
+      "courseId": 18,
+      "skillId": 43
+    },
+    {
+      "courseId": 18,
+      "skillId": 23
+    },
+    {
+      "courseId": 18,
+      "skillId": 77
+    },
+    {
+      "courseId": 18,
+      "skillId": 9
+    },
+    {
+      "courseId": 19,
+      "skillId": 115
+    },
+    {
+      "courseId": 19,
+      "skillId": 116
+    },
+    {
+      "courseId": 19,
+      "skillId": 117
+    },
+    {
+      "courseId": 19,
+      "skillId": 43
+    },
+    {
+      "courseId": 19,
+      "skillId": 23
+    },
+    {
+      "courseId": 19,
+      "skillId": 42
+    },
+    {
+      "courseId": 19,
+      "skillId": 9
+    },
+    {
+      "courseId": 20,
+      "skillId": 118
+    },
+    {
+      "courseId": 20,
+      "skillId": 119
+    },
+    {
+      "courseId": 20,
+      "skillId": 120
+    },
+    {
+      "courseId": 20,
+      "skillId": 121
+    },
+    {
+      "courseId": 20,
+      "skillId": 122
+    },
+    {
+      "courseId": 20,
+      "skillId": 43
+    },
+    {
+      "courseId": 20,
+      "skillId": 41
+    },
+    {
+      "courseId": 20,
+      "skillId": 9
+    },
+    {
+      "courseId": 20,
+      "skillId": 8
+    },
+    {
+      "courseId": 21,
+      "skillId": 123
+    },
+    {
+      "courseId": 21,
+      "skillId": 124
+    },
+    {
+      "courseId": 21,
+      "skillId": 125
+    },
+    {
+      "courseId": 21,
+      "skillId": 126
+    },
+    {
+      "courseId": 21,
+      "skillId": 97
+    },
+    {
+      "courseId": 21,
+      "skillId": 23
+    },
+    {
+      "courseId": 21,
+      "skillId": 9
+    },
+    {
+      "courseId": 22,
+      "skillId": 127
+    },
+    {
+      "courseId": 22,
+      "skillId": 128
+    },
+    {
+      "courseId": 22,
+      "skillId": 129
+    },
+    {
+      "courseId": 22,
+      "skillId": 130
+    },
+    {
+      "courseId": 22,
+      "skillId": 41
+    },
+    {
+      "courseId": 23,
+      "skillId": 131
+    },
+    {
+      "courseId": 23,
+      "skillId": 132
+    },
+    {
+      "courseId": 23,
+      "skillId": 133
+    },
+    {
+      "courseId": 23,
+      "skillId": 108
+    },
+    {
+      "courseId": 23,
+      "skillId": 41
+    },
+    {
+      "courseId": 23,
+      "skillId": 43
+    },
+    {
+      "courseId": 23,
+      "skillId": 23
+    },
+    {
+      "courseId": 23,
+      "skillId": 24
+    },
+    {
+      "courseId": 24,
+      "skillId": 134
+    },
+    {
+      "courseId": 24,
+      "skillId": 135
+    },
+    {
+      "courseId": 24,
+      "skillId": 136
+    },
+    {
+      "courseId": 24,
+      "skillId": 137
+    },
+    {
+      "courseId": 24,
+      "skillId": 108
+    },
+    {
+      "courseId": 24,
+      "skillId": 8
+    },
+    {
+      "courseId": 24,
+      "skillId": 88
+    },
+    {
+      "courseId": 24,
+      "skillId": 41
+    },
+    {
+      "courseId": 24,
+      "skillId": 43
+    },
+    {
+      "courseId": 25,
+      "skillId": 138
+    },
+    {
+      "courseId": 25,
+      "skillId": 139
+    },
+    {
+      "courseId": 25,
+      "skillId": 140
+    },
+    {
+      "courseId": 25,
+      "skillId": 141
+    },
+    {
+      "courseId": 25,
+      "skillId": 43
+    },
+    {
+      "courseId": 25,
+      "skillId": 41
+    },
+    {
+      "courseId": 25,
+      "skillId": 9
+    },
+    {
+      "courseId": 25,
+      "skillId": 14
+    },
+    {
+      "courseId": 25,
+      "skillId": 42
+    }
+  ]
+}

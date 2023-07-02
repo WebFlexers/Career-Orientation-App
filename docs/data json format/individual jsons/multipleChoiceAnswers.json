@@ -1016,475 +1016,474 @@
       "questionId": 158
     },
     {
-      "multipleChoiceAnswerId": 169,
+      "multipleChoiceAnswerId": 170,
       "text": "Βάση δεδομένων SQL",
       "isCorrect": false,
       "questionId": 158
     },
     {
-      "multipleChoiceAnswerId": 169,
+      "multipleChoiceAnswerId": 171,
       "text": "Σύστημα διαχείρισης αρχείων",
       "isCorrect": false,
       "questionId": 158
     },
     {
-      "multipleChoiceAnswerId": 170,
+      "multipleChoiceAnswerId": 172,
       "text": "Συνελικτικά Νευρωνικά Δίκτυα (CNN)",
       "isCorrect": false,
       "questionId": 161
     },
     {
-      "multipleChoiceAnswerId": 171,
+      "multipleChoiceAnswerId": 173,
       "text": "Δίκτυα LSTM (Long Short-Term Memory)",
       "isCorrect": true,
       "questionId": 161
     },
     {
-      "multipleChoiceAnswerId": 172,
+      "multipleChoiceAnswerId": 174,
       "text": "k-πλησιέστεροι γείτονες (k-NN)",
       "isCorrect": false,
       "questionId": 161
     },
     {
-      "multipleChoiceAnswerId": 173,
+      "multipleChoiceAnswerId": 175,
       "text": "Αναγνώριση Προτύπων",
       "isCorrect": false,
       "questionId": 164
     },
     {
-      "multipleChoiceAnswerId": 174,
+      "multipleChoiceAnswerId": 176,
       "text": "Ανάλυση Βάσεων Δεδομένων",
       "isCorrect": false,
       "questionId": 164
     },
     {
-      "multipleChoiceAnswerId": 175,
+      "multipleChoiceAnswerId": 177,
       "text": "Αυτόματη οδήγηση αυτοκινήτων",
       "isCorrect": true,
       "questionId": 164
     },
     {
-      "multipleChoiceAnswerId": 176,
+      "multipleChoiceAnswerId": 178,
       "text": "TCP ",
       "isCorrect": false,
       "questionId": 165
     },
     {
-      "multipleChoiceAnswerId": 177,
+      "multipleChoiceAnswerId": 179,
       "text": "HTTP ",
       "isCorrect": false,
       "questionId": 165
     },
     {
-      "multipleChoiceAnswerId": 178,
+      "multipleChoiceAnswerId": 180,
       "text": "OSPF ",
       "isCorrect": true,
       "questionId": 165
     },
     {
-      "multipleChoiceAnswerId": 179,
+      "multipleChoiceAnswerId": 181,
       "text": "GSM ",
       "isCorrect": true,
       "questionId": 168
     },
     {
-      "multipleChoiceAnswerId": 180,
+      "multipleChoiceAnswerId": 182,
       "text": "DSL ",
       "isCorrect": false,
       "questionId": 168
     },
     {
-      "multipleChoiceAnswerId": 181,
+      "multipleChoiceAnswerId": 183,
       "text": "UDP ",
       "isCorrect": false,
       "questionId": 168
     },
     {
-      "multipleChoiceAnswerId": 182,
+      "multipleChoiceAnswerId": 184,
       "text": "IP ",
       "isCorrect": false,
       "questionId": 171
     },
     {
-      "multipleChoiceAnswerId": 183,
+      "multipleChoiceAnswerId": 185,
       "text": "FTP ",
       "isCorrect": true,
       "questionId": 171
     },
     {
-      "multipleChoiceAnswerId": 184,
+      "multipleChoiceAnswerId": 186,
       "text": "ARP ",
       "isCorrect": false,
       "questionId": 171 
     },
     {
-      "multipleChoiceAnswerId": 185,
+      "multipleChoiceAnswerId": 187,
       "text": "Κρυπτογράφηση δεδομένων",
       "isCorrect": true,
       "questionId": 172
     },
     {
-      "multipleChoiceAnswerId": 186,
+      "multipleChoiceAnswerId": 188,
       "text": "Διαγραφή δεδομένων",
       "isCorrect": false,
       "questionId": 172
     },
     {
-      "multipleChoiceAnswerId": 187,
+      "multipleChoiceAnswerId": 189,
       "text": "Αποφυγή της χρήσης δικτύων",
       "isCorrect": false,
       "questionId": 172
     },
     {
-      "multipleChoiceAnswerId": 188,
+      "multipleChoiceAnswerId": 190,
       "text": "TCP Tahoe  ",
       "isCorrect": false,
       "questionId": 175 
     },
     {
-      "multipleChoiceAnswerId": 189,
+      "multipleChoiceAnswerId": 191,
       "text": "TCP Reno ",
       "isCorrect": false,
       "questionId": 175 
     },
     {
-      "multipleChoiceAnswerId": 190,
+      "multipleChoiceAnswerId": 192,
       "text": "TCP Cubic ",
       "isCorrect": true,
       "questionId": 175 
     },
     {
-      "multipleChoiceAnswerId": 191,
+      "multipleChoiceAnswerId": 193,
       "text": "ICMP ",
       "isCorrect": true,
       "questionId": 178
     },
     {
-      "multipleChoiceAnswerId": 192,
+      "multipleChoiceAnswerId": 194,
       "text": "IMAP ",
       "isCorrect": false,
       "questionId": 178
     },
     {
-      "multipleChoiceAnswerId": 193,
+      "multipleChoiceAnswerId": 195,
       "text": "SNMP ",
       "isCorrect": false,
       "questionId": 178
     },
     {
-      "multipleChoiceAnswerId": 194,
+      "multipleChoiceAnswerId": 196,
       "text": "GSM",
       "isCorrect": true,
       "questionId": 181
     },
     {
-      "multipleChoiceAnswerId": 195,
-      "text": "UDP",
-      "isCorrect": false,
-      "questionId": 181
-    },
-    {
-      "multipleChoiceAnswerId": 196,
-      "text": "UDP",
-      "isCorrect": false,
-      "questionId": 181
-    },
-    {
       "multipleChoiceAnswerId": 197,
+      "text": "UDP",
+      "isCorrect": false,
+      "questionId": 181
+    },
+    {
+      "multipleChoiceAnswerId": 198,
+      "text": "UDP",
+      "isCorrect": false,
+      "questionId": 181
+    },
+    {
+      "multipleChoiceAnswerId": 199,
       "text": "TCP Tahoe ",
       "isCorrect": false,
       "questionId": 182
     },
     {
-      "multipleChoiceAnswerId": 198,
+      "multipleChoiceAnswerId": 200,
       "text": "TCP Reno ",
       "isCorrect": false,
       "questionId": 182
     },
     {
-      "multipleChoiceAnswerId": 199,
+      "multipleChoiceAnswerId": 201,
       "text": "TCP Cubic ",
       "isCorrect": true,
       "questionId": 182
     },
     {
-      "multipleChoiceAnswerId": 200,
+      "multipleChoiceAnswerId": 202,
       "text": "ICMP",
       "isCorrect": true,
       "questionId": 185
     },
     {
-      "multipleChoiceAnswerId": 201,
+      "multipleChoiceAnswerId": 203,
       "text": "IMAP",
       "isCorrect": false,
       "questionId": 185
     },
     {
-      "multipleChoiceAnswerId": 202,
+      "multipleChoiceAnswerId": 204,
       "text": "SNMP",
       "isCorrect": false,
       "questionId": 185
     },
     {
-      "multipleChoiceAnswerId": 203,
+      "multipleChoiceAnswerId": 205,
       "text": "Κρυπτογράφηση δεδομένων",
       "isCorrect": true,
       "questionId": 186
     },
     {
-      "multipleChoiceAnswerId": 204,
+      "multipleChoiceAnswerId": 206,
       "text": "Διαγραφή δεδομένων",
       "isCorrect": false,
       "questionId": 186
     },
     {
-      "multipleChoiceAnswerId": 205,
+      "multipleChoiceAnswerId": 207,
       "text": "Αποφυγή της χρήσης δικτύων",
       "isCorrect": false,
       "questionId": 186
     },
     {
-      "multipleChoiceAnswerId": 206,
+      "multipleChoiceAnswerId": 208,
       "text": "TCP",
       "isCorrect": false,
       "questionId": 187
     },
     {
-      "multipleChoiceAnswerId": 207,
+      "multipleChoiceAnswerId": 209,
       "text": "HTTP",
       "isCorrect": false,
       "questionId": 187
     },
     {
-      "multipleChoiceAnswerId": 208,
+      "multipleChoiceAnswerId": 210,
       "text": "OSPF",
       "isCorrect": true,
       "questionId": 187
     },
     {
-      "multipleChoiceAnswerId": 209,
+      "multipleChoiceAnswerId": 211,
       "text": "Η αρχιτεκτονική Πελάτη-Εξυπηρετητή επιτρέπει την απομακρυσμένη πρόσβαση σε πόρους, ενώ η 3-tier δεν το επιτρέπει.",
       "isCorrect": false,
       "questionId": 16
     },
     {
-      "multipleChoiceAnswerId": 210,
+      "multipleChoiceAnswerId": 212,
       "text": "Η αρχιτεκτονική Πελάτη-Εξυπηρετητή είναι πιο ασφαλής από την 3-tier.",
       "isCorrect": false,
       "questionId": 16
     },
     {
-      "multipleChoiceAnswerId": 211,
+      "multipleChoiceAnswerId": 213,
       "text": "Η 3-tier αρχιτεκτονική διαχωρίζει την εφαρμογή σε τρία στάδια (παρουσίαση, λογική επεξεργασία, αποθήκευση δεδομένων) για να επιτρέψει πιο ευέλικτο και ευκολότερα διαχειρίσιμο σχεδιασμό.",
       "isCorrect": true,
       "questionId": 16
     },
     {
-      "multipleChoiceAnswerId": 212,
+      "multipleChoiceAnswerId": 214,
       "text": "Η 3-tier αρχιτεκτονική επιτρέπει μόνο μια σύνδεση στη φορά, ενώ η αρχιτεκτονική Πελάτη-Εξυπηρετητή επιτρέπει πολλαπλές συνδέσεις.",
       "isCorrect": false,
       "questionId": 16
     },
     {
-      "multipleChoiceAnswerId": 213,
+      "multipleChoiceAnswerId": 215,
       "text": "Να διαχειρίζεται τα αρχεία",
       "isCorrect": false,
       "questionId": 189
     },
     {
-      "multipleChoiceAnswerId": 214,
+      "multipleChoiceAnswerId": 216,
       "text": "Να διαχειρίζεται τις επεξεργασίες",
       "isCorrect": false,
       "questionId": 189
     },
     {
-      "multipleChoiceAnswerId": 215,
+      "multipleChoiceAnswerId": 217,
       "text": "Να διαχειρίζεται τον χώρο της μνήμης ",
       "isCorrect": true,
       "questionId": 189
     },
     {
-      "multipleChoiceAnswerId": 216,
+      "multipleChoiceAnswerId": 218,
       "text": "HTΕκ περιτροπής (Round-robin) TP",
       "isCorrect": true,
       "questionId": 192
     },
     {
-      "multipleChoiceAnswerId": 217,
+      "multipleChoiceAnswerId": 219,
       "text": "Δυαδικό δέντρο",
       "isCorrect": false,
       "questionId": 192
     },
     {
-      "multipleChoiceAnswerId": 218,
+      "multipleChoiceAnswerId": 220,
       "text": "Γράφημα",
       "isCorrect": false,
       "questionId": 192
     },
     {
-      "multipleChoiceAnswerId": 219,
+      "multipleChoiceAnswerId": 221,
       "text": "MIMD",
       "isCorrect": true,
       "questionId": 195
     },
     {
-      "multipleChoiceAnswerId": 220,
+      "multipleChoiceAnswerId": 222,
       "text": "HTTPSIMD",
       "isCorrect": false,
       "questionId": 195
     },
     {
-      "multipleChoiceAnswerId": 221,
+      "multipleChoiceAnswerId": 223,
       "text": "RISC",
       "isCorrect": false,
       "questionId": 195
     },
     {
-      "multipleChoiceAnswerId": 222,
+      "multipleChoiceAnswerId": 224,
       "text": "Προγραμματισμός C++",
       "isCorrect": false,
       "questionId": 196
     },
     {
-      "multipleChoiceAnswerId": 222,
+      "multipleChoiceAnswerId": 225,
       "text": "Απευθείας μετατροπή από VHDL (VHDL to Gate translation)",
       "isCorrect": true,
       "questionId": 196
     },
     {
-      "multipleChoiceAnswerId": 222,
+      "multipleChoiceAnswerId": 226,
       "text": "Αρχιτεκτονική της Κατάνευσης",
       "isCorrect": false,
       "questionId": 196
     },
     {
-      "multipleChoiceAnswerId": 223,
+      "multipleChoiceAnswerId": 227,
       "text": "Μονοπύρηνος Επεξεργαστής",
       "isCorrect": false,
       "questionId": 199
     },
     {
-      "multipleChoiceAnswerId": 224,
+      "multipleChoiceAnswerId": 228,
       "text": "Πολυπύρηνος Επεξεργαστής",
       "isCorrect": true,
       "questionId": 199
     },
     {
-      "multipleChoiceAnswerId": 225,
+      "multipleChoiceAnswerId": 229,
       "text": "Επεξεργαστής Χαμηλής Κατανάλωσης",
       "isCorrect": false,
       "questionId": 199
     },
     {
-      "multipleChoiceAnswerId": 226,
+      "multipleChoiceAnswerId": 230,
       "text": "Προσομοίωση Καιρού",
       "isCorrect": false,
       "questionId": 202
     }
     ,
     {
-      "multipleChoiceAnswerId": 227,
+      "multipleChoiceAnswerId": 231,
       "text": "Ανάλυση Δεδομένων",
       "isCorrect": false,
       "questionId": 202
     }
     ,
     {
-      "multipleChoiceAnswerId": 228,
+      "multipleChoiceAnswerId": 232,
       "text": "Ανάλυση Δεδομένων",
       "isCorrect": true,
       "questionId": 202
     },
     {
-      "multipleChoiceAnswerId": 229,
+      "multipleChoiceAnswerId": 233,
       "text": "Να διαχειρίζεται τα αρχεία",
       "isCorrect": false,
       "questionId": 203
     },
     {
-      "multipleChoiceAnswerId": 230,
+      "multipleChoiceAnswerId": 234,
       "text": "Να διαχειρίζεται τις επεξεργασίες",
       "isCorrect": false,
       "questionId": 203
     },
     {
-      "multipleChoiceAnswerId": 231,
+      "multipleChoiceAnswerId": 235,
       "text": "Να διαχειρίζεται τον χώρο της μνήμης",
       "isCorrect": true,
       "questionId": 203
     },
     {
-      "multipleChoiceAnswerId": 232,
+      "multipleChoiceAnswerId": 236,
       "text": "Εκ περιτροπής (Round-robin)",
       "isCorrect": true,
       "questionId": 206
     },
     {
-      "multipleChoiceAnswerId": 233,
+      "multipleChoiceAnswerId": 237,
       "text": "Δυαδικό δέντρο",
       "isCorrect": false,
       "questionId": 206
     },
     {
-      "multipleChoiceAnswerId": 234,
+      "multipleChoiceAnswerId": 238,
       "text": "Γράφημα",
       "isCorrect": false,
       "questionId": 206
     },
     {
-      "multipleChoiceAnswerId": 235,
+      "multipleChoiceAnswerId": 239,
       "text": "Προγραμματισμός C++",
       "isCorrect": false,
       "questionId": 208
     },
     {
-      "multipleChoiceAnswerId": 236,
+      "multipleChoiceAnswerId": 240,
       "text": "Απευθείας μετατροπή από VHDL (VHDL to Gate translation)",
       "isCorrect": false,
       "questionId": 208
     },
     {
-      "multipleChoiceAnswerId": 237,
+      "multipleChoiceAnswerId": 241,
       "text": "Αρχιτεκτονική της Κατάνευσης",
       "isCorrect": false,
       "questionId": 208
     },
     {
-      "multipleChoiceAnswerId": 238,
+      "multipleChoiceAnswerId": 242,
       "text": "Μονοπύρηνος Επεξεργαστής",
       "isCorrect": false,
       "questionId": 211
     },
     {
-      "multipleChoiceAnswerId": 239,
+      "multipleChoiceAnswerId": 243,
       "text": "Πολυπύρηνος Επεξεργαστής",
       "isCorrect": true,
       "questionId": 211
     },
     {
-      "multipleChoiceAnswerId": 240,
+      "multipleChoiceAnswerId": 244,
       "text": "Επεξεργαστής Χαμηλής Κατανάλωσης",
       "isCorrect": false,
       "questionId": 211
     },
     {
-      "multipleChoiceAnswerId": 241,
+      "multipleChoiceAnswerId": 245,
       "text": "Προσομοίωση Καιρού",
       "isCorrect": false,
       "questionId": 212
     },
     {
-      "multipleChoiceAnswerId": 242,
+      "multipleChoiceAnswerId": 246,
       "text": "Ανάλυση Δεδομένων",
       "isCorrect": false,
       "questionId": 212
     },
     {
-      "multipleChoiceAnswerId": 243,
+      "multipleChoiceAnswerId": 247,
       "text": "Όλα τα παραπάνω",
       "isCorrect": true,
       "questionId": 212
     }
   ]
-} 
-
+}

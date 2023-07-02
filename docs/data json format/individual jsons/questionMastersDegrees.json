@@ -66,10 +66,6 @@
     },
     {
       "questionId": 29,
-      "mastersDegreeId": 4
-    },    
-    {
-      "questionId": 29,
       "mastersDegreeId": 3
     },
     {
@@ -143,10 +139,6 @@
     {
       "questionId": 37,
       "mastersDegreeId": 2
-    },
-    {
-      "questionId": 38,
-      "mastersDegreeId": 4
     },
     {
       "questionId": 38,
@@ -1236,5 +1228,5 @@
       "questionId": 212,
       "mastersDegreeId": 2
     }
-  ]	
+  ]
 }

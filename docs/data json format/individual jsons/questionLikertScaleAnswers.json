@@ -1,316 +1,308 @@
 {
   "questionLikertScaleAnswers": [
-    {
-	  "questionId": 1,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 2,
-	  "likertScaleAnswerId": 2
-	},
-	{
-	  "questionId": 3,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 23,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 26,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 30,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 33,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 37,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 39,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 42,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 47,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 50,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 54,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 57,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 59,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 66,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 68,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 71,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 73,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 78,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 80,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 83,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 85,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 88,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 90,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 95,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 98,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 102,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 104,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 109,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 112,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 114,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 119,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 121,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 126,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 129,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 133,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 135,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 136,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 143,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 145,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 150,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 152,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 157,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 159,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 160,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 162,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 167,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 169,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 174,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 177,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 180,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 184,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 1,
-	  "likertScaleAnswer": 2
-	},
-	{
-	  "questionId": 2,
-	  "likertScaleAnswer": 3
-	},
-	{
-	  "questionId": 3,
-	  "likertScaleAnswer": 3
-	},
-	{
-	  "questionId": 4,
-	  "likertScaleAnswer": 3
-	},
-	{
-	  "questionId": 5,
-	  "likertScaleAnswer": 4
-	},
-	{
-	  "questionId": 6,
-	  "likertScaleAnswer": 5
-	},
-	{
-	  "questionId": 7,
-	  "likertScaleAnswer": 6
-	},
-	{
-	  "questionId": 8,
-	  "likertScaleAnswer": 7
-	},
-	{
-	  "questionId": 9,
-	  "likertScaleAnswer": 8
-	},
-	{
-	  "questionId": 10,
-	  "likertScaleAnswer": 9
-	},
-	{
-	  "questionId": 11,
-	  "likertScaleAnswer": 3
-	},
-	{
-	  "questionId": 12,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 13,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 14,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 15,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 17,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 18,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 19,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 20,
-	  "likertScaleAnswer": 3
-	},
-	{
-	  "questionId": 191,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 193,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 198,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 201,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 205,
-	  "likertScaleAnswer": 1
-	},
-	{
-	  "questionId": 209,
-	  "likertScaleAnswer": 1
-	}
+	 {
+	 "questionId": 23,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 26,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 30,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 33,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 37,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 39,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 42,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 47,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 50,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 54,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 57,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 59,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 62,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 66,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 68,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 71,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 73,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 78,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 80,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 83,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 85,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 88,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 90,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 95,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 98,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 102,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 104,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 109,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 112,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 114,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 119,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 121,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 126,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 129,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 133,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 135,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 136,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 143,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 145,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 150,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 152,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 157,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 159,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 160,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 162,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 167,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 169,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 174,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 177,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 180,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 184,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 1,
+	 "likertScaleAnswersId": 2
+	 },
+	 {
+     "questionId": 2,
+     "likertScaleAnswersId": 3
+	 },
+	 {
+	 "questionId": 3,
+	 "likertScaleAnswersId": 3
+	 },
+	 {
+	 "questionId": 4,
+	 "likertScaleAnswersId": 3
+	 },
+	 {
+	 "questionId": 5,
+	 "likertScaleAnswersId": 4
+	 },
+	 {
+	 "questionId": 6,
+	 "likertScaleAnswersId": 5
+	 },
+	 {
+	 "questionId": 7,
+	 "likertScaleAnswersId": 6
+	 },
+	 {
+	 "questionId": 8,
+	 "likertScaleAnswersId": 7
+	 },
+	 {
+	 "questionId": 9,
+	 "likertScaleAnswersId": 8
+	 },
+	 {
+	 "questionId": 10,
+	 "likertScaleAnswersId": 9
+	 },
+	 {
+	 "questionId": 11,
+	 "likertScaleAnswersId": 3
+	 },
+	 {
+	 "questionId": 12,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 13,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 14,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 15,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 17,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 18,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 19,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 20,
+	 "likertScaleAnswersId": 3
+	 },
+	 {
+	 "questionId": 191,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 193,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 198,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 201,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 205,
+	 "likertScaleAnswersId": 1
+	 },
+	 {
+	 "questionId": 209,
+	 "likertScaleAnswersId": 1
+	 }
   ]
 }

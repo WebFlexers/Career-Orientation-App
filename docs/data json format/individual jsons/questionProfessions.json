@@ -1,14 +1,6 @@
 {
   "questionProfessions": [
     {
-      "questionId": 1,
-      "professionId": 1
-    },
-    {
-      "questionId": 2,
-      "professionId": 2
-    },
-    {
       "questionId": 21,
       "professionId": 4
     },
@@ -146,10 +138,6 @@
     },
     {
       "questionId": 33,
-      "professionId": 10
-    },
-    {
-      "questionId": 33,
       "professionId": 3
     },
     {
@@ -202,10 +190,6 @@
     },
     {
       "questionId": 38,
-      "professionId": 14
-    },
-    {
-      "questionId": 38,
       "professionId": 7
     },
     {
@@ -227,10 +211,6 @@
     {
       "questionId": 39,
       "professionId": 8
-    },
-    {
-      "questionId": 39,
-      "professionId": 11
     },
     {
       "questionId": 40,
@@ -255,11 +235,7 @@
     {
       "questionId": 41,
       "professionId": 6
-    },  
-    {
-      "questionId": 42,
-      "professionId": 1
-    },  
+    },
     {
       "questionId": 42,
       "professionId": 10

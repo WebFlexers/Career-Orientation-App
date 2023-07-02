@@ -18,7 +18,10 @@
 	{
       "LikertScaleAnswerId": 3,
       "Option1": "NAI",
-      "Option2": "OXI"
+      "Option2": "OXI",
+      "Option3": "",
+      "Option4": "",
+      "Option5": ""
     },
 	{
       "LikertScaleAnswerId": 4,
@@ -67,13 +70,5 @@
       "Option3": "Απαιτούν ηθικούς κανόνες για την αποφυγή ανισότητας και διάκρισης",
       "Option4": "Αναγκαία για εξελίξεις σε τεχνολογία και αυτοματισμούς",
       "Option5": "Τη θεωρώ πολύ σημαντική και θέλω να είμαι μέρος αυτής της εξέλιξης"
-    },
-    {
-      "LikertScaleAnswerId": 10,
-      "Option1": "",
-      "Option2": "",
-      "Option3": "",
-      "Option4": "",
-      "Option5": ""
     }
 ]}

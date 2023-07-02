@@ -72,7 +72,7 @@
     },
     {
       "universityTestId": 11,
-      "semester": 5,
+      "semester": 6,
       "year": 3,
       "IsRevision": false,
 	  "trackId": 2
@@ -167,6 +167,6 @@
       "year": 4,
       "IsRevision": true,
 	  "trackId": 3
-    },
+    }
   ]
 }
