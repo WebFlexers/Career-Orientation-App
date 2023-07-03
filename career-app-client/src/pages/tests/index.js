@@ -1,11 +1,12 @@
 import lessonStyles from "@/styles/lessons.module.css";
 import testsStyles from "@/styles/tests.module.css";
 import { Container } from "react-bootstrap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AdminLayout from "@/components/admin.layout";
 import useSessionStorage from "@/hooks/useSessionStorage";
 import { getSession } from "next-auth/react";
+import axios from "axios";
 
 export default function Tests(props) {
   const router = useRouter();
@@ -28,12 +29,17 @@ export default function Tests(props) {
     { label: "Επαναληπτικό", isRevision: true, index: 4 },
   ];
 
-  const interestedTests = [
-    { label: "Τεστ 1", index: 1 },
-    { label: "Τεστ 2", index: 2 },
+  var interestedTests = [
+    { label: "Τεστ 1", index: 1, isCompleted: false },
+    { label: "Τεστ 2", index: 2, isCompleted: false },
   ];
 
-  function handleTestClick(index, isRevision) {
+  function handleTestClick(index, isRevision, isCompleted) {
+    if (isCompleted) {
+      alert("Έχετε ήδη το ολοκληρώσει το συγκεκριμένο τεστ!");
+      return;
+    }
+
     if (role == "Αμύητος") {
       const url = `/tests/${index}?generalTestId=${index}`;
       router.push(url);
@@ -98,7 +104,7 @@ export default function Tests(props) {
                       <button
                         className="admin-btn"
                         onClick={() =>
-                          handleTestClick(test.index, test.isRevision)
+                          handleTestClick(test.index, test.isRevision, false)
                         }
                       >
                         {test.label}
@@ -119,7 +125,14 @@ export default function Tests(props) {
                     <div className={testsStyles["tests-item"]}>
                       <button
                         className="admin-btn"
-                        onClick={() => handleTestClick(test.index, false)}
+                        onClick={() =>
+                          handleTestClick(test.index, false, test.isCompleted)
+                        }
+                        style={
+                          test.isCompleted
+                            ? { backgroundColor: "green", color: "white" }
+                            : null
+                        }
                       >
                         {test.label}
                       </button>
@@ -145,6 +158,7 @@ export async function getServerSideProps(ctx) {
   if (!session) return null;
 
   let userData = "";
+  let sessionToken = "";
   try {
     let reqInstance = axios.create({
       headers: {
@@ -156,9 +170,10 @@ export async function getServerSideProps(ctx) {
 
     const res = await reqInstance.get(url);
     userData = res.data;
+    sessionToken = session.accessToken;
   } catch (err) {
     return { err };
   } finally {
-    return { props: { userData } };
+    return { props: { userData, sessionToken } };
   }
 }

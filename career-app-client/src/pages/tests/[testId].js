@@ -39,15 +39,18 @@ export default function Test(props) {
     // Only at multiple choice questions the pairs are of the form [QuestionType-QuestionId, QuestionId-AnswerValue]
     // because radio fields can only work with strings
     // e.g. ["MultipleChoice-12":"12-3"] or ["TrueFalse-23":"true"]
-    var myObj = Object.keys(values).map((key) => [key, values[key]]);
+    var formAnswersObject = Object.keys(values).map((key) => [
+      key,
+      values[key],
+    ]);
 
-    if (myObj.length != questions.length) {
+    if (formAnswersObject.length != questions.length) {
       alert("Πρέπει να απαντήσετε σε όλες τις ερωτήσεις!");
       return;
     }
 
     // Create the answers object based on the array of [] pairs created before
-    let answersObject = myObj.map(function (answer) {
+    let reqAnswersObject = formAnswersObject.map(function (answer) {
       // Split the QuestionType-QuestionId to an array where the index 0 is the question type and the index 1 is the question id
       let splittedAnswerName = answer[0].split("-");
 
@@ -84,13 +87,13 @@ export default function Test(props) {
       reqObject = {
         userId: session.user.userId,
         generalTestId: generalTestId,
-        answers: answersObject,
+        answers: reqAnswersObject,
       };
     } else {
       reqObject = {
         userId: session.user.userId,
         universityTestId: universityTestId,
-        answers: answersObject,
+        answers: reqAnswersObject,
       };
     }
 
@@ -208,7 +211,8 @@ export default function Test(props) {
                                 })}
                               </>
                             ) : null}
-                            {question.type == "LikertScale" ? (
+                            {question.type == "LikertScale" &&
+                            role != "Αμύητος" ? (
                               <>
                                 {preferenceAnswers.map((answer) => {
                                   return (
@@ -227,7 +231,87 @@ export default function Test(props) {
                                   );
                                 })}
                               </>
-                            ) : null}
+                            ) : (
+                              <>
+                                {question.answer1 != null ? (
+                                  <>
+                                    <label>
+                                      <Field
+                                        type="radio"
+                                        name={`LikertScale-${question.questionId}`}
+                                        value={"1"}
+                                        className="me-2"
+                                      />
+                                      {question.answer1}
+                                    </label>
+                                    <br />
+                                  </>
+                                ) : null}
+
+                                {question.answer2 != null ? (
+                                  <>
+                                    <label>
+                                      <Field
+                                        type="radio"
+                                        name={`LikertScale-${question.questionId}`}
+                                        value={"2"}
+                                        className="me-2"
+                                      />
+                                      {question.answer2}
+                                    </label>
+                                    <br />
+                                  </>
+                                ) : null}
+
+                                {question.answer3 != null &&
+                                question.answer3 != "" ? (
+                                  <>
+                                    <label>
+                                      <Field
+                                        type="radio"
+                                        name={`LikertScale-${question.questionId}`}
+                                        value={"3"}
+                                        className="me-2"
+                                      />
+                                      {question.answer3}
+                                    </label>
+                                    <br />
+                                  </>
+                                ) : null}
+
+                                {question.answer4 != null &&
+                                question.answer4 != "" ? (
+                                  <>
+                                    <label>
+                                      <Field
+                                        type="radio"
+                                        name={`LikertScale-${question.questionId}`}
+                                        value={"4"}
+                                        className="me-2"
+                                      />
+                                      {question.answer4}
+                                    </label>
+                                    <br />
+                                  </>
+                                ) : null}
+
+                                {question.answer5 != null &&
+                                question.answer5 != "" ? (
+                                  <>
+                                    <label>
+                                      <Field
+                                        type="radio"
+                                        name={`LikertScale-${question.questionId}`}
+                                        value={"5"}
+                                        className="me-2"
+                                      />
+                                      {question.answer5}
+                                    </label>
+                                    <br />
+                                  </>
+                                ) : null}
+                              </>
+                            )}
                           </div>
                         </div>
                       </li>

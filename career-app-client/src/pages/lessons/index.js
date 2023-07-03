@@ -9,6 +9,7 @@ import useSessionStorage from "@/hooks/useSessionStorage";
 import { useSession } from "next-auth/react";
 
 export default function Lessons(props) {
+  const { data: session } = useSession();
   const role = useSessionStorage("role");
   const [courses, setCourses] = useState([]);
   const [selectedSemester, setSelectedSemester] = useState(0);
@@ -40,7 +41,29 @@ export default function Lessons(props) {
 
     setSelectedSemester(semester_index);
     setCourses(tempCourses);
+    incrementAcessStatistic(semester_index);
   };
+
+  async function incrementAcessStatistic(semester_index) {
+    try {
+      let reqInstance = axios.create({
+        headers: {
+          Authorization: `Bearer ${session.accessToken}`,
+        },
+      });
+
+      const url = `https://localhost:7155/api/Statistics/TeachingAccessStatistics`;
+      const config = { "content-type": "application/json" };
+
+      const res = await reqInstance.post(
+        url,
+        { semester: semester_index },
+        config
+      );
+    } catch (err) {
+      console.log(err);
+    }
+  }
 
   return (
     <main>

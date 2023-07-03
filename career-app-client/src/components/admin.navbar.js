@@ -12,6 +12,8 @@ function getHeader(pathName) {
     return "Διδασκαλία";
   } else if (pathName == "/tests") {
     return "Τεστ Αυτοαξιολόγησης";
+  } else if (pathName == "/progress") {
+    return "Πρόοδος";
   }
 }
 

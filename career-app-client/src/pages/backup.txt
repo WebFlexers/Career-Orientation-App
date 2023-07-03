@@ -1,21 +1,12 @@
-let reqObject = {
-      userId: session.user.userId,
-      universityTestId: universityTestId,
-      answers: answersObject,
-    };
-    try {
-      let reqInstance = axios.create({
-        headers: {
-          Authorization: `Bearer ${session.accessToken}`,
-        },
-      });
-
-      const url = ``;
-
-      const res = await reqInstance.get(url);
-      testData = res.data;
-    } catch (err) {
-      return { err };
-    } finally {
-      return { props: { testData } };
-    }
+{courses.map((course) => {
+              return (
+                <>
+                  <Row className={styles["box"]}>
+                    <Col className={styles["title"]}>{course.courseName}</Col>
+                    <Col className={styles["grade"]}>
+                      <b>{course.grade}</b>
+                    </Col>
+                  </Row>
+                </>
+              );
+            })}
