@@ -7,40 +7,60 @@ import AdminLayout from "@/components/admin.layout";
 import useSessionStorage from "@/hooks/useSessionStorage";
 import { getSession } from "next-auth/react";
 import axios from "axios";
+import Image from "next/image";
 
 export default function Tests(props) {
   const router = useRouter();
   const role = useSessionStorage("role");
   const track = useSessionStorage("track");
-  var activeSemester = parseInt(useSessionStorage("semester"));
+  const [tests, setTests] = useState([]);
+  let prospectiveStudentTest2Style = {};
+  const [hasCompletedAllTests, setHasCompletedAllTests] = useState(false);
 
-  const studentTests = [
-    { label: "Εξάμηνο 1", isRevision: false, index: 1 },
-    { label: "Εξάμηνο 2", isRevision: false, index: 2 },
-    { label: "Επαναληπτικό", isRevision: true, index: 1 },
-    { label: "Εξάμηνο 3", isRevision: false, index: 3 },
-    { label: "Εξάμηνο 4", isRevision: false, index: 4 },
-    { label: "Επαναληπτικό", isRevision: true, index: 2 },
-    { label: "Εξάμηνο 5", isRevision: false, index: 5 },
-    { label: "Εξάμηνο 6", isRevision: false, index: 6 },
-    { label: "Επαναληπτικό", isRevision: true, index: 3 },
-    { label: "Εξάμηνο 7", isRevision: false, index: 7 },
-    { label: "Εξάμηνο 8", isRevision: false, index: 8 },
-    { label: "Επαναληπτικό", isRevision: true, index: 4 },
-  ];
+  useEffect(() => {
+    getTests();
+  }, [tests]);
 
-  var interestedTests = [
-    { label: "Τεστ 1", index: 1, isCompleted: false },
-    { label: "Τεστ 2", index: 2, isCompleted: false },
-  ];
+  async function getTests() {
+    let tempTests = [];
+    let tempHasCompletedAllTests = false;
+    try {
+      let reqInstance = axios.create({
+        headers: {
+          Authorization: `Bearer ${props.sessionToken}`,
+        },
+      });
+
+      let url = "";
+      if (role == "Αμύητος") {
+        url = `https://localhost:7155/api/ProspectiveStudentTests/Completed`;
+      } else {
+        url = `https://localhost:7155/api/StudentTests/Completed`;
+      }
+
+      const res = await reqInstance.get(url);
+      tempTests = res.data.testsCompletionState;
+      tempHasCompletedAllTests = res.data.hasCompletedAllTests;
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setTests(tempTests);
+      setHasCompletedAllTests(tempHasCompletedAllTests);
+    }
+  }
 
   function handleTestClick(index, isRevision, isCompleted) {
     if (isCompleted) {
-      alert("Έχετε ήδη το ολοκληρώσει το συγκεκριμένο τεστ!");
+      alert("Έχετε ήδη ολοκληρώσει το συγκεκριμένο τεστ!");
       return;
     }
 
     if (role == "Αμύητος") {
+      if (index == 2 && !tests[0]?.isCompleted) {
+        alert("Πρέπει να ολοκληρώσετε το Τεστ 1 για να προχωρήσετε στο Τεστ 2");
+        return;
+      }
+
       const url = `/tests/${index}?generalTestId=${index}`;
       router.push(url);
       return;
@@ -66,6 +86,21 @@ export default function Tests(props) {
     router.push(url);
   }
 
+  if (role == "Αμύητος") {
+    if (tests[1]?.isCompleted)
+      prospectiveStudentTest2Style = {
+        backgroundColor: "green",
+        color: "white",
+      };
+    else {
+      if (!tests[0]?.isCompleted)
+        prospectiveStudentTest2Style = {
+          backgroundColor: "#cccccc",
+          color: "#666666",
+        };
+    }
+  }
+
   return (
     <main>
       <Container className="mt-4 mb-4" style={{ textAlign: "center" }}>
@@ -88,27 +123,57 @@ export default function Tests(props) {
         {(role == "Φοιτητής" || role == "Απόφοιτος") && (
           <>
             <div className={`mt-3 ${testsStyles["tests-box"]}`}>
-              {studentTests.map((test) => {
-                if (role == "Απόφοιτος") activeSemester = 8;
-                // Show tests based on the active semester
-                if (
-                  studentTests.indexOf(test) + 1 >
-                  activeSemester + Math.floor(activeSemester / 2)
-                ) {
-                  return null;
-                }
-
+              {tests?.map((test) => {
                 return (
                   <>
                     <div className={testsStyles["tests-item"]}>
-                      <button
-                        className="admin-btn"
-                        onClick={() =>
-                          handleTestClick(test.index, test.isRevision, false)
-                        }
-                      >
-                        {test.label}
-                      </button>
+                      {test.revisionYear == null ? (
+                        <>
+                          <button
+                            className="admin-btn"
+                            onClick={() =>
+                              handleTestClick(
+                                test.semester,
+                                false,
+                                test.isCompleted
+                              )
+                            }
+                            style={
+                              test.isCompleted
+                                ? {
+                                    backgroundColor: "green",
+                                    color: "white",
+                                  }
+                                : null
+                            }
+                          >
+                            <>Εξάμηνο {test.semester}</>
+                          </button>
+                        </>
+                      ) : (
+                        <>
+                          <button
+                            className="admin-btn"
+                            onClick={() =>
+                              handleTestClick(
+                                test.revisionYear,
+                                true,
+                                test.isCompleted
+                              )
+                            }
+                            style={
+                              test.isCompleted
+                                ? {
+                                    backgroundColor: "green",
+                                    color: "white",
+                                  }
+                                : null
+                            }
+                          >
+                            <>Επαναληπτικό</>
+                          </button>
+                        </>
+                      )}
                     </div>
                   </>
                 );
@@ -119,31 +184,71 @@ export default function Tests(props) {
         {role == "Αμύητος" && (
           <>
             <div className={testsStyles["interested-tests-box"]}>
-              {interestedTests.map((test) => {
-                return (
-                  <>
-                    <div className={testsStyles["tests-item"]}>
-                      <button
-                        className="admin-btn"
-                        onClick={() =>
-                          handleTestClick(test.index, false, test.isCompleted)
+              <div className={testsStyles["tests-item"]}>
+                <button
+                  className="admin-btn"
+                  onClick={() =>
+                    handleTestClick(
+                      tests[0]?.generalTestId,
+                      false,
+                      tests[0]?.isCompleted
+                    )
+                  }
+                  style={
+                    tests[0]?.isCompleted
+                      ? {
+                          backgroundColor: "green",
+                          color: "white",
                         }
-                        style={
-                          test.isCompleted
-                            ? { backgroundColor: "green", color: "white" }
-                            : null
-                        }
-                      >
-                        {test.label}
-                      </button>
-                    </div>
-                  </>
-                );
-              })}
+                      : null
+                  }
+                >
+                  Τεστ {tests[0]?.generalTestId}
+                </button>
+              </div>
+              <div className={testsStyles["tests-item"]}>
+                <button
+                  className="admin-btn"
+                  onClick={() =>
+                    handleTestClick(
+                      tests[1]?.generalTestId,
+                      false,
+                      tests[1]?.isCompleted
+                    )
+                  }
+                  style={prospectiveStudentTest2Style}
+                >
+                  Τεστ {tests[1]?.generalTestId}
+                </button>
+              </div>
             </div>
           </>
         )}
       </Container>
+      {hasCompletedAllTests && (
+        <>
+          <Container className="mt-5 mb-4" style={{ textAlign: "center" }}>
+            <h4 className={lessonStyles["header"]}>
+              <div
+                className="mb-3"
+                style={{ fontSize: "1.2em", color: "#01ab87" }}
+              >
+                Συγχαρητήρια!
+              </div>{" "}
+              Ολοκληρώσατε όλα τα τεστς. Μεταβείτε στην ενότητα "Συστάσεις" για
+              να δείτε τα αποτελέσματα!
+            </h4>
+            <button
+              className="admin-btn mt-3"
+              onClick={() => {
+                router.push("/referals");
+              }}
+            >
+              Μετάβαση
+            </button>
+          </Container>
+        </>
+      )}
     </main>
   );
 }
@@ -157,23 +262,7 @@ export async function getServerSideProps(ctx) {
 
   if (!session) return null;
 
-  let userData = "";
-  let sessionToken = "";
-  try {
-    let reqInstance = axios.create({
-      headers: {
-        Authorization: `Bearer ${session.accessToken}`,
-      },
-    });
+  const sessionToken = session.accessToken;
 
-    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
-
-    const res = await reqInstance.get(url);
-    userData = res.data;
-    sessionToken = session.accessToken;
-  } catch (err) {
-    return { err };
-  } finally {
-    return { props: { userData, sessionToken } };
-  }
+  return { props: { sessionToken } };
 }

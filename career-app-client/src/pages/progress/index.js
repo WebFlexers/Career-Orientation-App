@@ -14,11 +14,16 @@ export default function Progress({ semestersData }) {
   useEffect(() => {
     let ctx = canvas.current;
 
-    let tempArray = [];
+    let tempAccessCountArray = [];
+    let tempSemestersArray = [];
+    let tempStr = "";
     semestersData.map(function (semester) {
-      tempArray.push(parseInt(semester.accessCount));
+      tempAccessCountArray.push(parseInt(semester.accessCount));
+      tempStr = "Εξάμηνο " + semester.semester;
+      tempSemestersArray.push(tempStr);
     });
-    let accessCounts = tempArray;
+    let accessCount = tempAccessCountArray;
+    let semesterLabels = tempSemestersArray.sort();
 
     let chartStatus = Chart.getChart("myChart");
     if (chartStatus != undefined) {
@@ -28,22 +33,29 @@ export default function Progress({ semestersData }) {
     const chart = new Chart(ctx, {
       type: "pie",
       data: {
-        labels: ["Έτος 1", "Έτος 2", "Έτος 3", "Έτος 4"],
+        labels: semesterLabels,
         datasets: [
           {
-            label: "Dataset 1",
-            data: accessCounts,
+            data: accessCount,
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
+              "rgba(53, 184, 255, 0.2)",
+              "rgba(255, 186, 53, 0.2)",
+              "rgba(119, 255, 53, 0.2)",
+              "rgba(255, 53, 219, 0.2)",
+              "rgba(53, 255, 199, 0.2)",
+              "rgba(206, 53, 255, 0.2)",
+              "rgba(102, 255, 53, 0.2)",
             ],
             borderColor: [
               "rgba(255, 99, 132, 1)",
-              "rgba(54, 162, 235, 1)",
-              "rgba(255, 206, 86, 1)",
-              "rgba(75, 192, 192, 1)",
+              "rgba(53, 184, 255, 1)",
+              "rgba(255, 186, 53, 1)",
+              "rgba(119, 255, 53, 1)",
+              "rgba(255, 53, 219, 1)",
+              "rgba(53, 255, 199, 1)",
+              "rgba(206, 53, 255, 1)",
+              "rgba(102, 255, 53, 1)",
             ],
             borderWidth: 1,
           },
@@ -53,6 +65,10 @@ export default function Progress({ semestersData }) {
         plugins: {
           legend: {
             position: "top",
+          },
+          title: {
+            display: true,
+            text: "Κατανομή επισκέψεων φοιτητή σε εξάμηνα",
           },
         },
       },
@@ -94,6 +110,7 @@ export async function getServerSideProps(ctx) {
 
     const res = await reqInstance.get(url);
     semestersData = res.data;
+    console.log(semestersData);
   } catch (err) {
     console.log(err);
   } finally {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/sidebar.module.css";
 import useSessionStorage from "@/hooks/useSessionStorage";
+import { signOut } from "next-auth/react";
 
 export default function SideBar(props) {
   const username = useSessionStorage("username");
@@ -17,6 +18,11 @@ export default function SideBar(props) {
       label: "Τεστ Αυτοαξιολόγησης",
       path: "/tests",
       targetSegment: "tests",
+    },
+    {
+      label: "Συστάσεις",
+      path: "/referals",
+      targetSegment: "referals",
     },
     {
       label: "Πρόοδος",
@@ -61,7 +67,7 @@ export default function SideBar(props) {
             Ρυθμίσεις
           </Link>
           <Link key={25} href="/kapou-magika">
-            Έξοδος
+            Αποσύνδεση
           </Link>
         </div>
       </div>

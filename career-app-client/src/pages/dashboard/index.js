@@ -44,6 +44,10 @@ export default function Dashboard(props) {
   }, [courses]);
 
   async function getCourses() {
+    if (props.data.isProspectiveStudent == true) {
+      return;
+    }
+
     let data = [];
     try {
       let reqInstance = axios.create({
@@ -56,9 +60,7 @@ export default function Dashboard(props) {
 
       const res = await reqInstance.get(url);
       data = res.data;
-      console.log(data);
     } catch (err) {
-      console.log(err);
     } finally {
       let tempSemestersList = [];
       data.map((course) => {
@@ -67,7 +69,6 @@ export default function Dashboard(props) {
       });
       setCourses(data);
       setSemesters(tempSemestersList);
-      console.log(tempSemestersList);
     }
   }
 
