@@ -27,7 +27,7 @@ export default function Referrals(props) {
 
       let url = "";
       if (role == "Αμύητος") {
-        url = `https://localhost:7155/api/Recommendations/ProspectiveStudent`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Recommendations/ProspectiveStudent`;
       } else {
         url = ``;
       }

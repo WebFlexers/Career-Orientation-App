@@ -33,7 +33,7 @@ export default function Test(props) {
   // Methods
 
   async function submitAnswers(values) {
-    //alert(JSON.stringify(values, null, 2));
+    alert(JSON.stringify(values, null, 2));
 
     // Convert values object to an array[] of [QuestionType-QuestionId, AnswerValue] pairs
     // Only at multiple choice questions the pairs are of the form [QuestionType-QuestionId, QuestionId-AnswerValue]
@@ -363,9 +363,9 @@ export async function getServerSideProps(ctx) {
 
     let url = "";
     if (generalTestId == null || generalTestId == "") {
-      url = `https://localhost:7155/api/StudentTests?Track=${track}&Semester=${semester}&RevisionYear=${revisionYear}`;
+      url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests?Track=${track}&Semester=${semester}&RevisionYear=${revisionYear}`;
     } else {
-      url = `https://localhost:7155/api/ProspectiveStudentTests/generalTestId?generalTestId=${generalTestId}`;
+      url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/generalTestId?generalTestId=${generalTestId}`;
     }
 
     const res = await reqInstance.get(url);

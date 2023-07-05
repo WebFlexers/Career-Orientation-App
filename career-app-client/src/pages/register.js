@@ -97,7 +97,7 @@ export default function Register() {
 
   async function registerUser(values) {
     try {
-      const url = "https://localhost:7155/api/Users/Register";
+      const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Users/Register`;
 
       let data = {};
       if (values.role == "interested") {
