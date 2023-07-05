@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useSession, signIn } from "next-auth/react";
 import axios from "axios";
+import { useState } from "react";
 
 const onFinish = (values) => {
   console.log("Success:");
@@ -69,6 +70,7 @@ export default function Register() {
   const { data: session, status } = useSession();
   const router = useRouter();
   const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
+  const [submitErrors, setSubmitErrors] = useState([]);
 
   if (status === "authenticated") {
     return <h2 style={{ textAlign: "center" }}>Already logged in!</h2>;
@@ -157,8 +159,15 @@ export default function Register() {
         router.push("/login");
       }
     } catch (err) {
-      alert("An error occured");
-      console.log(err.response);
+      let tempSumbitErros = [];
+
+      for (const prop in err.response.data.errors)
+        tempSumbitErros.push(err.response.data.errors[prop]);
+
+      setSubmitErrors(tempSumbitErros);
+
+      console.log(submitErrors);
+      //alert(err.response.data.title);
     }
   }
 
@@ -171,11 +180,12 @@ export default function Register() {
           height={400}
           className={styles["login-img-background"]}
         />
-        <div id={styles["form-box"]} style={{ height: "85%" }}>
+
+        <div id={styles["form-box"]}>
           <h4 className="mt-3" style={{ textAlign: "center" }}>
             Εγγραφή
           </h4>
-          <div className="pt-3 pb-3">
+          <div className="pt-2 pb-3">
             Έχεις ήδη λογαριασμό?{" "}
             <Link
               href="/login"
@@ -309,6 +319,20 @@ export default function Register() {
             >
               ΕΓΓΡΑΦΗ
             </button>
+            <div>
+              {submitErrors?.map((errorsList) => {
+                return errorsList?.map((err) => {
+                  console.log(err);
+                  return (
+                    <>
+                      <div className={`mt-2 mb-2 ${styles["error-msg"]}`}>
+                        {err}
+                      </div>
+                    </>
+                  );
+                });
+              })}
+            </div>
           </form>
           <br />
         </div>

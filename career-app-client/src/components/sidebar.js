@@ -21,8 +21,8 @@ export default function SideBar(props) {
     },
     {
       label: "Συστάσεις",
-      path: "/referals",
-      targetSegment: "referals",
+      path: "/referrals",
+      targetSegment: "referrals",
     },
     {
       label: "Πρόοδος",

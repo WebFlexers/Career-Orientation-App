@@ -79,7 +79,7 @@ export default function Dashboard(props) {
           <h3 className="mt-4">Βαθμοί</h3>
         </Container>
         <Container>
-          <div>Δεν υπάρχουν βαθμοί!</div>
+          <div className="mt-4">Δεν υπάρχουν βαθμοί!</div>
         </Container>
       </>
     );
@@ -152,7 +152,9 @@ export async function getServerSideProps(ctx) {
 
     const res = await reqInstance.get(url);
     data = res.data;
+    console.log(res);
   } catch (err) {
+    console.log(err);
     return { err };
   } finally {
     return { props: { data } };

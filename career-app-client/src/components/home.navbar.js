@@ -10,14 +10,9 @@ const HomeNavigationBar = (props) => {
   const { data: session } = useSession();
   console.log(session);
 
-  let _style = {};
-  if (router.pathname != "/") {
-    _style = { boxShadow: "0px 10px 5px -10px #111" };
-  }
-
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" bg="transparent" style={_style}>
+      <Navbar collapseOnSelect expand="lg" bg="transparent">
         <Container>
           <Navbar.Brand href="/">
             <Image
@@ -33,11 +28,15 @@ const HomeNavigationBar = (props) => {
             <Nav className="me-auto"></Nav>
             <Nav className="me-5">
               <Nav.Link href="/">Αρχική Σελίδα</Nav.Link>
-              <Nav.Link href="/about">Σχετικά με εμάς</Nav.Link>
-              <Nav.Link href="/contact">Επικοινωνία</Nav.Link>
+              <Nav.Link href="/about" style={{ pointerEvents: "none" }}>
+                Σχετικά με εμάς
+              </Nav.Link>
+              <Nav.Link href="/contact" style={{ pointerEvents: "none" }}>
+                Επικοινωνία
+              </Nav.Link>
               {session ? (
                 <>
-                  <Nav.Link href="/dashboard" style={{ color: "#fcb426" }}>
+                  <Nav.Link href="/dashboard" style={{ color: "#c9901e" }}>
                     Κεντρικός Πίνακας
                   </Nav.Link>
                   <button
