@@ -2,19 +2,31 @@
   position: absolute;
   left: 0px;
   bottom: 0px;
+  z-index:-1;
 }
 
 #form-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: red;
   padding: 10px;
   border: 1px solid rgb(192, 192, 192);
-  width: 50%;
   text-align: center;
   background-color: white;
-  overflow: scroll;
+  width: 600px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.back-btn {
+  float: left;
+  /* Add clear:both also to the other element you want to affect*/
+  clear: both; 
+  background-color: transparent;
+  border: 0;
+
+}
+.back-btn:hover {
+  background-color: transparent;
+  color: grey;
 }
 
 .input {

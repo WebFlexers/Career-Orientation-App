@@ -42,7 +42,6 @@ export default function Tests(props) {
       tempTests = res.data.testsCompletionState;
       tempHasCompletedAllTests = res.data.hasCompletedAllTests;
     } catch (err) {
-      console.log(err);
     } finally {
       setTests(tempTests);
       setHasCompletedAllTests(tempHasCompletedAllTests);

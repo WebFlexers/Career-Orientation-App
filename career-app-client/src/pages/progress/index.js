@@ -1,29 +1,45 @@
-import { Container } from "react-bootstrap";
-import { useState } from "react";
+import { Container, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
 import AdminLayout from "@/components/admin.layout";
 import styles from "@/styles/progress.module.css";
 import Chart from "chart.js/auto";
-import { useRef, useEffect } from "react";
+import "chart.js/auto"; // ADD THIS
+import { useRef, useEffect, useState } from "react";
 import { getSession } from "next-auth/react";
 import axios from "axios";
+import useSessionStorage from "@/hooks/useSessionStorage";
 
-export default function Progress({ semestersData }) {
+export default function Progress(props) {
   const canvas = useRef();
+  const chartId = useRef(null);
+  const role = useSessionStorage("role");
+  const [tests, setTests] = useState([]);
+
+  let statusStyle = {};
 
   useEffect(() => {
-    let ctx = canvas.current;
+    getTests();
+  }, [tests]);
 
+  useEffect(() => {
     let tempAccessCountArray = [];
     let tempSemestersArray = [];
     let tempStr = "";
-    semestersData.map(function (semester) {
+
+    props.semestersData.map(function (semester) {
       tempAccessCountArray.push(parseInt(semester.accessCount));
       tempStr = "Εξάμηνο " + semester.semester;
       tempSemestersArray.push(tempStr);
     });
+
     let accessCount = tempAccessCountArray;
     let semesterLabels = tempSemestersArray.sort();
+
+    let ctx = canvas.current;
+
+    if (chartId.current !== null) {
+      return;
+    }
 
     let chartStatus = Chart.getChart("myChart");
     if (chartStatus != undefined) {
@@ -73,7 +89,32 @@ export default function Progress({ semestersData }) {
         },
       },
     });
+    chartId.current = chart.id;
   }, []);
+
+  async function getTests() {
+    let tempTests = [];
+    try {
+      let reqInstance = axios.create({
+        headers: {
+          Authorization: `Bearer ${props.sessionToken}`,
+        },
+      });
+
+      let url = "";
+      if (role == "Αμύητος") {
+        url = `https://localhost:7155/api/ProspectiveStudentTests/Completed`;
+      } else {
+        url = `https://localhost:7155/api/StudentTests/Completed`;
+      }
+
+      const res = await reqInstance.get(url);
+      tempTests = res.data.testsCompletionState;
+    } catch (err) {
+    } finally {
+      setTests(tempTests);
+    }
+  }
 
   return (
     <main>
@@ -81,9 +122,94 @@ export default function Progress({ semestersData }) {
         <h3 className="mt-4">Επισκεψημότητα</h3>
       </Container>
       <Container className="mt-3 mb-3">
-        <div id={styles["pie-box"]}>
-          <canvas ref={canvas}></canvas>
-        </div>
+        {props.semestersData?.length > 0 ? (
+          <>
+            <div id={styles["pie-box"]}>
+              <canvas ref={canvas}></canvas>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="mt-4">
+              Για να σας δώσουμε στατιστικά επισκεψότητας πρέπει να πρώτα να
+              επισκεφθείτε την ενότητα διδασκαλία και να μελετήσετε τα εξάμηνα!
+            </div>
+          </>
+        )}
+      </Container>
+      <Container>
+        <h3 className="mt-4">Τεστς</h3>
+      </Container>
+      <Container className="mt-3 mb-3">
+        {tests.map((test) => {
+          {
+            test.isCompleted
+              ? (statusStyle = {})
+              : (statusStyle = {
+                  pointerEvents: "none",
+                  backgroundColor: "red",
+                  color: "white",
+                });
+          }
+          return (
+            <>
+              <Row className="mt-4">
+                <div className={styles["test-box"]}>
+                  {role == "Αμύητος" ? (
+                    <>
+                      <div clsssName={styles["title"]}>
+                        Τεστ {test.generalTestId}
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      {test.revisionYear == null ? (
+                        <>
+                          <div clsssName={styles["title"]}>
+                            Εξάμηνο {test.semester}
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div clsssName={styles["title"]}>
+                            Επαναληπτικό {test.revisionYear}
+                          </div>
+                        </>
+                      )}
+                    </>
+                  )}
+                  {test.isCompleted ? (
+                    <>
+                      <button
+                        className={styles["status-box"]}
+                        style={{
+                          pointerEvents: "none",
+                          backgroundColor: "green",
+                          color: "white",
+                        }}
+                      >
+                        PASS
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      <button
+                        className={styles["status-box"]}
+                        style={{
+                          pointerEvents: "none",
+                          backgroundColor: "orange",
+                          color: "white",
+                        }}
+                      >
+                        PENDING
+                      </button>
+                    </>
+                  )}
+                </div>
+              </Row>
+            </>
+          );
+        })}
       </Container>
     </main>
   );
@@ -99,6 +225,7 @@ export async function getServerSideProps(ctx) {
   if (!session) return null;
 
   let semestersData = "";
+  let sessionToken = "";
   try {
     let reqInstance = axios.create({
       headers: {
@@ -110,10 +237,11 @@ export async function getServerSideProps(ctx) {
 
     const res = await reqInstance.get(url);
     semestersData = res.data;
+    sessionToken = session.accessToken;
     console.log(semestersData);
   } catch (err) {
     console.log(err);
   } finally {
-    return { props: { semestersData } };
+    return { props: { semestersData, sessionToken } };
   }
 }
