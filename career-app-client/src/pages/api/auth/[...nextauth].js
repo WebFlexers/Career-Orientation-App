@@ -18,7 +18,7 @@ export const authOptions = {
       async authorize(credentials, req) {
         const { email, password } = credentials;
         // Prepare params
-        const url = "https://localhost:7155/api/Users/Login";
+        const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Users/Login`;
         const data = {
           email,
           password,

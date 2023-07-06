@@ -33,9 +33,9 @@ export default function Tests(props) {
 
       let url = "";
       if (role == "Αμύητος") {
-        url = `https://localhost:7155/api/ProspectiveStudentTests/Completed`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
       } else {
-        url = `https://localhost:7155/api/StudentTests/Completed`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
       }
 
       const res = await reqInstance.get(url);
@@ -240,7 +240,7 @@ export default function Tests(props) {
             <button
               className="admin-btn mt-3"
               onClick={() => {
-                router.push("/referals");
+                router.push("/referrals");
               }}
             >
               Μετάβαση

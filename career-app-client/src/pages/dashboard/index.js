@@ -56,7 +56,7 @@ export default function Dashboard(props) {
         },
       });
 
-      const url = `https://localhost:7155/api/Grades`;
+      const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Grades`;
 
       const res = await reqInstance.get(url);
       data = res.data;
@@ -148,7 +148,7 @@ export async function getServerSideProps(ctx) {
       },
     });
 
-    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Users/${session.user.userId}`;
 
     const res = await reqInstance.get(url);
     data = res.data;

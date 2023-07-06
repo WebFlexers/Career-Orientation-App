@@ -1,4 +1,4 @@
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { useRouter } from "next/router";
 import AdminLayout from "@/components/admin.layout";
 import styles from "@/styles/progress.module.css";
@@ -103,9 +103,9 @@ export default function Progress(props) {
 
       let url = "";
       if (role == "Αμύητος") {
-        url = `https://localhost:7155/api/ProspectiveStudentTests/Completed`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
       } else {
-        url = `https://localhost:7155/api/StudentTests/Completed`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
       }
 
       const res = await reqInstance.get(url);
@@ -155,56 +155,60 @@ export default function Progress(props) {
             <>
               <Row className="mt-4">
                 <div className={styles["test-box"]}>
-                  {role == "Αμύητος" ? (
-                    <>
-                      <div clsssName={styles["title"]}>
-                        Τεστ {test.generalTestId}
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      {test.revisionYear == null ? (
-                        <>
-                          <div clsssName={styles["title"]}>
-                            Εξάμηνο {test.semester}
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <div clsssName={styles["title"]}>
-                            Επαναληπτικό {test.revisionYear}
-                          </div>
-                        </>
-                      )}
-                    </>
-                  )}
-                  {test.isCompleted ? (
-                    <>
-                      <button
-                        className={styles["status-box"]}
-                        style={{
-                          pointerEvents: "none",
-                          backgroundColor: "green",
-                          color: "white",
-                        }}
-                      >
-                        PASS
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      <button
-                        className={styles["status-box"]}
-                        style={{
-                          pointerEvents: "none",
-                          backgroundColor: "orange",
-                          color: "white",
-                        }}
-                      >
-                        PENDING
-                      </button>
-                    </>
-                  )}
+                  <Col>
+                    {role == "Αμύητος" ? (
+                      <>
+                        <div clsssName={styles["title"]}>
+                          Τεστ {test.generalTestId}
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        {test.revisionYear == null ? (
+                          <>
+                            <div clsssName={styles["title"]}>
+                              Εξάμηνο {test.semester}
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div clsssName={styles["title"]}>
+                              Επαναληπτικό {test.revisionYear}
+                            </div>
+                          </>
+                        )}
+                      </>
+                    )}
+                  </Col>
+                  <Col>
+                    {test.isCompleted ? (
+                      <>
+                        <button
+                          className={styles["status-box"]}
+                          style={{
+                            pointerEvents: "none",
+                            backgroundColor: "green",
+                            color: "white",
+                          }}
+                        >
+                          PASS
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        <button
+                          className={styles["status-box"]}
+                          style={{
+                            pointerEvents: "none",
+                            backgroundColor: "orange",
+                            color: "white",
+                          }}
+                        >
+                          PENDING
+                        </button>
+                      </>
+                    )}
+                  </Col>
                 </div>
               </Row>
             </>
@@ -233,7 +237,7 @@ export async function getServerSideProps(ctx) {
       },
     });
 
-    const url = `https://localhost:7155/api/Statistics/TeachingAccessStatistics`;
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Statistics/TeachingAccessStatistics`;
 
     const res = await reqInstance.get(url);
     semestersData = res.data;

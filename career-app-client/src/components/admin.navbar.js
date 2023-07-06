@@ -16,6 +16,8 @@ function getHeader(pathName) {
     return "Συστάσεις";
   } else if (pathName == "/progress") {
     return "Πρόοδος";
+  } else if (pathName == "/help") {
+    return "Βοήθεια";
   }
 }
 
@@ -53,10 +55,13 @@ const AdminNavigationBar = (props) => {
                 </button>
               </Nav.Item>
               <Nav.Item>
-                <button style={{ backgroundColor: "transparent", border: "0" }}>
+                <button
+                  onClick={() => router.push("/help")}
+                  style={{ backgroundColor: "transparent", border: "0" }}
+                >
                   <Image
-                    src="/images/find-icon.png"
-                    alt="Find Icon"
+                    src="/images/help-icon.png"
+                    alt="Help Icon"
                     width={25}
                     height={25}
                     style={{ margin: "5px 15px" }}

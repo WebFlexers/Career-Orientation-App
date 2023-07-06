@@ -33,7 +33,7 @@ export default function Lessons(props) {
 
     if (role == "Αμύητος") IsProspectiveStudent = true;
 
-    const url = `https://localhost:7155/api/Courses?Semester=${semester_index}&Track=${track}&IsProspectiveStudent=${IsProspectiveStudent}`;
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Courses?Semester=${semester_index}&Track=${track}&IsProspectiveStudent=${IsProspectiveStudent}`;
 
     const res = await axios.get(url);
 
@@ -52,7 +52,7 @@ export default function Lessons(props) {
         },
       });
 
-      const url = `https://localhost:7155/api/Statistics/TeachingAccessStatistics`;
+      const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Statistics/TeachingAccessStatistics`;
       const config = { "content-type": "application/json" };
 
       const res = await reqInstance.post(
@@ -179,7 +179,7 @@ export async function getServerSideProps(ctx) {
       },
     });
 
-    const url = `https://localhost:7155/api/Users/${session.user.userId}`;
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Users/${session.user.userId}`;
 
     const res = await reqInstance.get(url);
     userData = res.data;
