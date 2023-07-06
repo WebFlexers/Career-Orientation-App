@@ -10,11 +10,7 @@ import useSessionStorage from "@/hooks/useSessionStorage";
 import { useRouter } from "next/router";
 
 export default function Dashboard(props) {
-  const router = useRouter();
-  const [courses, setCourses] = useState([]);
-  const [semesters, setSemesters] = useState([]);
-  const { data: session } = useSession();
-  const role = useSessionStorage("role");
+  console.log(props);
 
   // Store username and students role in sessionStorage
   useEffect(() => {
@@ -23,56 +19,25 @@ export default function Dashboard(props) {
       let semester = 0;
       let track = "";
 
-      if (props.data.isProspectiveStudent == true) {
+      if (props.userData.isProspectiveStudent == true) {
         role = "Αμύητος";
-      } else if (props.data.isGraduate == true) {
+      } else if (props.userData.isGraduate == true) {
         role = "Απόφοιτος";
-        track = props.data.track;
+        track = props.userData.track;
       } else {
         role = "Φοιτητής";
-        semester = props.data.semester;
-        track = props.data.track;
+        semester = props.userData.semester;
+        track = props.userData.track;
       }
 
-      sessionStorage.setItem("username", props.data.username);
+      sessionStorage.setItem("username", props.userData.username);
       sessionStorage.setItem("role", role);
       sessionStorage.setItem("semester", semester);
       sessionStorage.setItem("track", track);
-
-      getCourses();
     }
-  }, [courses]);
+  }, []);
 
-  async function getCourses() {
-    if (props.data.isProspectiveStudent == true) {
-      return;
-    }
-
-    let data = [];
-    try {
-      let reqInstance = axios.create({
-        headers: {
-          Authorization: `Bearer ${session.accessToken}`,
-        },
-      });
-
-      const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Grades`;
-
-      const res = await reqInstance.get(url);
-      data = res.data;
-    } catch (err) {
-    } finally {
-      let tempSemestersList = [];
-      data.map((course) => {
-        if (!tempSemestersList.includes(course.semester))
-          tempSemestersList.push(course.semester);
-      });
-      setCourses(data);
-      setSemesters(tempSemestersList);
-    }
-  }
-
-  if (props.data.isProspectiveStudent == true) {
+  if (props.userData.isProspectiveStudent == true) {
     return (
       <>
         <Container>
@@ -98,7 +63,7 @@ export default function Dashboard(props) {
         </Container>
         <Container className="mt-3 mb-3">
           <div id={styles["grades-box"]}>
-            {semesters.map((semester) => {
+            {props.semestersData.map((semester) => {
               return (
                 <>
                   <Row className={styles["box"]}>
@@ -106,7 +71,7 @@ export default function Dashboard(props) {
                       <b>Εξάμηνο {semester}</b>
                     </Col>
                   </Row>
-                  {courses.map((course) => {
+                  {props.coursesData.map((course) => {
                     if (course.semester != semester) return;
                     return (
                       <>
@@ -140,7 +105,9 @@ export async function getServerSideProps(ctx) {
 
   if (!session) return null;
 
-  let data = "";
+  let userData = "";
+  let coursesData = "";
+  let semestersData = [];
   try {
     let reqInstance = axios.create({
       headers: {
@@ -149,14 +116,28 @@ export async function getServerSideProps(ctx) {
     });
 
     const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Users/${session.user.userId}`;
-
     const res = await reqInstance.get(url);
-    data = res.data;
-    console.log(res);
+    userData = res.data;
+
+    const url2 = `${process.env.NEXT_PUBLIC_API_HOST}/api/Grades`;
+    const res2 = await reqInstance.get(url2);
+    if (res2) {
+      coursesData = res2.data;
+    }
   } catch (err) {
-    console.log(err);
     return { err };
   } finally {
-    return { props: { data } };
+    console.log(coursesData);
+
+    if (coursesData != "") {
+      let tempSemestersList = [];
+      coursesData.map((course) => {
+        if (!tempSemestersList.includes(course.semester))
+          tempSemestersList.push(course.semester);
+      });
+      semestersData = tempSemestersList;
+    }
+
+    return { props: { userData, coursesData, semestersData } };
   }
 }

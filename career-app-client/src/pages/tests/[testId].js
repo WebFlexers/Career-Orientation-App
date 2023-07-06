@@ -33,7 +33,7 @@ export default function Test(props) {
   // Methods
 
   async function submitAnswers(values) {
-    alert(JSON.stringify(values, null, 2));
+    //alert(JSON.stringify(values, null, 2));
 
     // Convert values object to an array[] of [QuestionType-QuestionId, AnswerValue] pairs
     // Only at multiple choice questions the pairs are of the form [QuestionType-QuestionId, QuestionId-AnswerValue]
@@ -107,9 +107,9 @@ export default function Test(props) {
 
       let url = "";
       if (role == "Αμύητος") {
-        url = `https://localhost:7155/api/ProspectiveStudentTests`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests`;
       } else {
-        url = `https://localhost:7155/api/StudentTests`;
+        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests`;
       }
 
       const config = { "content-type": "application/json" };
@@ -135,14 +135,7 @@ export default function Test(props) {
     <>
       <Container fluid className={styles["header"]}>
         <div className={styles["header-content"]}>
-          {!isRevision ? (
-            <h1>
-              Τεστ - Εξάμηνο {semester}
-              {semester > 4 ? <> - Κατεύθυνση: {track}</> : null}
-            </h1>
-          ) : (
-            <h1>Επαναληπτικό Τεστ - Έτος {revisionYear}</h1>
-          )}
+          <h1>Τεστ</h1>
           <h4>
             Επιλέξτε απάντηση σύμφωνα με τις γνώσεις ή τις προτιμήσεις σας
           </h4>

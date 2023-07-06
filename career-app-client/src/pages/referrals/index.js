@@ -9,50 +9,18 @@ import Image from "next/image";
 
 export default function Referrals(props) {
   const role = useSessionStorage("role");
-  const [recommendation, setRecommendation] = useState([]);
-  const [canRender, setCanRender] = useState(false);
 
-  useEffect(() => {
-    getRecommendation();
-  }, [recommendation]);
+  console.log(props.recommendations);
 
-  async function getRecommendation() {
-    let tempRecommendation = "";
-    try {
-      let reqInstance = axios.create({
-        headers: {
-          Authorization: `Bearer ${props.sessionToken}`,
-        },
-      });
-
-      let url = "";
-      if (role == "Αμύητος") {
-        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Recommendations/ProspectiveStudent`;
-      } else {
-        url = ``;
-      }
-
-      const res = await reqInstance.get(url);
-      tempRecommendation = res.data;
-      console.log(tempRecommendation);
-    } catch (err) {
-    } finally {
-      setRecommendation(tempRecommendation[0]);
-      setCanRender(true);
-    }
+  function getColor(recommendationLevel) {
+    if (recommendationLevel === "VeryPoorFit") return "red";
+    else if (recommendationLevel === "PoorFit") return "#FF7F50";
+    else if (recommendationLevel === "ModerateFit") return "#DE970B";
+    else if (recommendationLevel === "GoodFit") return "#0096FF";
+    else if (recommendationLevel === "ExcellentFit") return "#027148";
   }
 
-  function getColor(score) {
-    if (score <= 25) return "red";
-    else if (score <= 40) return "#FF7F50";
-    else if (score <= 60) return "#DE970B";
-    else if (score <= 80) return "#0096FF";
-    else if (score <= 100) return "#50C878";
-  }
-
-  if (!canRender) return;
-
-  if (!recommendation) {
+  if (props.recommendations.length < 1) {
     return (
       <>
         <Container>
@@ -85,46 +53,128 @@ export default function Referrals(props) {
       <Container className="mt-3 mb-3">
         {role == "Αμύητος" && (
           <>
-            <div
-              className="mt-3"
-              style={{ fontSize: "1.2em", display: "inline" }}
-            >
-              <b>Score (%): </b>
-              <div
-                style={{
-                  fontSize: "1.2em",
-                  display: "inline",
-                  color: getColor(recommendation.percentageScore),
-                }}
-              >
-                {recommendation.percentageScore}
-              </div>
-            </div>
-            <div
-              className="mt-3"
-              style={{ fontSize: "1.2em", textAlign: "justify" }}
-            >
-              {recommendation.recommendationMessage}
-            </div>
+            {props.recommendations.map((rec) => {
+              return (
+                <>
+                  <div
+                    className="mt-3"
+                    style={{ fontSize: "1.2em", display: "inline" }}
+                  >
+                    <b>Score (%): </b>
+                    <div
+                      style={{
+                        fontSize: "1.2em",
+                        display: "inline",
+                        color: getColor(rec.recommendationLevel),
+                      }}
+                    >
+                      {rec.percentageScore}
+                    </div>
+                  </div>
+                  <div
+                    className="mt-3"
+                    style={{ fontSize: "1.2em", textAlign: "justify" }}
+                  >
+                    {rec.recommendationMessage}
+                  </div>
+                </>
+              );
+            })}
+          </>
+        )}
+        {(role == "Φοιτητής" || role == "Απόφοιτος") && (
+          <>
+            {props.recommendations.Track && (
+              <>
+                <Container>
+                  <h4 className="mt-4">Κατευθύνσεις</h4>
+                </Container>
+                <Container className="ms-3">
+                  {props.recommendations.Track.map((track) => {
+                    return (
+                      <>
+                        <div>
+                          {track.name}:&nbsp;(
+                          <div
+                            style={{
+                              display: "inline",
+                              color: getColor(track.recommendationLevel),
+                            }}
+                          >
+                            {track.percentageScore}%
+                          </div>
+                          )
+                        </div>
+                      </>
+                    );
+                  })}
+                </Container>
+              </>
+            )}
+            {props.recommendations.Profession && (
+              <>
+                <Container>
+                  <h4 className="mt-4">Ειδικότητες</h4>
+                </Container>
+                <Container className="ms-3">
+                  {props.recommendations.Profession.map((profession) => {
+                    return (
+                      <>
+                        <div>
+                          {profession.name}:&nbsp;(
+                          <div
+                            style={{
+                              display: "inline",
+                              color: getColor(profession.recommendationLevel),
+                            }}
+                          >
+                            {profession.percentageScore}%
+                          </div>
+                          )
+                        </div>
+                      </>
+                    );
+                  })}
+                </Container>
+              </>
+            )}
+            {props.recommendations.MastersDegree && (
+              <>
+                <Container>
+                  <h4 className="mt-4">Μεταπτυχιακά</h4>
+                </Container>
+                <Container className="ms-3">
+                  {props.recommendations.MastersDegree.map((degree) => {
+                    return (
+                      <>
+                        <div>
+                          {degree.name}:&nbsp;(
+                          <div
+                            style={{
+                              display: "inline",
+                              color: getColor(degree.recommendationLevel),
+                            }}
+                          >
+                            {degree.percentageScore}%
+                          </div>
+                          )
+                        </div>
+                      </>
+                    );
+                  })}
+                </Container>
+              </>
+            )}
           </>
         )}
       </Container>
       <Container className="mt-4" style={{ textAlign: "center" }}>
-        {recommendation.percentageScore < 60 ? (
-          <Image
-            src="/images/thumbs-down.png"
-            alt="Thumbs Up Image"
-            width={350}
-            height={350}
-          />
-        ) : (
-          <Image
-            src="/images/thumbs-up.png"
-            alt="Thumbs Up Image"
-            width={350}
-            height={350}
-          />
-        )}
+        <Image
+          src="/images/thumbs-up.png"
+          alt="Thumbs Up Image"
+          width={350}
+          height={350}
+        />
       </Container>
     </main>
   );
@@ -139,7 +189,37 @@ export async function getServerSideProps(ctx) {
 
   if (!session) return null;
 
-  const sessionToken = session.accessToken;
+  let recommendations = [];
+  let reqInstance = {};
+  try {
+    reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
 
-  return { props: { sessionToken } };
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Recommendations/Student`;
+    const res = await reqInstance.get(url);
+    if (res) {
+      recommendations = res.data.recommendations;
+    }
+  } catch (err) {
+    console.log("FROM ONE");
+    console.log(err);
+  }
+
+  if (recommendations.length === 0) {
+    try {
+      const url2 = `${process.env.NEXT_PUBLIC_API_HOST}/api/Recommendations/ProspectiveStudent`;
+      const res2 = await reqInstance.get(url2);
+      if (res2) {
+        recommendations = res2.data;
+      }
+    } catch (err) {
+      console.log("FROM TWO");
+      console.log(err);
+    }
+  }
+
+  return { props: { recommendations } };
 }
