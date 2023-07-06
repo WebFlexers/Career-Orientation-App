@@ -13,40 +13,9 @@ export default function Tests(props) {
   const router = useRouter();
   const role = useSessionStorage("role");
   const track = useSessionStorage("track");
-  const [tests, setTests] = useState([]);
   let prospectiveStudentTest2Style = {};
-  const [hasCompletedAllTests, setHasCompletedAllTests] = useState(false);
 
-  useEffect(() => {
-    getTests();
-  }, [tests]);
-
-  async function getTests() {
-    let tempTests = [];
-    let tempHasCompletedAllTests = false;
-    try {
-      let reqInstance = axios.create({
-        headers: {
-          Authorization: `Bearer ${props.sessionToken}`,
-        },
-      });
-
-      let url = "";
-      if (role == "Αμύητος") {
-        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
-      } else {
-        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
-      }
-
-      const res = await reqInstance.get(url);
-      tempTests = res.data.testsCompletionState;
-      tempHasCompletedAllTests = res.data.hasCompletedAllTests;
-    } catch (err) {
-    } finally {
-      setTests(tempTests);
-      setHasCompletedAllTests(tempHasCompletedAllTests);
-    }
-  }
+  console.log(props.test);
 
   function handleTestClick(index, isRevision, isCompleted) {
     if (isCompleted) {
@@ -86,13 +55,13 @@ export default function Tests(props) {
   }
 
   if (role == "Αμύητος") {
-    if (tests[1]?.isCompleted)
+    if (props.tests[1]?.isCompleted)
       prospectiveStudentTest2Style = {
         backgroundColor: "green",
         color: "white",
       };
     else {
-      if (!tests[0]?.isCompleted)
+      if (!props.tests[0]?.isCompleted)
         prospectiveStudentTest2Style = {
           backgroundColor: "#cccccc",
           color: "#666666",
@@ -104,7 +73,7 @@ export default function Tests(props) {
     <main>
       <Container className="mt-4 mb-4" style={{ textAlign: "center" }}>
         <h4 className={lessonStyles["header"]}>
-          Πριν προβείτε στην επίλυση των παρακάτω τεστ, μελετήστε το υλικό{" "}
+          Πριν προβείτε στην επίλυση των παρακάτω τεστ, μελετήστε το υλικό
           <br />
           που βρίσκεται στην ενότητα Διδασκαλία.
         </h4>
@@ -122,7 +91,7 @@ export default function Tests(props) {
         {(role == "Φοιτητής" || role == "Απόφοιτος") && (
           <>
             <div className={`mt-3 ${testsStyles["tests-box"]}`}>
-              {tests?.map((test) => {
+              {props.tests.map((test) => {
                 return (
                   <>
                     <div className={testsStyles["tests-item"]}>
@@ -188,13 +157,13 @@ export default function Tests(props) {
                   className="admin-btn"
                   onClick={() =>
                     handleTestClick(
-                      tests[0]?.generalTestId,
+                      props.tests[0]?.generalTestId,
                       false,
-                      tests[0]?.isCompleted
+                      props.tests[0]?.isCompleted
                     )
                   }
                   style={
-                    tests[0]?.isCompleted
+                    props.tests[0]?.isCompleted
                       ? {
                           backgroundColor: "green",
                           color: "white",
@@ -202,7 +171,7 @@ export default function Tests(props) {
                       : null
                   }
                 >
-                  Τεστ {tests[0]?.generalTestId}
+                  Τεστ {props.tests[0]?.generalTestId}
                 </button>
               </div>
               <div className={testsStyles["tests-item"]}>
@@ -210,21 +179,21 @@ export default function Tests(props) {
                   className="admin-btn"
                   onClick={() =>
                     handleTestClick(
-                      tests[1]?.generalTestId,
+                      props.tests[1]?.generalTestId,
                       false,
-                      tests[1]?.isCompleted
+                      props.tests[1]?.isCompleted
                     )
                   }
                   style={prospectiveStudentTest2Style}
                 >
-                  Τεστ {tests[1]?.generalTestId}
+                  Τεστ {props.tests[1]?.generalTestId}
                 </button>
               </div>
             </div>
           </>
         )}
       </Container>
-      {hasCompletedAllTests && (
+      {props.hasCompletedAllTests && (
         <>
           <Container className="mt-5 mb-4" style={{ textAlign: "center" }}>
             <h4 className={lessonStyles["header"]}>
@@ -234,8 +203,8 @@ export default function Tests(props) {
               >
                 Συγχαρητήρια!
               </div>{" "}
-              Ολοκληρώσατε όλα τα τεστς. Μεταβείτε στην ενότητα "Συστάσεις" για
-              να δείτε τα αποτελέσματα!
+              Ολοκληρώσατε όλα τα τεστς. Μεταβείτε στην ενότητα
+              &quot;Συστάσεις&quot; για να δείτε τα αποτελέσματα!
             </h4>
             <button
               className="admin-btn mt-3"
@@ -260,8 +229,33 @@ export async function getServerSideProps(ctx) {
   const session = await getSession(ctx);
 
   if (!session) return null;
+  console.log(session);
 
-  const sessionToken = session.accessToken;
+  let tests = [];
+  let hasCompletedAllTests = false;
+  try {
+    let reqInstance = axios.create({
+      headers: {
+        Authorization: `Bearer ${session.accessToken}`,
+      },
+    });
 
-  return { props: { sessionToken } };
+    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
+    const res = await reqInstance.get(url);
+    if (res) {
+      tests = res.data.testsCompletionState;
+      hasCompletedAllTests = res.data.hasCompletedAllEssentialTests;
+    }
+
+    const url2 = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
+    const res2 = await reqInstance.get(url2);
+    if (res2) {
+      tests = res2.data.testsCompletionState;
+      hasCompletedAllTests = res2.data.hasCompletedAllTests;
+    }
+  } catch (err) {
+    console.log(err);
+  } finally {
+    return { props: { tests, hasCompletedAllTests } };
+  }
 }
