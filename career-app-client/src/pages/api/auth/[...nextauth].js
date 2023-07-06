@@ -25,6 +25,7 @@ export const authOptions = {
         };
         const config = { "content-type": "application/json" };
         // Request
+        axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
         const res = await axios.post(url, data, config);
 
         if (res) {

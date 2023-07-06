@@ -143,10 +143,9 @@ export default function Register() {
         }
       }
 
-      console.log(data);
-
       const config = { "content-type": "application/json" };
 
+      axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
       const res = await axios.post(url, data, config);
 
       if (res.status == 201) {
