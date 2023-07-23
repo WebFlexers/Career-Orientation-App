@@ -24,7 +24,7 @@ export default function Tests(props) {
     }
 
     if (role == "Αμύητος") {
-      if (index == 2 && !tests[0]?.isCompleted) {
+      if (index == 2 && !props.tests[0]?.isCompleted) {
         alert("Πρέπει να ολοκληρώσετε το Τεστ 1 για να προχωρήσετε στο Τεστ 2");
         return;
       }
