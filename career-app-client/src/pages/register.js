@@ -7,10 +7,6 @@ import { useSession, signIn } from "next-auth/react";
 import axios from "axios";
 import { useState } from "react";
 
-const onFinish = (values) => {
-  console.log("Success:");
-};
-
 const validate = (values) => {
   const errors = {};
   if (!values.username) {
@@ -71,11 +67,6 @@ export default function Register() {
   const router = useRouter();
   const semesters = [1, 2, 3, 4, 5, 6, 7, 8];
   const [submitErrors, setSubmitErrors] = useState([]);
-
-  if (status === "authenticated") {
-    return <h2 style={{ textAlign: "center" }}>Already logged in!</h2>;
-  }
-
   // Form's main function
   const formik = useFormik({
     initialValues: {
@@ -94,6 +85,10 @@ export default function Register() {
       registerUser(values);
     },
   });
+
+  if (status === "authenticated") {
+    return <h2 style={{ textAlign: "center" }}>Already logged in!</h2>;
+  }
 
   async function registerUser(values) {
     try {
@@ -148,10 +143,9 @@ export default function Register() {
         }
       }
 
-      console.log(data);
-
       const config = { "content-type": "application/json" };
 
+      axios.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
       const res = await axios.post(url, data, config);
 
       if (res.status == 201) {
@@ -274,7 +268,14 @@ export default function Register() {
                 >
                   <option value="">Επιλέξτε Εξάμηνο:</option>
                   {semesters.map((semester) => {
-                    return <option value={semester}>{semester}</option>;
+                    return (
+                      <option
+                        value={semester}
+                        key={semesters.indexOf(semester)}
+                      >
+                        {semester}
+                      </option>
+                    );
                   })}
                 </Field>
                 {formik.errors.semester ? (

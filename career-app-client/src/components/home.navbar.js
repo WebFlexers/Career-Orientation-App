@@ -40,7 +40,11 @@ const HomeNavigationBar = (props) => {
                     Κεντρικός Πίνακας
                   </Nav.Link>
                   <button
-                    onClick={() => signOut({ callbackUrl: "/" })}
+                    onClick={() =>
+                      signOut({
+                        callbackUrl: `${process.env.NEXT_PUBLIC_API_HOST}/`,
+                      })
+                    }
                     style={{
                       border: "0",
                       background: "transparent",

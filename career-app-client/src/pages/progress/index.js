@@ -18,10 +18,6 @@ export default function Progress(props) {
   let statusStyle = {};
 
   useEffect(() => {
-    getTests();
-  }, [tests]);
-
-  useEffect(() => {
     let tempAccessCountArray = [];
     let tempSemestersArray = [];
     let tempStr = "";
@@ -92,30 +88,6 @@ export default function Progress(props) {
     chartId.current = chart.id;
   }, []);
 
-  async function getTests() {
-    let tempTests = [];
-    try {
-      let reqInstance = axios.create({
-        headers: {
-          Authorization: `Bearer ${props.sessionToken}`,
-        },
-      });
-
-      let url = "";
-      if (role == "Αμύητος") {
-        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
-      } else {
-        url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
-      }
-
-      const res = await reqInstance.get(url);
-      tempTests = res.data.testsCompletionState;
-    } catch (err) {
-    } finally {
-      setTests(tempTests);
-    }
-  }
-
   return (
     <main>
       <Container>
@@ -141,7 +113,7 @@ export default function Progress(props) {
         <h3 className="mt-4">Τεστς</h3>
       </Container>
       <Container className="mt-3 mb-3">
-        {tests.map((test) => {
+        {props.testsData.map((test) => {
           {
             test.isCompleted
               ? (statusStyle = {})
@@ -229,7 +201,7 @@ export async function getServerSideProps(ctx) {
   if (!session) return null;
 
   let semestersData = "";
-  let sessionToken = "";
+  let testsData = "";
   try {
     let reqInstance = axios.create({
       headers: {
@@ -237,15 +209,24 @@ export async function getServerSideProps(ctx) {
       },
     });
 
-    const url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Statistics/TeachingAccessStatistics`;
-
-    const res = await reqInstance.get(url);
+    var url = `${process.env.NEXT_PUBLIC_API_HOST}/api/Statistics/TeachingAccessStatistics`;
+    var res = await reqInstance.get(url);
     semestersData = res.data;
-    sessionToken = session.accessToken;
-    console.log(semestersData);
+
+    url = `${process.env.NEXT_PUBLIC_API_HOST}/api/ProspectiveStudentTests/Completed`;
+    res = await reqInstance.get(url);
+    if (res) {
+      testsData = res.data.testsCompletionState;
+    }
+
+    url = `${process.env.NEXT_PUBLIC_API_HOST}/api/StudentTests/Completed`;
+    res = await reqInstance.get(url);
+    if (res) {
+      testsData = res.data.testsCompletionState;
+    }
   } catch (err) {
     console.log(err);
   } finally {
-    return { props: { semestersData, sessionToken } };
+    return { props: { semestersData, testsData } };
   }
 }
