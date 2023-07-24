@@ -72,7 +72,7 @@ const AdminNavigationBar = (props) => {
                 <button
                   onClick={() =>
                     signOut({
-                      callbackUrl: `${proccess.env.NEXT_PUBLIC_API_HOST}/`,
+                      callbackUrl: `${process.env.NEXT_PUBLIC_API_HOST}/`,
                     })
                   }
                   style={{ backgroundColor: "transparent", border: "0" }}

@@ -8,7 +8,11 @@ export default function App({ Component, pageProps: { ...pageProps } }) {
   const layout = getLayout(<Component {...pageProps} />);
   return (
     <>
-      <SessionProvider session={pageProps.session}>
+      <SessionProvider
+        session={pageProps.session}
+        refetchInterval={5 * 60}
+        refetchOnWindowFocus={false}
+      >
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="" />

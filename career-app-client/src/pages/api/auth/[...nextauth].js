@@ -63,6 +63,13 @@ export const authOptions = {
 
       return session;
     },
+
+    async signOut({ token, session }) {
+      res.setHeader("Set-Cookie", "");
+
+      token = {};
+      session = {};
+    },
   },
 };
 
